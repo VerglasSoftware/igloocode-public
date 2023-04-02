@@ -49,6 +49,7 @@ export default function UserMenu() {
               <Menu.Item>
                 {({ active }) => (
                   <button
+                    onClick={() => window.location.href = '/api/auth/logout'}
                     className={`${
                       active ? 'bg-gray-100 text-gray-900' : 'text-gray-900'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}

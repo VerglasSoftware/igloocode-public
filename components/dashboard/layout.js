@@ -1,11 +1,17 @@
 import Head from "next/head";
 export var siteTitle = "IglooCode";
 
+import { useUser } from '@auth0/nextjs-auth0/client';
+
 import Navbar from "./navbar";
 import Sidebar from "./sidebar";
 
 export default function Layout({ children, title }) {
-    return (
+    const { user, error, isLoading } = useUser();
+    if (isLoading) return <div>Loading...</div>;
+    if (error) return <div>{error.message}</div>;
+
+    return user && (
         <div className="min-h-screen flex flex-col">
 
             <Head>
