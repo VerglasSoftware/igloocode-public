@@ -25,7 +25,7 @@ export default function Sidebar({ }) {
 
     return (
                 <aside className="w-full md:w-60 border-r-gray-200 border-r-2 flex flex-col justify-start">
-                    <div className="flex flex-row h-18 justify-center items-center py-5 pt-6">
+                    <div className="flex flex-row h-18 justify-center items-center py-5 pt-8 pt-6">
                         <Image
                         src={"/images/logo_full.png"}
                         width={200}

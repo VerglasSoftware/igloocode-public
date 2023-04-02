@@ -30,7 +30,7 @@ export default function Layout({ children, title }) {
             <div className="flex flex-col md:flex-row flex-1">
                 <Sidebar />
                 <div className="flex flex-col flex-1">
-                    <main className="flex-1 p-5 bg-gray-50">{children}</main>
+                    <main className="flex-1 p-8 bg-gray-50">{children}</main>
                 </div>
             </div>
         </div>
