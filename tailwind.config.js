@@ -9,6 +9,7 @@ module.exports = {
 			colors: {
 				"ic-blue": "#00E8FF",
 				"ic-pink": "#FF00F7",
+				"ic-purple": "#9255ff",
 			},
 			gridTemplateColumns: {
 				sidebar: "300px auto",

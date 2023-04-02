@@ -1,18 +1,32 @@
 import Head from "next/head";
 export var siteTitle = "IglooCode";
 
-export default function Layout({ children, session }) {
+import Navbar from "./navbar";
+import Sidebar from "./sidebar";
+
+export default function Layout({ children, title }) {
     return (
         <div className="min-h-screen flex flex-col">
+
+            <Head>
+                <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+                <link rel="manifest" href="/images/site.webmanifest" />
+                <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#9333ea" />
+                <link rel="shortcut icon" href="/images/favicon.ico" />
+                <meta name="apple-mobile-web-app-title" content="IglooCode" />
+                <meta name="application-name" content="IglooCode" />
+                <meta name="msapplication-TileColor" content="#2f2f2f" />
+                <meta name="msapplication-config" content="/images/browserconfig.xml" />
+                <title>{title + " - " + siteTitle}</title>
+            </Head>
+
             <div className="flex flex-col md:flex-row flex-1">
-                <aside className="bg-fuchsia-100 w-full md:w-60"></aside>
+                <Sidebar />
                 <div className="flex flex-col flex-1">
-                    <header
-                        className="bg-purple-200 sticky top-0 h-14 flex justify-center items-center font-semibold uppercase"
-                    >
-                        Next.js sidebar menu
-                    </header>
-                    <main className="flex-1">{children}</main>
+                    <Navbar title={title} />
+                    <main className="flex-1 p-5 bg-gray-100">{children}</main>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 module.exports = {
 	images: {
-		domains: ["tailwindui.com"],
+		domains: ["tailwindui.com", "s.gravatar.com", "ui-avatars.com"],
 		dangerouslyAllowSVG: true,
 	},
 };

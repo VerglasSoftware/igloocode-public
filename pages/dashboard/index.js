@@ -1,7 +1,7 @@
 import React from 'react';
 import { useUser } from '@auth0/nextjs-auth0/client';
 
-import Layout, { siteTitle } from "../../components/dashboard/layout";
+import Layout from "../../components/dashboard/layout";
 
 export default function Index() {
   const { user, error, isLoading } = useUser();
@@ -11,7 +11,7 @@ export default function Index() {
 
   return (
     user && (
-        <Layout>
+        <Layout title={"Dashboard"}>
       <div>
         <img src={user.picture} alt={user.name} />
         <h2>{user.name}</h2>
