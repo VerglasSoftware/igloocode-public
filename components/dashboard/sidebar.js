@@ -2,11 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 export var siteTitle = "IglooCode";
 
+import { useUser } from "@auth0/nextjs-auth0/client";
+
 import { useRouter } from 'next/router'
 
 import { TbCircleFilled, TbHandStop, TbHeartFilled, TbHelp, TbHomeBolt, TbLogicXnor, TbPlus, TbSettings, TbTrophy } from "react-icons/tb";
+import UserMenu from "./navmenus/user";
 
 export default function Sidebar({ }) {
+    const { user, error, isLoading } = useUser();
     const router = useRouter();
 
     const navigationItems = [
@@ -49,7 +53,7 @@ export default function Sidebar({ }) {
                         }
                     </div>
                     <div className="flex flex-col flex-1 justify-end">
-                    <div className="flex flex-col p-5">
+                    <div className="flex flex-col p-5 pb-0">
                         
                         <div className="flex flex-row items-center mb-2">
                             <span className="text-sm font-semibold flex-1">Recent competitions</span>
@@ -75,6 +79,13 @@ export default function Sidebar({ }) {
                         </Link>
 
                     </div>
+
+                    <div className="p-5">
+
+                        <UserMenu />
+
+                        </div>
+
                     <div className="text-gray-500 flex flex-row justify-center items-center w-60 mb-5">
                         <p className="text-center text-sm">Made with <TbHeartFilled className="inline mx-1 text-red-600" /> in the UK by <br />
                         <a href="https://dandabs.io" className="hover:text-ic-purple">Daníel Adams</a> and <a href="" className="hover:text-ic-purple">Jake Gillman</a>.</p>

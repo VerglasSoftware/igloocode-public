@@ -3,7 +3,6 @@ export var siteTitle = "IglooCode";
 
 import { useUser } from '@auth0/nextjs-auth0/client';
 
-import Navbar from "./navbar";
 import Sidebar from "./sidebar";
 
 export default function Layout({ children, title }) {
@@ -31,8 +30,7 @@ export default function Layout({ children, title }) {
             <div className="flex flex-col md:flex-row flex-1">
                 <Sidebar />
                 <div className="flex flex-col flex-1">
-                    <Navbar title={title} />
-                    <main className="flex-1 p-5 bg-gray-100">{children}</main>
+                    <main className="flex-1 p-5 bg-gray-50">{children}</main>
                 </div>
             </div>
         </div>
