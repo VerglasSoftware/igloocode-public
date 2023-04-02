@@ -17,6 +17,7 @@ module.exports = {
 			gridTemplateRows: {
 				header: "64px auto",
 			},
+			backgroundColor: ['even'],
 		},
 	},
 	plugins: [require("@tailwindcss/typography")],
