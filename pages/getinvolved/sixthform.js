@@ -5,7 +5,7 @@ import Link from "next/link";
 import Script from "next/script";
 import React from "react";
 import { FiAward, FiBriefcase, FiCoffee, FiLifeBuoy } from "react-icons/fi";
-import Layout, { siteTitle } from "../../components/layout";
+import Layout, { siteTitle } from "../../components/public/layout";
 import imgKaty from "../../public/images/IMG_2398.jpeg";
 import imgQueens from "../../public/images/IMG_2438.jpeg";
 import imgMacSB from "../../public/images/IMG_6555.png";

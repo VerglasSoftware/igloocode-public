@@ -2,7 +2,7 @@ import { Red_Hat_Mono } from "@next/font/google";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { siteTitle } from "../components/public/layout";
 import imgDan from "../public/images/80dc15ad-6966-4a77-aa2b-9bd60409f9c5.jpg";
 import imgJosephi from "../public/images/D54DBDEB-F430-43FC-B0B6-1330A3366503.jpg";
 import imgJake from "../public/images/jake.png";

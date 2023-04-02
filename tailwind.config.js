@@ -10,6 +10,12 @@ module.exports = {
 				"ic-blue": "#00E8FF",
 				"ic-pink": "#FF00F7",
 			},
+			gridTemplateColumns: {
+				sidebar: "300px auto",
+			}, 
+			gridTemplateRows: {
+				header: "64px auto",
+			},
 		},
 	},
 	plugins: [require("@tailwindcss/typography")],

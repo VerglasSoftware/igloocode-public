@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Typewriter from "typewriter-effect";
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { siteTitle } from "../components/public/layout";
 import imgHelp from "../public/images/IMG_6559.png";
 import imgKayla from "../public/images/IMG_6565.png";
 import imgScoreboard from "../public/images/IMG_6571.png";

@@ -6,7 +6,7 @@ import Script from "next/script";
 import React from "react";
 import { FiBook, FiBriefcase, FiCode, FiCoffee, FiLink, FiMinimize } from "react-icons/fi";
 import { SiHandshake } from "react-icons/si";
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { siteTitle } from "../components/public/layout";
 import imgMacSB from "../public/images/IMG_6555.png";
 import imgRachelle from "../public/images/IMG_6905.png";
 const red_hat_mono = Red_Hat_Mono({ subsets: ["latin"] });

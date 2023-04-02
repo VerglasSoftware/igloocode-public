@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import React from "react";
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { siteTitle } from "../components/public/layout";
 import imgPeterFroggott from "../public/images/IMG_2440.png";
 import imgOpenDay from "../public/images/IMG_3652.png";
 import imgMacSB from "../public/images/IMG_6555.png";
