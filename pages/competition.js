@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import React from "react";
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { siteTitle } from "../components/public/layout";
 import imgTasks from "../public/images/IMG_6551.jpeg";
 import imgEncryption from "../public/images/IMG_6562.jpeg";
 import imgTyping from "../public/images/IMG_7214.png";

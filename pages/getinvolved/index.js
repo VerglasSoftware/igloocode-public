@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import React from "react";
-import Layout, { siteTitle } from "../../components/layout";
+import Layout, { siteTitle } from "../../components/public/layout";
 import imgCosmo from "../../public/images/IMG_6195.png";
 import imgHands from "../../public/images/IMG_6559.png";
 const red_hat_mono = Red_Hat_Mono({ subsets: ["latin"] });
