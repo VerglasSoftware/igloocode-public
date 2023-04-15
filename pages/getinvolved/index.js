@@ -5,8 +5,8 @@ import Link from "next/link";
 import Script from "next/script";
 import React from "react";
 import Layout, { siteTitle } from "../../components/public/layout";
-import imgCosmo from "../../public/images/IMG_6195.png";
-import imgHands from "../../public/images/IMG_6559.png";
+import imgCosmo from "../../public/images/IMG_0679.jpeg";
+import imgHands from "../../public/images/60A456C6-0BA2-43F1-B30E-97211DF2C6D9.jpeg";
 const red_hat_mono = Red_Hat_Mono({ subsets: ["latin"] });
 
 function Index() {
