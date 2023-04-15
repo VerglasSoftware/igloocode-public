@@ -4,10 +4,10 @@ import Image from "next/image";
 import React from "react";
 import Typewriter from "typewriter-effect";
 import Layout, { siteTitle } from "../components/public/layout";
-import imgHelp from "../public/images/IMG_6559.png";
-import imgKayla from "../public/images/IMG_6565.png";
-import imgScoreboard from "../public/images/IMG_6571.png";
-import imgLB from "../public/images/IMG_6572.jpeg";
+import imgHelp from "../public/images/DSC01901.jpeg";
+import imgKayla from "../public/images/DSC01823.jpeg";
+import imgScoreboard from "../public/images/DSC01768.jpeg";
+import imgLB from "../public/images/DSC01822.jpeg";
 
 import imgKainos from "../public/images/kainos_transparent.webp";
 import imgLIT from "../public/images/LIT-logo.webp";
@@ -52,7 +52,7 @@ function Index() {
 						delay: 100,
 					}}
 				/>
-				<a className={`${red_hat_mono.className} text-gray-300 text-xl mt-7 border-[1px] border-gray-400 p-2 cursor-default`}>2023 APPLICATIONS CLOSED</a>
+				<a className={`${red_hat_mono.className} text-gray-300 text-xl mt-7 border-[1px] border-gray-400 p-2 cursor-default`}>APPLICATIONS OPEN LATE 2023</a>
 
 				<div className="absolute bottom-0 mb-8 flex flex-col items-center">
 					<p className={`${red_hat_mono.className} text-white mb-3`}>In partnership with</p>
@@ -85,10 +85,10 @@ function Index() {
 									Technology at GCSE, or who have an interest in computers or programming.
 								</p>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									This once-in-a-lifetime event, organised by 3 sixth-form students from Belfast and Ballymena in partnership with some of NI's biggest tech companies, is an amazing
+									This unique event, organised by 3 sixth-form students from Belfast and Ballymena in partnership with some of NI's biggest tech companies, is an amazing
 									opportunity to test your computing skills in a competitive environment while hearing about careers in IT from some of the biggest names in the industry.
 								</p>
-								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>We look forward to seeing you in Belfast next year for IC23!</p>
+								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>We look forward to seeing you for our second year in 2024!</p>
 							</div>
 							<div className="sm:block hidden">
 								<Image src={imgLB} className="w-full h-[28rem] shadow-md object-cover sm:block hidden" />
@@ -228,7 +228,7 @@ function Index() {
 			</div>
 			<Script id="update-countdown" strategy="afterInteractive">
 				{`
-				var end = new Date('03/28/2023 10:0 AM');
+				var end = new Date('03/28/2024 10:0 AM');
 				var _second = 1000;
 				var _minute = _second * 60;
 				var _hour = _minute * 60;
@@ -300,7 +300,7 @@ function Index() {
 									are you ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">win</span>?
 								</h2>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									<span className="font-medium">IglooCode23</span> <br />
+									<span className="font-medium">IglooCode 2023</span> took part on <br />
 									28th March 2023 <br />
 									10am - 3:30pm
 								</p>
@@ -310,17 +310,20 @@ function Index() {
 									Belfast <br />
 									BT9 5AF
 								</p>
+								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
+									<span className="font-medium">2024 details will be released late this year.</span> <br />
+								</p>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3 mt-10`}>
 									<span className="font-medium">General enquiries</span> <br />
 									daniel@iglooco.de
 								</p>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
 									<span className="font-medium">Sponsor- & partnership enquiries</span> <br />
-									aideen@iglooco.de
+									amchugh708@c2ken.net
 								</p>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
 									<span className="font-medium">Media enquiries</span> <br />
-									emma@iglooco.de
+									emmamirwhite@gmail.com
 								</p>
 							</div>
 						</div>

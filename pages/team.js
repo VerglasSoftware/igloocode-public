@@ -3,17 +3,27 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Layout, { siteTitle } from "../components/public/layout";
-import imgDan from "../public/images/80dc15ad-6966-4a77-aa2b-9bd60409f9c5.jpg";
-import imgJosephi from "../public/images/D54DBDEB-F430-43FC-B0B6-1330A3366503.jpg";
-import imgJake from "../public/images/jake.png";
-import imgAideen from "../public/images/Näyttökuva 2022-12-7 kello 23.01.39.png";
-import imgEmma from "../public/images/Näyttökuva 2022-12-7 kello 23.02.09.png";
-import imgOliver from "../public/images/oliver.png";
-import imgRyan from "../public/images/ryan.png";
 
+import imgAideen from "../public/images/team/aideen.png";
+import imgAxel from "../public/images/team/axel.png";
+import imgBenF from "../public/images/team/benf.png";
+import imgBenT from "../public/images/team/bent.png";
+import imgDan from "../public/images/team/dan.png";
+import imgDylan from "../public/images/team/dylan.png";
+import imgEliza from "../public/images/team/eliza.png";
+import imgEmma from "../public/images/team/emma.png";
+import imgGrainne from "../public/images/team/grainne.png";
+import imgJake from "../public/images/team/jake.png";
+import imgJosephi from "../public/images/team/josephi.png";
+import imgLJ from "../public/images/team/lj.png";
+import imgMa from "../public/images/team/ma.png";
+import imgMatthew from "../public/images/team/matthew.png";
+import imgOliver from "../public/images/team/oliver.png";
+import imgRyan from "../public/images/team/ryan.png";
+import imgConnlaith from "../public/images/team/connlaith.png";
+import imgChris from "../public/images/team/chris.png";
+import imgKayla from "../public/images/team/kayla.png";
 import imgHollie from "../public/images/hollie.jpg";
-import imgMatthew from "../public/images/matthew.jpg";
-import imgPaige from "../public/images/paige.jpg";
 
 import Script from "next/script";
 import imgBlank from "../public/images/pfp.webp";
@@ -163,7 +173,7 @@ function Team() {
 							problems the students may have.
 						</p>
 						<div className="grid grid-cols-5 gap-28 gap-y-8">
-							<div className="flex flex-col justify-center items-center">
+						<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Seth</p>
 							</div>
@@ -172,35 +182,35 @@ function Team() {
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Calvin</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
-								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<Image src={imgMa} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Ma</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
-								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<Image src={imgKayla} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Kayla</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
-								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<Image src={imgChris} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Chris</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
-								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<Image src={imgEliza} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Eliza</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Samuel</p>
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Samuel B</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
-								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Shady</p>
+								<Image src={imgBenT} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Ben T</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
-								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Crio</p>
+								<Image src={imgBenF} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Ben F</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
-								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<Image src={imgDylan} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Dylan</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
@@ -208,23 +218,15 @@ function Team() {
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Eve</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
-								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<Image src={imgLJ} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>LJ</p>
-							</div>
-							<div className="flex flex-col justify-center items-center">
-								<Image src={imgPaige} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Paige</p>
-							</div>
-							<div className="flex flex-col justify-center items-center">
-								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Ben</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgHollie} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Hollie</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
-								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<Image src={imgConnlaith} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Connlaith</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
@@ -232,8 +234,12 @@ function Team() {
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Matthew</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
-								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Kitt</p>
+								<Image src={imgGrainne} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Gráinne</p>
+							</div>
+							<div className="flex flex-col justify-center items-center">
+								<Image src={imgAxel} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Axel</p>
 							</div>
 						</div>
 						<div className="flex justify-center items-center mt-6">

@@ -7,8 +7,8 @@ import React from "react";
 import { FiBook, FiBriefcase, FiCode, FiCoffee, FiLink, FiMinimize } from "react-icons/fi";
 import { SiHandshake } from "react-icons/si";
 import Layout, { siteTitle } from "../components/public/layout";
-import imgMacSB from "../public/images/IMG_6555.png";
-import imgRachelle from "../public/images/IMG_6905.png";
+import imgMacSB from "../public/images/DSC01974.jpeg";
+import imgRachelle from "../public/images/IMG_0693.jpg";
 const red_hat_mono = Red_Hat_Mono({ subsets: ["latin"] });
 
 function Perks() {
@@ -205,8 +205,8 @@ function Perks() {
 										</h2>
 									</div>
 									<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-										Thinking about going for the win? If you succeed, you'll be going home victorious, along with our beautiful IglooCode trophy and a cash prize to spend on
-										whatever you so desire at your school.
+										Thinking about going for the win? If you succeed, you'll be going home victorious, along with state-of-the-art Arduino starter kits, worth £100 each,
+										to further enhance your interest and knowledge of STEM and IT.
 									</p>
 									<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
 										Forever go down in history as the first winners of IglooCode - what is there to lose?!
@@ -226,7 +226,7 @@ function Perks() {
 										every school involved, with tutorials on how to get started and up to speed on new topics.
 									</p>
 									<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-										Take these home or work through them with your teachers or mentors at school, and maybe you could be coming home with the IC23 trophy in March!
+										Take these home or work through them with your teachers or mentors at school, and maybe you could be coming home with the victory in 2024!
 									</p>
 								</div>
 							</div>

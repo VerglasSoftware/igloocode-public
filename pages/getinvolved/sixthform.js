@@ -6,10 +6,10 @@ import Script from "next/script";
 import React from "react";
 import { FiAward, FiBriefcase, FiCoffee, FiLifeBuoy } from "react-icons/fi";
 import Layout, { siteTitle } from "../../components/public/layout";
-import imgKaty from "../../public/images/IMG_2398.jpeg";
-import imgQueens from "../../public/images/IMG_2438.jpeg";
-import imgMacSB from "../../public/images/IMG_6555.png";
-import imgSam from "../../public/images/IMG_6902.png";
+import imgKaty from "../../public/images/DSC01864.jpeg";
+import imgQueens from "../../public/images/IMG_0660.jpeg";
+import imgMacSB from "../../public/images/DSC01908.jpeg";
+import imgSam from "../../public/images/DSC01890.jpeg";
 const red_hat_mono = Red_Hat_Mono({ subsets: ["latin"] });
 
 function Index() {
