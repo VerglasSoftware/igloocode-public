@@ -5,9 +5,9 @@ import Link from "next/link";
 import Script from "next/script";
 import React from "react";
 import Layout, { siteTitle } from "../components/public/layout";
-import imgTasks from "../public/images/IMG_6551.jpeg";
-import imgEncryption from "../public/images/IMG_6562.jpeg";
-import imgTyping from "../public/images/IMG_7214.png";
+import imgTasks from "../public/images/DSC01857.jpeg";
+import imgEncryption from "../public/images/DSC01856.jpeg";
+import imgTyping from "../public/images/DSC01866.jpeg";
 import imgAppInventor from "../public/images/logos/appinventor.png";
 import imgArduino from "../public/images/logos/arduino.png";
 import imgCSS from "../public/images/logos/css.png";
@@ -19,7 +19,8 @@ import imgMindstorms from "../public/images/logos/mindstorms.png";
 import imgPython from "../public/images/logos/python.png";
 import imgScratch from "../public/images/logos/scratch.png";
 import imgSphero from "../public/images/logos/sphero.png";
-import imgMBC from "../public/images/Media,793462,en.jpg";
+import imgMBC from "../public/images/IMG_5830.jpeg";
+import imgMBC2 from "../public/images/DSC01750.jpeg";
 const red_hat_mono = Red_Hat_Mono({ subsets: ["latin"] });
 
 function Index() {
@@ -183,7 +184,7 @@ function Index() {
 								</Link>
 							</div>
 							<div className="flex flex-col justify-center">
-								<Image src={imgMBC} className="w-full h-80 shadow-md object-cover" />
+								<Image src={imgMBC2} className="w-full h-80 shadow-md object-cover" />
 							</div>
 						</div>
 					</div>
