@@ -163,7 +163,7 @@ function Team() {
 							problems the students may have.
 						</p>
 						<div className="grid grid-cols-5 gap-28 gap-y-8">
-							<div className="flex flex-col justify-center items-center">
+						<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Seth</p>
 							</div>
@@ -189,15 +189,15 @@ function Team() {
 							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Samuel</p>
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Samuel B</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Shady</p>
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Ben T</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Crio</p>
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Ben F</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
@@ -210,14 +210,6 @@ function Team() {
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>LJ</p>
-							</div>
-							<div className="flex flex-col justify-center items-center">
-								<Image src={imgPaige} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Paige</p>
-							</div>
-							<div className="flex flex-col justify-center items-center">
-								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Ben</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgHollie} className="w-full aspect-square rounded-full shadow-md object-cover" />
@@ -233,7 +225,11 @@ function Team() {
 							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Kitt</p>
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Gráinne</p>
+							</div>
+							<div className="flex flex-col justify-center items-center">
+								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Axel</p>
 							</div>
 						</div>
 						<div className="flex justify-center items-center mt-6">
