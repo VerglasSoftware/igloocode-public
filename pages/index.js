@@ -4,10 +4,10 @@ import Image from "next/image";
 import React from "react";
 import Typewriter from "typewriter-effect";
 import Layout, { siteTitle } from "../components/public/layout";
-import imgHelp from "../public/images/IMG_6559.png";
-import imgKayla from "../public/images/IMG_6565.png";
-import imgScoreboard from "../public/images/IMG_6571.png";
-import imgLB from "../public/images/IMG_6572.jpeg";
+import imgHelp from "../public/images/DSC01901.jpeg";
+import imgKayla from "../public/images/DSC01823.jpeg";
+import imgScoreboard from "../public/images/DSC01768.jpeg";
+import imgLB from "../public/images/DSC01822.jpeg";
 
 import imgKainos from "../public/images/kainos_transparent.webp";
 import imgLIT from "../public/images/LIT-logo.webp";
