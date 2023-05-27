@@ -59,27 +59,20 @@ export default function Footer({ session }) {
 					</Link>
 				</div>
 				<p className={`${red_hat_mono.className} text-sm text-neutral-400 text-center mt-6`}>
-					© 2022{" "}
+					© 2022 IglooCode Ltd. All Rights Reserved.
+					<br />
+					Website by{" "}
 					<a href="https://dandabs.io/" className="hover:underline">
 						Daniel Adams
 					</a>
-					,{" "}
-					<a href="#" className="hover:underline">
-						Aideen McHugh
-					</a>
-					,{" "}
-					<a href="#" className="hover:underline">
-						Emma White
-					</a>{" "}
-					&{" "}
+					{" "}and{" "}
 					<a href="https://github.com/JakeyGilly" className="hover:underline">
 						Jake Gillman
-					</a>
-					. All Rights Reserved.
+					</a>.
 					<br />
-					<span className="text-xs text-center">IglooCode is not associated with Slemish College or Strathearn School and any publications from us do not represent their views.</span>
+					<span className="text-[0.6rem] leading-[0.9rem] text-center">IglooCode is not associated with Slemish College or Strathearn School and any publications from us do not represent their views.</span>
 					<br />
-					<span className="text-xs text-center">Information on this website may not be final or confirmed. We reserve the right to change content at any time without notice.</span>
+					<span className="text-[0.6rem] text-center">'IglooCode' is a trading name of IglooCode Ltd. IglooCode Ltd is a company registered in England and Wales (Company no. 14838037). {/*Registered office: 82A James Carter Road, Mildenhall, Suffolk, IP28 7DE.*/}</span>
 				</p>
 			</footer>
 
