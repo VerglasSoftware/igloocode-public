@@ -77,16 +77,24 @@ function Team() {
 						</p>
 						<div className="grid grid-cols-3 gap-28">
 							<div className="flex flex-col justify-center items-center">
+								<Image src={imgEmma} className="w-full aspect-square rounded-full shadow-md object-cover" />
+							</div>
+							<div className="flex flex-col justify-center items-center">
 								<Image src={imgDan} className="w-full aspect-square rounded-full shadow-md object-cover" />
 							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgAideen} className="w-full aspect-square rounded-full shadow-md object-cover" />
 							</div>
-							<div className="flex flex-col justify-center items-center">
-								<Image src={imgJake} className="w-full aspect-square rounded-full shadow-md object-cover" />
-							</div>
 						</div>
 						<div className="grid grid-cols-3 gap-28">
+							<div className="flex flex-col justify-top items-center">
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Emma</p>
+								<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2 text-center`}>
+									I first found my love of coding when I went to my school's coding club in Year 9. I've been building my skills and making new friends through the subject ever
+									since. Now that I'm in Sixth Form I have restarted my school's Code Club and am currently running it as a way to ignite a passion for IT in younger students as the
+									same was done for me.
+								</p>
+							</div>
 							<div className="flex flex-col justify-top items-center">
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Dan</p>
 								<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2 text-center`}>
@@ -103,12 +111,6 @@ function Team() {
 									Children’s Digital Rights.
 								</p>
 							</div>
-							<div className="flex flex-col justify-top items-center">
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Emma</p>
-								<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2 text-center`}>
-								I love programming. I use languages like C/C++, Java, C# and Python for creating apps, scripts and programs. I also have interests in hardware and music.
-								</p>
-							</div>
 						</div>
 					</div>
 					<div id="helpers" className="mt-16">
@@ -120,13 +122,25 @@ function Team() {
 						</p>
 						<div className="grid grid-cols-4 gap-28">
 							<div className="flex flex-col justify-center items-center">
+								<Image src={imgJake} className="w-full aspect-square rounded-full shadow-md object-cover" />
+							</div>
+							<div className="flex flex-col justify-center items-center">
 								<Image src={imgOliver} className="w-full aspect-square rounded-full shadow-md object-cover" />
 							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgRyan} className="w-full aspect-square rounded-full shadow-md object-cover" />
 							</div>
+							<div className="flex flex-col justify-center items-center">
+								<Image src={imgJosephi} className="w-full aspect-square rounded-full shadow-md object-cover" />
+							</div>
 						</div>
 						<div className="grid grid-cols-4 gap-28">
+							<div className="flex flex-col justify-top items-center">
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Jake</p>
+								<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2 text-center`}>
+									I love programming. I use languages like C/C++, Java, C# and Python for creating apps, scripts and programs. I also have interests in hardware and music.
+								</p>
+							</div>
 							<div className="flex flex-col justify-top items-center">
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Oliver</p>
 								<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2 text-center`}>
@@ -139,6 +153,13 @@ function Team() {
 								<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2 text-center break-all`}>
 									You don't have to be IT crazy to be tech savvy. You just have to be crazy. Take my advice and grab this oppurtunity
 									=MzNgMmNgMmNgEjNgIjNgAjMgUjNggjNgQzNgAjMgkzNgIjN. £10 to the first under 16 that can decode this.
+								</p>
+							</div>
+							<div className="flex flex-col justify-top items-center">
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Josephi</p>
+								<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2 text-center`}>
+									I have always loved everything related to computers, from graphic design to coding. I spend my time indulging in hobbies like gaming or video editing and believe
+									these activities will behoove me.
 								</p>
 							</div>
 						</div>
@@ -163,6 +184,14 @@ function Team() {
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgMa} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Ma</p>
+							</div>
+							<div className="flex flex-col justify-center items-center">
+								<Image src={imgKayla} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Kayla</p>
+							</div>
+							<div className="flex flex-col justify-center items-center">
+								<Image src={imgChris} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Chris</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgEliza} className="w-full aspect-square rounded-full shadow-md object-cover" />
@@ -191,6 +220,14 @@ function Team() {
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgLJ} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>LJ</p>
+							</div>
+							<div className="flex flex-col justify-center items-center">
+								<Image src={imgHollie} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Hollie</p>
+							</div>
+							<div className="flex flex-col justify-center items-center">
+								<Image src={imgConnlaith} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Connlaith</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgMatthew} className="w-full aspect-square rounded-full shadow-md object-cover" />
