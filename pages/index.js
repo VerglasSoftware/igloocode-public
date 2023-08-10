@@ -314,16 +314,10 @@ function Index() {
 									<span className="font-medium">2024 details will be released late this year.</span> <br />
 								</p>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3 mt-10`}>
-									<span className="font-medium">General enquiries</span> <br />
+									<span className="font-medium">Enquiries</span> <br />
 									daniel@iglooco.de
-								</p>
-								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									<span className="font-medium">Sponsor- & partnership enquiries</span> <br />
-									amchugh708@c2ken.net
-								</p>
-								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									<span className="font-medium">Media enquiries</span> <br />
-									emmamirwhite@gmail.com
+									<br />
+									dadams479@c2ken.net
 								</p>
 							</div>
 						</div>
