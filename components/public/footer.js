@@ -59,7 +59,7 @@ export default function Footer({ session }) {
 					</Link>
 				</div>
 				<p className={`${red_hat_mono.className} text-sm text-neutral-400 text-center mt-6`}>
-					© {new Date(Date.now()).getFullYear()} IglooCode Ltd. All Rights Reserved.
+					© {new Date(Date.now()).getFullYear()} Verglas Software Limited. All Rights Reserved.
 					<br />
 					Website by{" "}
 					<a href="https://dandabs.io/" className="hover:underline">
