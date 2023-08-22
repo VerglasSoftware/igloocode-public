@@ -72,7 +72,7 @@ export default function Footer({ session }) {
 					<br />
 					<span className="text-[0.6rem] leading-[0.9rem] text-center">IglooCode is not associated with Slemish College or Strathearn School and any publications from us do not represent their views.</span>
 					<br />
-					<span className="text-[0.6rem] text-center">'IglooCode' is a trading name of IglooCode Ltd. IglooCode Ltd is a company registered in England and Wales (Company no. 14838037). {/*Registered office: 82A James Carter Road, Mildenhall, Suffolk, IP28 7DE.*/}</span>
+					<span className="text-[0.6rem] text-center">'IglooCode' is a trading name of Verglas Software Limited, a company registered in England and Wales (no. 14838037). {/*Registered office: 82A James Carter Road, Mildenhall, Suffolk, IP28 7DE.*/}</span>
 				</p>
 			</footer>
 
