@@ -69,106 +69,109 @@ function Team() {
 					</div>
 					<div id="organisers">
 						<h2 className={`${red_hat_mono.className} text-white text-4xl font-medium mb-2`}>
-							the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">organisers</span>.
+							the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">event coordinators</span>.
 						</h2>
 						<p className={`${red_hat_mono.className} text-white text-lg font-light mb-12`}>
-							The organisers are the people who came up with the idea of IglooCode, and are responsible for relations between external parties, the planning of the event and overall
-							project management.
+							the event coordinators are made up of the verglas board of directors and outreach committee. they are responsible for relations between external parties, the planning of the event and overall project management.
 						</p>
-						<div className="grid grid-cols-3 gap-28">
-							<div className="flex flex-col justify-center items-center">
-								<Image src={imgDan} className="w-full aspect-square rounded-full shadow-md object-cover" />
+
+						<div className="flex flex-col gap-y-4">
+							<div className="flex flex-row justify-start items-center">
+								<Image src={imgDan} className="aspect-square rounded-full shadow-md object-cover w-40 h-40" />
+								<div className="flex flex-col ms-8">
+									<p className={`${red_hat_mono.className} text-white text-2xl font-medium`}>Dan <span className="brightness-50">– Lead Event Coordinator</span></p>
+									<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2`}>
+										Ever since my mum told me that websites were made with code when I was in P2, I've been hooked. Throughout the past 10 years, I've been committed to developing my
+										skills and experiences with different programming languages. I help to run the Code Club in my school, and in the next few years I dream of studying Computer
+										Science at the University of Reykjavík.
+									</p>
+								</div>
 							</div>
-							<div className="flex flex-col justify-center items-center">
-								<Image src={imgAideen} className="w-full aspect-square rounded-full shadow-md object-cover" />
+							<div className="flex flex-row justify-start items-center">
+								<Image src={imgAideen} className="aspect-square rounded-full shadow-md object-cover w-40 h-40" />
+								<div className="flex flex-col ms-8">
+									<p className={`${red_hat_mono.className} text-white text-2xl font-medium`}>Aideen <span className="brightness-50">– Lead Speaker</span></p>
+									<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2`}>
+										I've been passionate about technology and coding since primary school; so much so that I was called the ICT Co-ordinator by teachers. When I’m not at school
+										volunteering with the Code Club or the Rocket Club, I'm a member of the NICCY Youth Panel, where I have represented young people from NI in Brussels regarding
+										Children's Digital Rights.
+									</p>
+								</div>
 							</div>
-							<div className="flex flex-col justify-center items-center">
-								<Image src={imgJake} className="w-full aspect-square rounded-full shadow-md object-cover" />
+							<div className="flex flex-row justify-start items-center">
+								<Image src={imgJake} className="aspect-square rounded-full shadow-md object-cover w-40" />
+								<div className="flex flex-col ms-8">
+									<p className={`${red_hat_mono.className} text-white text-2xl font-medium`}>Jake <span className="brightness-50">– Software Developer</span></p>
+									<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2`}>
+										I love programming. I use languages like C/C++, Java, C# and Python for creating apps, scripts and programs. I also have interests in hardware and music.
+									</p>
+								</div>
 							</div>
-						</div>
-						<div className="grid grid-cols-3 gap-28">
-							<div className="flex flex-col justify-top items-center">
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Dan</p>
-								<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2 text-center`}>
-									Ever since my mum told me that websites were made with code when I was in P2, I've been hooked. Throughout the past 10 years, I've been committed to developing my
-									skills and experiences with different programming languages. I help to run the Code Club in my school, and in the next few years I dream of studying Computer
-									Science at the University of Reykjavík.
-								</p>
+							<div className="flex flex-row justify-start items-center">
+								<Image src={imgMa} className="aspect-square rounded-full shadow-md object-cover w-40" />
+								<div className="flex flex-col ms-8">
+									<p className={`${red_hat_mono.className} text-white text-2xl font-medium`}>Matthew H <span className="brightness-50">– Lead Photographer</span></p>
+									<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2`}>
+										
+									</p>
+								</div>
 							</div>
-							<div className="flex flex-col justify-top items-center">
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Aideen</p>
-								<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2 text-center`}>
-									I've been passionate about technology and coding since primary school; so much so that I was called the ICT Co-ordinator by teachers. When I’m not at school
-									volunteering with the Code Club or the Rocket Club, I'm a member of the NICCY Youth Panel, where I have represented young people from NI in Brussels regarding
-									Children's Digital Rights.
-								</p>
+							<div className="flex flex-row justify-start items-center">
+								<Image src={imgBlank} className="aspect-square rounded-full shadow-md object-cover w-40" />
+								<div className="flex flex-col ms-8">
+									<p className={`${red_hat_mono.className} text-white text-2xl font-medium`}>Samuel B</p>
+									<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2`}>
+										
+									</p>
+								</div>
 							</div>
-							<div className="flex flex-col justify-top items-center">
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Jake</p>
-								<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2 text-center`}>
-								I love programming. I use languages like C/C++, Java, C# and Python for creating apps, scripts and programs. I also have interests in hardware and music.
-								</p>
+							<div className="flex flex-row justify-start items-center">
+								<Image src={imgBlank} className="aspect-square rounded-full shadow-md object-cover w-40" />
+								<div className="flex flex-col ms-8">
+									<p className={`${red_hat_mono.className} text-white text-2xl font-medium`}>Autumn</p>
+									<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2`}>
+										
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div id="helpers" className="mt-16">
+					<div id="volunteers" className="mt-16">
 						<h2 className={`${red_hat_mono.className} text-white text-4xl font-medium mb-2`}>
-							the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">staff</span>.
+							the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">volunteers</span>.
 						</h2>
 						<p className={`${red_hat_mono.className} text-white text-lg font-light mb-12`}>
-							The staff are the people who have helped with the planning of IglooCode, from name suggestions and graphic design to website and application development.
-						</p>
-						<div className="grid grid-cols-4 gap-28">
-							<div className="flex flex-col justify-center items-center">
-								<Image src={imgOliver} className="w-full aspect-square rounded-full shadow-md object-cover" />
-							</div>
-						</div>
-						<div className="grid grid-cols-4 gap-28">
-							<div className="flex flex-col justify-top items-center">
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Oliver</p>
-								<p className={`${red_hat_mono.className} text-gray-200 text-sm font-light mt-2 text-center`}>
-									I have always loved coding and in my spare time find ways to improve my skills, like using JavaScript to create bots for apps. Meeting new people with the same
-									interests has been phenomenal for my growth in the subject.
-								</p>
-							</div>
-							<div className="flex flex-col justify-center items-center">
-								<Image src={imgMa} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Ma</p>
-							</div>
-							<div className="flex flex-col justify-center items-center">
-								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Calvin</p>
-							</div>
-							<div className="flex flex-col justify-center items-center">
-								<Image src={imgAxel} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Axel</p>
-							</div>
-						</div>
-					</div>
-					<div id="mentors" className="mt-16">
-						<h2 className={`${red_hat_mono.className} text-white text-4xl font-medium mb-2`}>
-							the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">mentors</span>.
-						</h2>
-						<p className={`${red_hat_mono.className} text-white text-lg font-light mb-12`}>
-							The mentors are the people that will be on the floor at IglooCode - we'll be bringing one mentor per team to make sure the event runs smoothly, and to help with any
+							The volunteers are the people that will be on the floor at IglooCode - we'll be bringing one mentor per team to make sure the event runs smoothly, and to help with any
 							problems the students may have.
 						</p>
 						<div className="grid grid-cols-5 gap-28 gap-y-8">
-							<div className="flex flex-col justify-center items-center">
-								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Seth</p>
+						<div className="flex flex-col justify-center items-center">
+								<Image src={imgAxel} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Axel</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Samuel B</p>
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Ben C</p>
+							</div>
+							<div className="flex flex-col justify-center items-center">
+								<Image src={imgBenF} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Ben F</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgBenT} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Ben T</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
-								<Image src={imgBenF} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Ben F</p>
+								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Calvin</p>
+							</div>
+							<div className="flex flex-col justify-center items-center">
+								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Crio</p>
+							</div>
+							<div className="flex flex-col justify-center items-center">
+								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Daniel B</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgDylan} className="w-full aspect-square rounded-full shadow-md object-cover" />
@@ -179,6 +182,10 @@ function Team() {
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Eve</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
+								<Image src={imgGrainne} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Gráinne</p>
+							</div>
+							<div className="flex flex-col justify-center items-center">
 								<Image src={imgLJ} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>LJ</p>
 							</div>
@@ -187,8 +194,24 @@ function Team() {
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Matthew</p>
 							</div>
 							<div className="flex flex-col justify-center items-center">
-								<Image src={imgGrainne} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Gráinne</p>
+								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Odhran</p>
+							</div>
+							<div className="flex flex-col justify-center items-center">
+								<Image src={imgOliver} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Oliver</p>
+							</div>
+							<div className="flex flex-col justify-center items-center">
+								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Sarah</p>
+							</div>
+							<div className="flex flex-col justify-center items-center">
+								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Seth</p>
+							</div>
+							<div className="flex flex-col justify-center items-center">
+								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Viv</p>
 							</div>
 						</div>
 						<div className="flex justify-center items-center mt-6">

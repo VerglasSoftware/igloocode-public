@@ -5,9 +5,9 @@ import Link from "next/link";
 import Script from "next/script";
 import React from "react";
 import Layout, { siteTitle } from "../components/public/layout";
-import imgPeterFroggott from "../public/images/IMG_2440.png";
+import imgPeterFroggott from "../public/images/IMG_0673.jpg";
 import imgOpenDay from "../public/images/IMG_3652.png";
-import imgMacSB from "../public/images/IMG_6555.png";
+import imgMacSB from "../public/images/DSC01776.jpg";
 const red_hat_mono = Red_Hat_Mono({ subsets: ["latin"] });
 
 function About() {
@@ -51,10 +51,10 @@ function About() {
 						<div className="grid sm:grid-cols-3">
 							<div className="col-span-2 sm:pr-16 flex flex-col justify-center">
 								<h2 className={`${red_hat_mono.className} text-white text-4xl font-medium mb-6`}>
-									every great story has a <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">beginning</span>.
+									the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">beginning</span> of igloocode.
 								</h2>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									We are three sixth form students from Ballymena and Belfast, and we're collaborating to organise a cross-community programming competition for aspiring IT students
+									Back in October 2022, three sixth form students from Ballymena and Belfast, had the idea to collaborate to organise a cross-community programming competition for aspiring IT students
 									across Northern Ireland.
 								</p>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
@@ -64,52 +64,59 @@ function About() {
 									It was an extremely moving experience coming together with people who shared the same interests as us, but also a phenomenal week of memories to look back on with
 									new friends, proving that there is so much more to education than a constant stream of work.
 								</p>
+								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
+									Our goal is to encourage the next generation to get further involved in the industry, by spreading our love and passion for IT, but also to meet other like-minded individuals and have the opportunity to
+									make lifelong friendships just like we did.
+								</p>
 							</div>
 							<div className="flex flex-col justify-center  sm:block hidden">
-								<Image src={imgPeterFroggott} className="w-full h-[27rem] shadow-md object-cover" />
+								<Image src={imgOpenDay} className="w-full h-[31rem] shadow-md object-cover" />
 							</div>
 						</div>
 						<div className="grid sm:grid-cols-3 mt-12">
 							<div className="flex flex-col justif y-center  sm:block hidden">
-								<Image src={imgOpenDay} className="w-full h-[27rem] shadow-md object-cover" style={{ objectPosition: "100% 70%" }} />
+								<Image src={imgPeterFroggott} className="w-full h-[26rem] shadow-md object-cover" style={{ objectPosition: "100% 70%" }} />
 							</div>
 							<div className="col-span-2 pl-16 flex flex-col justify-center">
 								<h2 className={`${red_hat_mono.className} text-white text-4xl font-medium mb-6`}>
-									making amazing friends for <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">life</span>.
+									<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">success</span> at last.
 								</h2>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									Three months after CyberFirst, we're still very close friends, and through each other we have met even more people interested in IT. We help each other with
-									projects, show each other new technologies, and learn more about the industry with each other.
+									Throughout November 2022, we drafted basic plans for a CTF competition for schools, and sent emails to 65 secondary schools to gauge interest. After only a week we
+									received responses from over 14 schools, totalling to almost 200 pupils interested in attending.
 								</p>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									We were brought together due to our love and passion for IT and cybersecurity, and we want to give this opportunity to other children who may be interested in the
-									industry.
+									Then, we reached out to Liberty IT and Kainos who very kindly gave us a financial contribution to be able to run the event. In March 2023, after an early 6am start,
+									we welcomed everyone to QUB's Computer Science Building for IglooCode.
 								</p>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									Our goal is to encourage the next generation to get further involved in the industry, but also to meet other like-minded individuals and have the opportunity to
-									make lifelong friendships just like we did.
+									Six hours of event later, we were relieved as IglooCode came to a close. With only minimal problems and some very valuable feedback from teachers and students alike,
+									we were confident that IglooCode would become an annual event.
 								</p>
 							</div>
 						</div>
 						<div className="grid sm:grid-cols-3 mt-12">
 							<div className="col-span-2 sm:pr-16 flex flex-col justify-center">
 								<h2 className={`${red_hat_mono.className} text-white text-4xl font-medium mb-6`}>
-									and finally, taking the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">initiative</span>.
+									a new <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">chapter</span>.
 								</h2>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									After only a few hours of discussion about our schools' code clubs, we decided to volunteer to run a coding competition for school pupils across the county.
+									In May 2023, the main people involved in IglooCode decided to incorporate into a limited company, and we started work on releasing our highly-acclaimed competition
+									software to teachers to use across the country for their own classes.
 								</p>
+								
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									Over the next few days, we drafted basic plans for a CTF competition for schools, and sent emails to 65 secondary schools to gauge interest. After only a week we
-									received responses from over 14 schools, totalling to almost 200 pupils interested in attending.
+									In August, we decided to rename our company to Verglas, and the shareholders elected a new Board of Directors and Outreach Committee of 2 sixth-formers and 3 first-year
+									degree apprentices to be in charge of events such as IglooCode.
 								</p>
+
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									We're taking the initiative to pass this opportunity onto others, combining our love with programming and IT with the rush of adrenaline that comes along with
-									planning and running a large event.
+									IglooCode 2024 planning began in early October. We held a meeting to discuss improvements and plans for the next year, and we again started our annual process of onboarding
+									schools, sponsors and volunteers. 
 								</p>
 							</div>
 							<div className="flex flex-col justify-center sm:block hidden">
-								<Image src={imgMacSB} className="w-full h-[27rem] shadow-md object-cover" />
+								<Image src={imgMacSB} className="w-full h-[25rem] shadow-md object-cover" />
 							</div>
 						</div>
 					</div>

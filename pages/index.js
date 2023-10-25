@@ -13,6 +13,8 @@ import imgKainos from "../public/images/kainos_transparent.webp";
 import imgLIT from "../public/images/LIT-logo.webp";
 import imgQUB from "../public/images/qub_transparent.png";
 
+import imgVerglas from "../public/images/wll.png";
+
 import Link from "next/link";
 import Script from "next/script";
 import { FiBook, FiCode, FiGift } from "react-icons/fi";
@@ -40,7 +42,22 @@ function Index() {
 				}`}
 			</Script>
 			<section className="w-screen min-h-screen bg-hero bg-cover flex flex-col justify-center items-center relative" style={{ backgroundBlendMode: "normal, saturation" }} id="hero">
-				<h1 className={`${red_hat_mono.className} w-fit text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-3`}>IglooCode</h1>
+				
+				<div className="flex flex-col">
+					<h1 className={`${red_hat_mono.className} w-fit text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-3`}>IglooCode</h1>
+					
+					<div className="flex flex-row justify-end items-center -mt-4 mb-3">
+
+						<span className={`${red_hat_mono.className} text-white brightness-75 text-lg`}>by</span>
+						<Link href="https://verglas.io">
+								<Image src={imgVerglas} className="w-28 mx-5 brightness-75 hover:brightness-95 ml-2 mr-0" />
+						</Link>
+					</div>
+				
+				</div>
+				
+				
+
 				<Typewriter
 					options={{
 						strings: ["< build your skills together />"],
@@ -52,7 +69,7 @@ function Index() {
 						delay: 100,
 					}}
 				/>
-				<a className={`${red_hat_mono.className} text-gray-300 text-xl mt-7 border-[1px] border-gray-400 p-2 cursor-default`}>APPLICATIONS OPEN LATE 2023</a>
+				<a className={`${red_hat_mono.className} text-gray-300 hover:text-white text-xl mt-7 border-[1px] border-gray-400 p-2`} href="/f/school-interest">APPLY NOW (FOR TEACHERS)</a>
 
 				<div className="absolute bottom-0 mb-8 flex flex-col items-center">
 					<p className={`${red_hat_mono.className} text-white mb-3`}>In partnership with</p>
@@ -85,7 +102,7 @@ function Index() {
 									Technology at GCSE, or who have an interest in computers or programming.
 								</p>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									This unique event, organised by 3 sixth-form students from Belfast and Ballymena in partnership with some of NI's biggest tech companies, is an amazing
+									This unique event, organised by a group of sixth-form and first-year university students from Belfast, Ballymena and Newry in partnership with some of NI's biggest tech companies, is an amazing
 									opportunity to test your computing skills in a competitive environment while hearing about careers in IT from some of the biggest names in the industry.
 								</p>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>We look forward to seeing you for our second year in 2024!</p>
@@ -95,7 +112,12 @@ function Index() {
 							</div>
 						</div>
 					</div>
-					<div id="skills" className="mt-24">
+					<div className="mt-12 text-white text-xl px-36 font-medium">
+						<span className={`${red_hat_mono.className}`}>
+							"A very well organised event and such a credit to the pupils that organised. A great system to add some competitive edge during the competition sessions. Well done to all."
+						</span>
+					</div>
+					<div id="skills" className="mt-12">
 						<div className="flex flex-col sm:flex-row mb-10">
 							<div className="flex justify-center items-center">
 								<p className={`${red_hat_mono.className} text-white text-sm font-thin sm:pr-20 hidden sm:block`}>
@@ -228,7 +250,7 @@ function Index() {
 			</div>
 			<Script id="update-countdown" strategy="afterInteractive">
 				{`
-				var end = new Date('03/28/2024 10:0 AM');
+				var end = new Date('03/26/2024 10:0 AM');
 				var _second = 1000;
 				var _minute = _second * 60;
 				var _hour = _minute * 60;
@@ -280,7 +302,7 @@ function Index() {
 					</div>
 				</div>
 			</section>
-			<div className="flex w-screen items-center bg-zinc-900 flex-col" id="content">
+			<div className="flex w-screen items-center bg-zinc-900 flex-col" id="contact">
 				<section className="py-20 w-9/12 max-w-screen-lg justify-start">
 					<div id="sponsors">
 						<div className="grid sm:grid-cols-2 gap-16">
@@ -300,9 +322,9 @@ function Index() {
 									are you ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">win</span>?
 								</h2>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									<span className="font-medium">IglooCode 2023</span> took part on <br />
-									28th March 2023 <br />
-									10am - 3:30pm
+									<span className="font-medium">IglooCode 2024</span> will provisionally take part on <br />
+									26th March 2023 <br />
+									10:30am - 3:30pm
 								</p>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
 									<span className="font-medium">QUB Computer Science Building</span> <br />
@@ -311,11 +333,11 @@ function Index() {
 									BT9 5AF
 								</p>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									<span className="font-medium">2024 details will be released late this year.</span> <br />
+									<span className="font-medium">Confirmed 2024 details will be released before the start of the year.</span> <br />
 								</p>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3 mt-10`}>
 									<span className="font-medium">Enquiries</span> <br />
-									daniel@iglooco.de
+									dana@verglas.io
 									<br />
 									dadams479@c2ken.net
 								</p>

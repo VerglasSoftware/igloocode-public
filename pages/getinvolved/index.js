@@ -56,7 +56,7 @@ function Index() {
 								<p className={`${red_hat_mono.className} text-white text-center text-md font-thin pt-3`}>
 									Give your students a day out to practice their skills in the real world, while making new friends and getting a first-hand insight to the industry.
 								</p>
-								<Link href="/getinvolved/teachers" className={`${red_hat_mono.className} text-white hover:underline text-xl mt-4 border-[1px] border-gray-400 p-2 w-full text-center`}>
+								<Link href="/f/school-interest" className={`${red_hat_mono.className} text-white hover:underline text-xl mt-4 border-[1px] border-gray-400 p-2 w-full text-center`}>
 									ENTER YOUR SCHOOL
 								</Link>
 							</div>

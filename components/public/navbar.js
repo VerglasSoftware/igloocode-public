@@ -16,7 +16,7 @@ export default function Navbar() {
 		{ name: "About", href: "/competition", current: router.route == "/competition" || router.route == "/partners" },
 		{ name: "Our story", href: "/about", current: router.route == "/about" || router.route == "/team" },
 		{ name: "Join us", href: "/getinvolved", current: router.route.startsWith("/getinvolved") },
-		{ name: "Contact", href: "/contact", current: router.route == "/contact" },
+		{ name: "Contact", href: "/#contact", current: router.route == "/index" },
 	];
 	return (
 		<div className="fixed w-screen z-50 bg-cover bg-bottom" id="navbar">

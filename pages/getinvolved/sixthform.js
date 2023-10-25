@@ -206,7 +206,7 @@ function Index() {
 									</div>
 									<div>
 										<p className={`${red_hat_mono.className} text-gray-300 text-sm`}>
-											Get your teacher to send an email to <span className="font-bold">volunteer@iglooco.de</span> to say you're interested in taking part and ask them to CC in
+											Get your teacher to send an email to <span className="font-bold">volunteeratigloocode@verglas.io</span> to say you're interested in taking part and ask them to CC in
 											your C2k email.
 										</p>
 									</div>
