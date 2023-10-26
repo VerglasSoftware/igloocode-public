@@ -205,9 +205,12 @@ function Index() {
 										<span className={`${red_hat_mono.className} text-sky-400 text-2xl font-medium`}>3</span>
 									</div>
 									<div>
-										<p className={`${red_hat_mono.className} text-gray-300 text-sm`}>
+										{/* <p className={`${red_hat_mono.className} text-gray-300 text-sm`}>
 											Get your teacher to send an email to <span className="font-bold">volunteeratigloocode@verglas.io</span> to say you're interested in taking part and ask them to CC in
 											your C2k email.
+										</p> */}
+										<p className={`${red_hat_mono.className} text-gray-300 text-sm`}>
+											Fill in the application form at <Link href="/f/volunteer" className="font-bold underline">https://iglooco.de/f/volunteer</Link> and submit it before December 21st.
 										</p>
 									</div>
 								</div>
