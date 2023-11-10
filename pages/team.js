@@ -145,10 +145,10 @@ function Team() {
 							problems the students may have.
 						</p>
 						<div className="grid grid-cols-5 gap-28 gap-y-8">
-							{/* <div className="flex flex-col justify-center items-center">
+							<div className="flex flex-col justify-center items-center">
 								<Image src={imgAxel} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Axel</p>
-							</div> */}
+							</div>
 							{/* <div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Ben C</p>
@@ -169,10 +169,10 @@ function Team() {
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Crio</p>
 							</div> */}
-							{/* <div className="flex flex-col justify-center items-center">
+							<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Daniel B</p>
-							</div> */}
+							</div>
 							{/* <div className="flex flex-col justify-center items-center">
 								<Image src={imgDylan} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Dylan</p>
@@ -209,10 +209,10 @@ function Team() {
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Seth</p>
 							</div> */}
-							{/* <div className="flex flex-col justify-center items-center">
+							<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
-								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Viv</p>
-							</div> */}
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Vivian</p>
+							</div>
 						</div>
 						<div className="flex justify-center items-center mt-6">
 							<p className={`${red_hat_mono.className} text-white text-md font-light mt-4`}>
