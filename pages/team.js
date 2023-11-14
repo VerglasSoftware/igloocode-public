@@ -201,10 +201,10 @@ function Team() {
 								<Image src={imgOliver} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Oliver</p>
 							</div> */}
-							{/* <div className="flex flex-col justify-center items-center">
+							<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Sarah</p>
-							</div> */}
+							</div>
 							{/* <div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Seth</p>
