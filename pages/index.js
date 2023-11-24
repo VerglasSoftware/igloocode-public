@@ -69,7 +69,7 @@ function Index() {
 						delay: 100,
 					}}
 				/>
-				<a className={`${red_hat_mono.className} text-gray-300 hover:text-white text-xl mt-7 border-[1px] border-gray-400 p-2`} href="/f/school-interest">APPLY NOW (FOR TEACHERS)</a>
+				<a className={`${red_hat_mono.className} text-gray-300 text-xl mt-7 border-[1px] border-gray-400 p-2 cursor-default`} href="/f/school-interest">2024 APPLICATIONS HAVE CLOSED</a>
 
 				<div className="absolute bottom-0 mb-8 flex flex-col items-center">
 					<p className={`${red_hat_mono.className} text-white mb-3`}>In partnership with</p>
@@ -322,7 +322,7 @@ function Index() {
 									are you ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">win</span>?
 								</h2>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									<span className="font-medium">IglooCode 2024</span> will provisionally take part on <br />
+									<span className="font-medium">IglooCode 2024</span> will take part on <br />
 									26th March 2023 <br />
 									10:30am - 3:30pm
 								</p>
@@ -331,9 +331,6 @@ function Index() {
 									18 Malone Road <br />
 									Belfast <br />
 									BT9 5AF
-								</p>
-								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-									<span className="font-medium">Confirmed 2024 details will be released before the start of the year.</span> <br />
 								</p>
 								<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3 mt-10`}>
 									<span className="font-medium">Enquiries</span> <br />
