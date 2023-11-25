@@ -209,10 +209,10 @@ function Team() {
 								<Image src={imgMatthew} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Matthew</p>
 							</div> */}
-							{/* <div className="flex flex-col justify-center items-center">
+							<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Odhran</p>
-							</div> */}
+							</div>
 							{/* <div className="flex flex-col justify-center items-center">
 								<Image src={imgOliver} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Oliver</p>
@@ -221,10 +221,10 @@ function Team() {
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Sarah</p>
 							</div>
-							{/* <div className="flex flex-col justify-center items-center">
+							<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Seth</p>
-							</div> */}
+							</div>
 							<div className="flex flex-col justify-center items-center">
 								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Vivian</p>
