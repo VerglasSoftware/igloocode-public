@@ -201,6 +201,10 @@ function Team() {
 								<Image src={imgGrainne} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Gráinne</p>
 							</div> */}
+							<div className="flex flex-col justify-center items-center">
+								<Image src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" />
+								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>Josh</p>
+							</div>
 							{/* <div className="flex flex-col justify-center items-center">
 								<Image src={imgLJ} className="w-full aspect-square rounded-full shadow-md object-cover" />
 								<p className={`${red_hat_mono.className} text-white text-2xl font-medium mt-4`}>LJ</p>
