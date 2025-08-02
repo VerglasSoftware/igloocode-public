@@ -1,2 +1,2 @@
-# ic_public
+# IGLOO CODE PUBLIC WEBSITE THANK YOU 
 IglooCode public webpage
