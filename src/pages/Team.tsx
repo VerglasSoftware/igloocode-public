@@ -106,7 +106,7 @@ const Team = (): JSX.Element => {
               
               <div className="group flex flex-col sm:flex-row items-center sm:items-start gap-6 p-6 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
                 <div className="relative overflow-hidden rounded-full shadow-2xl group-hover:shadow-cyan-500/30 transition-all duration-300 flex-shrink-0">
-                  <img src={imgAideen} className="w-32 h-32 sm:w-40 sm:h-40 object-cover transition-transform duration-300 group-hover:scale-105" alt="Aideen" />
+                  <img src={imgDylan} className="w-32 h-32 sm:w-40 sm:h-40 object-cover transition-transform duration-300 group-hover:scale-105" alt="Aideen" />
                 </div>
                 <div className="flex flex-col text-center sm:text-left flex-1">
                   <h3 className="text-white text-xl sm:text-2xl font-medium font-mono mb-2">
@@ -116,6 +116,20 @@ const Team = (): JSX.Element => {
                     I've been passionate about technology and coding since primary school; so much so that I was called the ICT Co-ordinator by teachers. When I'm not at school
                     volunteering with the Code Club or the Rocket Club, I'm a member of the NICCY Youth Panel, where I have represented young people from NI in Brussels regarding
                     Children's Digital Rights.
+                  </p>
+                </div>
+              </div>
+
+              <div className="group flex flex-col sm:flex-row items-center sm:items-start gap-6 p-6 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-2xl group-hover:shadow-purple-500/30 transition-all duration-300 flex-shrink-0">
+                  <img src={imgAxel} className="w-32 h-32 sm:w-40 sm:h-40 object-cover transition-transform duration-300 group-hover:scale-105" alt="Jake" />
+                </div>
+                <div className="flex flex-col text-center sm:text-left flex-1">
+                  <h3 className="text-white text-xl sm:text-2xl font-medium font-mono mb-2">
+                    Axel Graham <span className="text-gray-400 font-light">– Marketing</span>
+                  </h3>
+                  <p className="text-gray-200 text-sm font-light leading-relaxed font-mono">
+                    I love programming. I use languages like C/C++, Java, C# and Python for creating apps, scripts and programs. I also have interests in hardware and music.
                   </p>
                 </div>
               </div>
