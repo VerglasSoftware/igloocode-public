@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
-import { FiAward, FiBriefcase, FiCoffee, FiLifeBuoy } from 'react-icons/fi'
+import { LifeBuoy, Briefcase, Award, Coffee } from "lucide-react"
 import Layout from '@components/Layout'
 
 // Import images
@@ -159,7 +159,7 @@ function SixthForm(): JSX.Element {
 							<div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-lime-500/30 transition-all duration-300">
 								<div className="flex flex-row items-center mb-6">
 									<div className="bg-gradient-to-br from-lime-500/20 to-lime-700/20 backdrop-blur-sm border border-lime-500/30 w-16 h-16 flex items-center justify-center rounded-full mr-6 flex-none transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-lime-500/20">
-										<FiLifeBuoy className="text-lime-400 w-7 h-7" />
+										<LifeBuoy className="text-lime-400 w-7 h-7" />
 									</div>
 									<div>
 										<h3 className="font-mono text-white text-xl font-medium">Volunteering experience</h3>
@@ -171,7 +171,7 @@ function SixthForm(): JSX.Element {
 							<div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-red-500/30 transition-all duration-300">
 								<div className="flex flex-row items-center mb-6">
 									<div className="bg-gradient-to-br from-red-500/20 to-red-700/20 backdrop-blur-sm border border-red-500/30 w-16 h-16 flex items-center justify-center rounded-full mr-6 flex-none transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-red-500/20">
-										<FiBriefcase className="text-red-500 w-7 h-7" />
+										<Briefcase className="text-red-500 w-7 h-7" />
 									</div>
 									<div>
 										<h3 className="font-mono text-white text-xl font-medium">Industry links</h3>
@@ -185,7 +185,7 @@ function SixthForm(): JSX.Element {
 							<div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-sky-500/30 transition-all duration-300">
 								<div className="flex flex-row items-center mb-6">
 									<div className="bg-gradient-to-br from-sky-500/20 to-sky-700/20 backdrop-blur-sm border border-sky-500/30 w-16 h-16 flex items-center justify-center rounded-full mr-6 flex-none transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-sky-500/20">
-										<FiAward className="text-sky-400 w-7 h-7" />
+										<Award className="text-sky-400 w-7 h-7" />
 									</div>
 									<div>
 										<h3 className="font-mono text-white text-xl font-medium">Something for UCAS</h3>
@@ -197,7 +197,7 @@ function SixthForm(): JSX.Element {
 							<div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-yellow-500/30 transition-all duration-300">
 								<div className="flex flex-row items-center mb-6">
 									<div className="bg-gradient-to-br from-yellow-500/20 to-yellow-700/20 backdrop-blur-sm border border-yellow-500/30 w-16 h-16 flex items-center justify-center rounded-full mr-6 flex-none transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-yellow-500/20">
-										<FiCoffee className="text-yellow-400 w-7 h-7" />
+										<Coffee className="text-yellow-400 w-7 h-7" />
 									</div>
 									<div>
 										<h3 className="font-mono text-white text-xl font-medium">Free food!</h3>

@@ -27,7 +27,7 @@ export default function Footer({ session }: FooterProps): JSX.Element {
 					<Link to="/about" className="font-mono text-sm text-neutral-200 hover:text-white hover:underline transition-all duration-300 hover:translate-x-1">
 						Our story
 					</Link>
-					<Link to="/team" className="font-mono text-sm text-neutral-200 hover:text-white hover:underline transition-all duration-300 hover:translate-x-1">
+					<Link to="https://verglas.io/#/people" className="font-mono text-sm text-neutral-200 hover:text-white hover:underline transition-all duration-300 hover:translate-x-1">
 						Meet the team
 					</Link>
 					<div></div>

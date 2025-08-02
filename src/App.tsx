@@ -5,7 +5,6 @@ import { HelmetProvider } from 'react-helmet-async'
 import Home from './pages/Home'
 import About from './pages/About'
 import Competition from './pages/Competition'
-import Team from './pages/Team'
 import GetInvolved from './pages/GetInvolved'
 import Perks from './pages/Perks'
 import SixthForm from './pages/SixthForm'
@@ -21,7 +20,6 @@ function App(): JSX.Element {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/competition" element={<Competition />} />
-          <Route path="/team" element={<Team />} />
           <Route path="/getinvolved" element={<GetInvolved />} />
           <Route path="/getinvolved/sixthform" element={<SixthForm />} />
           <Route path="/getinvolved/teachers" element={<Teachers />} />

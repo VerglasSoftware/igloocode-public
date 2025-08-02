@@ -16,7 +16,6 @@ export default function Navbar(): JSX.Element {
 	const navigation: NavigationItem[] = [
 		{ name: "Home", href: "/", current: location.pathname === "/" },
 		{ name: "About", href: "/competition", current: location.pathname === "/competition" },
-		{ name: "Team", href: "/team", current: location.pathname === "/team" },
 		{ name: "Our story", href: "/about", current: location.pathname === "/about" },
 		{ name: "Get involved", href: "/getinvolved", current: location.pathname === "/getinvolved" },
 	]

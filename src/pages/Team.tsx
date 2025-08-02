@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import Layout from '@components/Layout';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 // Import team member images
 import imgAideen from '/images/team/aideen.png';
@@ -22,6 +22,8 @@ import imgKayla from '/images/team/kayla.png';
 import imgHollie from '/images/hollie.jpg';
 
 const Team = (): JSX.Element => {
+  const [isDylanFlipped, setIsDylanFlipped] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -106,7 +108,37 @@ const Team = (): JSX.Element => {
               
               <div className="group flex flex-col sm:flex-row items-center sm:items-start gap-6 p-6 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
                 <div className="relative overflow-hidden rounded-full shadow-2xl group-hover:shadow-cyan-500/30 transition-all duration-300 flex-shrink-0">
-                  <img src={imgDylan} className="w-32 h-32 sm:w-40 sm:h-40 object-cover transition-transform duration-300 group-hover:scale-105" alt="Aideen" />
+                  <div 
+                    className="w-32 h-32 sm:w-40 sm:h-40 relative cursor-pointer"
+                    onClick={() => setIsDylanFlipped(!isDylanFlipped)}
+                    style={{ perspective: '1000px' }}
+                  >
+                    <div 
+                      className="absolute inset-0 w-full h-full transition-transform duration-700 preserve-3d"
+                      style={{ 
+                        transformStyle: 'preserve-3d',
+                        transform: isDylanFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)'
+                      }}
+                    >
+                      {/* Front face */}
+                      <img 
+                        src={imgDylan} 
+                        className="absolute inset-0 w-full h-full object-cover rounded-full transition-transform duration-300 group-hover:scale-105" 
+                        alt="Dylan"
+                        style={{ backfaceVisibility: 'hidden' }}
+                      />
+                      {/* Back face */}
+                      <img 
+                        src="/images/logos/boots.avif" 
+                        className="absolute inset-0 w-full h-full object-cover rounded-full transition-transform duration-300 group-hover:scale-105" 
+                        alt="Boots"
+                        style={{ 
+                          backfaceVisibility: 'hidden',
+                          transform: 'rotateY(180deg)'
+                        }}
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div className="flex flex-col text-center sm:text-left flex-1">
                   <h3 className="text-white text-xl sm:text-2xl font-medium font-mono mb-2">
