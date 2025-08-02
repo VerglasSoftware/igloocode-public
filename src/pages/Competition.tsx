@@ -2,22 +2,17 @@ import { Helmet } from 'react-helmet-async';
 import Layout from '@components/Layout';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import { Code, Globe, Palette, Cpu, BrainCircuit, Binary, Zap } from 'lucide-react';
 
 // Import competition images
 import imgTasks from '/images/DSC01857.jpeg';
 import imgEncryption from '/images/DSC01856.jpeg';
 import imgTyping from '/images/DSC01866.jpeg';
-import imgAppInventor from '/images/logos/appinventor.png';
-import imgArduino from '/images/logos/arduino.png';
+import imgPython from '/images/logos/python.png';
 import imgCSS from '/images/logos/css.png';
 import imgHTML from '/images/logos/html.png';
-import imgJS from '/images/logos/js.png';
-import imgMakeyMakey from '/images/logos/makeymakey.png';
-import imgMicrobit from '/images/logos/microbit.png';
-import imgMindstorms from '/images/logos/mindstorms.png';
-import imgPython from '/images/logos/python.png';
 import imgScratch from '/images/logos/scratch.png';
-import imgSphero from '/images/logos/sphero.png';
+import imgMicrobit from '/images/logos/microbit.png';
 import imgMBC from '/images/IMG_5830.jpeg';
 
 const Competition = (): JSX.Element => {
@@ -146,22 +141,202 @@ const Competition = (): JSX.Element => {
                     We're expecting over 100 kids from across Northern Ireland to take part in IglooCode. That's a huge number of unique people with their own unique interests,
                     personalities and skills.
                   </p>
-                  <p className="text-white text-base font-light leading-relaxed font-mono">Here's some of the categories we're planning to offer:</p>
-                </div>
-                <div className="grid grid-cols-5 gap-4 mt-6">
-                  <img src={imgPython} className="w-full aspect-square object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" alt="Python" />
-                  <img src={imgHTML} className="w-full aspect-square object-contain rounded-lg shadow-md transition-transform duration-300 hover:scale-105" alt="HTML" />
-                  <img src={imgCSS} className="w-full aspect-square object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" alt="CSS" />
-                  <img src={imgJS} className="w-full aspect-square object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" alt="JavaScript" />
-                  <img src={imgSphero} className="w-full aspect-square object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" alt="Sphero" />
-                  <img src={imgMindstorms} className="w-full aspect-square object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" alt="Mindstorms" />
-                  <img src={imgArduino} className="w-full aspect-square object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" alt="Arduino" />
-                  <img src={imgScratch} className="w-full aspect-square object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" alt="Scratch" />
-                  <img src={imgAppInventor} className="w-full aspect-square object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" alt="App Inventor" />
-                  <img src={imgMakeyMakey} className="w-full aspect-square object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" alt="Makey Makey" />
-                  <img src={imgMicrobit} className="w-full aspect-square object-contain rounded-lg shadow-md transition-transform duration-300 hover:scale-105" alt="Micro:bit" />
+                  <p className="text-white text-base font-light leading-relaxed font-mono">
+                    Our competition features a diverse range of categories designed to challenge students at every skill level, from beginner-friendly visual programming to advanced coding concepts.
+                  </p>
+                  <p className="text-white text-base font-light leading-relaxed font-mono">
+                    Each category offers multiple difficulty levels, ensuring that whether you're just starting your coding journey or you're already experienced, there's something that will both challenge and engage you.
+                  </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      
+      <div className="flex w-screen items-center bg-zinc-900 flex-col">
+        <section className="py-16 sm:py-20 w-11/12 sm:w-9/12 max-w-screen-lg">
+          <div className="text-center mb-16">
+            <h2 className="text-white text-3xl sm:text-4xl font-medium font-mono leading-tight mb-6">
+              technologies & <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">platforms</span>.
+            </h2>
+            <p className="text-white text-lg font-light leading-relaxed font-mono max-w-3xl mx-auto">
+              These are the core technologies and concepts you'll be working with during IglooCode:
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <div className="group p-6 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300 hover:scale-105">
+              <div className="flex flex-col items-center text-center">
+                <img src={imgPython} className="w-16 h-16 object-cover rounded-lg shadow-md mb-4 group-hover:scale-110 transition-transform duration-300" alt="Python" />
+                <span className="text-white text-sm font-mono font-medium">Python</span>
+                <span className="text-gray-400 text-xs font-mono mt-1">Programming Language</span>
+              </div>
+            </div>
+            
+            <div className="group p-6 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-blue-500/30 transition-all duration-300 hover:scale-105">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-blue-700/20 rounded-lg shadow-md mb-4 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+                  <Code className="w-8 h-8 text-blue-400" />
+                </div>
+                <span className="text-white text-sm font-mono font-medium">C#</span>
+                <span className="text-gray-400 text-xs font-mono mt-1">Programming Language</span>
+              </div>
+            </div>
+            
+            <div className="group p-6 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-orange-500/30 transition-all duration-300 hover:scale-105">
+              <div className="flex flex-col items-center text-center">
+                <img src={imgHTML} className="w-16 h-16 object-contain rounded-lg shadow-md mb-4 group-hover:scale-110 transition-transform duration-300" alt="HTML" />
+                <span className="text-white text-sm font-mono font-medium">HTML</span>
+                <span className="text-gray-400 text-xs font-mono mt-1">Web Markup</span>
+              </div>
+            </div>
+            
+            <div className="group p-6 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-blue-400/30 transition-all duration-300 hover:scale-105">
+              <div className="flex flex-col items-center text-center">
+                <img src={imgCSS} className="w-16 h-16 object-cover rounded-lg shadow-md mb-4 group-hover:scale-110 transition-transform duration-300" alt="CSS" />
+                <span className="text-white text-sm font-mono font-medium">CSS</span>
+                <span className="text-gray-400 text-xs font-mono mt-1">Web Styling</span>
+              </div>
+            </div>
+            
+            <div className="group p-6 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-green-500/30 transition-all duration-300 hover:scale-105">
+              <div className="flex flex-col items-center text-center">
+                <img src={imgScratch} className="w-16 h-16 object-cover rounded-lg shadow-md mb-4 group-hover:scale-110 transition-transform duration-300" alt="Scratch" />
+                <span className="text-white text-sm font-mono font-medium">Scratch</span>
+                <span className="text-gray-400 text-xs font-mono mt-1">Visual Programming</span>
+              </div>
+            </div>
+            
+            <div className="group p-6 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300 hover:scale-105">
+              <div className="flex flex-col items-center text-center">
+                <img src={imgMicrobit} className="w-16 h-16 object-contain rounded-lg shadow-md mb-4 group-hover:scale-110 transition-transform duration-300" alt="Micro:bit" />
+                <span className="text-white text-sm font-mono font-medium">Micro:bit</span>
+                <span className="text-gray-400 text-xs font-mono mt-1">Hardware Programming</span>
+              </div>
+            </div>
+            
+            <div className="group p-6 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-yellow-500/30 transition-all duration-300 hover:scale-105">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-yellow-500/20 to-yellow-700/20 rounded-lg shadow-md mb-4 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+                  <Zap className="w-8 h-8 text-yellow-400" />
+                </div>
+                <span className="text-white text-sm font-mono font-medium">Logic Gates</span>
+                <span className="text-gray-400 text-xs font-mono mt-1">Digital Logic</span>
+              </div>
+            </div>
+            
+            <div className="group p-6 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-red-500/30 transition-all duration-300 hover:scale-105">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-red-500/20 to-red-700/20 rounded-lg shadow-md mb-4 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+                  <Binary className="w-8 h-8 text-red-400" />
+                </div>
+                <span className="text-white text-sm font-mono font-medium">Binary</span>
+                <span className="text-gray-400 text-xs font-mono mt-1">Data Manipulation</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-8">
+            <div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+              <div className="flex items-center mb-4">
+                <Code className="w-8 h-8 text-purple-400 mr-3" />
+                <h3 className="text-white text-xl font-mono font-medium">Programming Languages</h3>
+              </div>
+              <p className="text-gray-300 text-base font-light leading-relaxed font-mono mb-4">
+                Master Python and C# through hands-on coding challenges that range from basic syntax to advanced problem-solving techniques.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-1 bg-purple-500/20 text-purple-400 rounded font-mono">Python</span>
+                <span className="text-xs px-2 py-1 bg-blue-500/20 text-blue-400 rounded font-mono">C#</span>
+              </div>
+            </div>
+            
+            <div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
+              <div className="flex items-center mb-4">
+                <Globe className="w-8 h-8 text-cyan-400 mr-3" />
+                <h3 className="text-white text-xl font-mono font-medium">Web Technologies</h3>
+              </div>
+              <p className="text-gray-300 text-base font-light leading-relaxed font-mono mb-4">
+                Build and style web pages using HTML for structure and CSS for beautiful, responsive designs.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-1 bg-orange-500/20 text-orange-400 rounded font-mono">HTML</span>
+                <span className="text-xs px-2 py-1 bg-blue-400/20 text-blue-300 rounded font-mono">CSS</span>
+              </div>
+            </div>
+            
+            <div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-green-500/30 transition-all duration-300">
+              <div className="flex items-center mb-4">
+                <Cpu className="w-8 h-8 text-green-400 mr-3" />
+                <h3 className="text-white text-xl font-mono font-medium">Hardware & Visual Programming</h3>
+              </div>
+              <p className="text-gray-300 text-base font-light leading-relaxed font-mono mb-4">
+                Program physical devices with Micro:bit and create interactive projects using Scratch's visual programming environment.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-1 bg-green-500/20 text-green-400 rounded font-mono">Scratch</span>
+                <span className="text-xs px-2 py-1 bg-cyan-500/20 text-cyan-400 rounded font-mono">Micro:bit</span>
+              </div>
+            </div>
+            
+            <div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-yellow-500/30 transition-all duration-300">
+              <div className="flex items-center mb-4">
+                <BrainCircuit className="w-8 h-8 text-yellow-400 mr-3" />
+                <h3 className="text-white text-xl font-mono font-medium">Digital Logic & Binary</h3>
+              </div>
+              <p className="text-gray-300 text-base font-light leading-relaxed font-mono mb-4">
+                Understand the fundamentals of computer science through logic gates and binary data manipulation challenges.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-1 bg-yellow-500/20 text-yellow-400 rounded font-mono">Logic Gates</span>
+                <span className="text-xs px-2 py-1 bg-red-500/20 text-red-400 rounded font-mono">Binary</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      
+      <div className="flex w-screen items-center bg-zinc-900 flex-col">
+        <section className="py-16 sm:py-20 w-11/12 sm:w-9/12 max-w-screen-lg">
+          <div className="text-center mb-16">
+            <h2 className="text-white text-3xl sm:text-4xl font-medium font-mono leading-tight mb-6">
+              multiple difficulty <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">levels</span>.
+            </h2>
+            <p className="text-white text-lg font-light leading-relaxed font-mono max-w-3xl mx-auto">
+              Every category offers tasks ranging from beginner to advanced, ensuring everyone can participate and be challenged at their level.
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-3 gap-8">
+            <div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-green-500/30 transition-all duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+                <h3 className="text-white text-xl font-mono font-medium">Beginner</h3>
+              </div>
+              <p className="text-gray-300 text-base font-light leading-relaxed font-mono">
+                Perfect for those new to programming. These tasks introduce basic concepts and provide a gentle learning curve.
+              </p>
+            </div>
+            
+            <div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-yellow-500/30 transition-all duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-3 h-3 bg-yellow-500 rounded-full mr-3"></div>
+                <h3 className="text-white text-xl font-mono font-medium">Intermediate</h3>
+              </div>
+              <p className="text-gray-300 text-base font-light leading-relaxed font-mono">
+                For students with some experience. These challenges require more complex thinking and problem-solving skills.
+              </p>
+            </div>
+            
+            <div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-red-500/30 transition-all duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-3 h-3 bg-red-500 rounded-full mr-3"></div>
+                <h3 className="text-white text-xl font-mono font-medium">Advanced</h3>
+              </div>
+              <p className="text-gray-300 text-base font-light leading-relaxed font-mono">
+                Designed for experienced programmers. These tasks push the boundaries and test advanced concepts.
+              </p>
             </div>
           </div>
         </section>
