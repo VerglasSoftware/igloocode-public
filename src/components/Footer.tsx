@@ -61,27 +61,25 @@ export default function Footer({ session }: FooterProps): JSX.Element {
 					</Link>
 				</div>
 				
-				<div className="relative z-10 w-full max-w-4xl border-t border-neutral-700 pt-8">
-					<p className="font-mono text-xs text-neutral-400 text-center leading-relaxed">
-						<span className="text-neutral-300">© {new Date(Date.now()).getFullYear()} Verglas Software Limited.</span> All Rights Reserved.
-						<br />
-						<span className="text-neutral-400">Website crafted with ❤️ by </span>
-						<a href="https://dandabs.io/" className="hover:underline text-purple-400 hover:text-purple-300 transition-colors">
-							Daniel Adams
-						</a>
-						<span className="text-neutral-400"> and </span>
-						<a href="https://github.com/JakeyGilly" className="hover:underline text-cyan-400 hover:text-cyan-300 transition-colors">
-							Jake Gillman
-						</a>
-						<span className="text-neutral-400">.</span>
-						<br />
-						<span className="text-[0.6rem] leading-[1.2rem] text-center text-neutral-500 mt-2 block">
-							IglooCode is not associated with Slemish College or Strathearn School and any publications from us do not represent their views.
-						</span>
-						<br />
-						<span className="text-[0.6rem] text-center text-neutral-500">
-							'IglooCode' is a trading name of Verglas Software Limited, a company registered in England and Wales (no. 14838037).
-						</span>
+				<div className="relative z-10 text-center text-neutral-400 text-sm max-w-4xl mx-auto mb-8 leading-relaxed">
+					<p className="mb-4 font-light">
+						Verglas (NI) Limited is a company registered in Northern Ireland
+						(no. NI716105). Registered office: Office 218, 92 Castle Street,
+						Belfast, BT1 1HE.
+					</p>
+					<p className="mb-4 font-light">
+						Verglas is not associated with our founding schools, and any
+						publications from us are not representative of our partners or
+						sponsors.
+					</p>
+					<p className="font-light">
+						IglooCode™ and Educatr™ are trademarks of Verglas (NI) Limited.
+					</p>
+				</div>
+
+				<div className="relative z-10 text-center text-neutral-300 text-sm border-t border-neutral-700 pt-8">
+					<p className="font-light mb-4">
+						© 2025 Verglas (NI) Limited. All rights reserved.
 					</p>
 				</div>
 			</footer>
