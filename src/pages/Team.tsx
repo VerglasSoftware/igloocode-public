@@ -20,7 +20,6 @@ import imgConnlaith from '/images/team/connlaith.png';
 import imgChris from '/images/team/chris.png';
 import imgKayla from '/images/team/kayla.png';
 import imgHollie from '/images/hollie.jpg';
-import imgBlank from '/images/pfp.webp';
 
 const Team = (): JSX.Element => {
   useEffect(() => {
@@ -48,45 +47,56 @@ const Team = (): JSX.Element => {
       </Helmet>
       
       <section
-        className="w-screen min-h-[60vh] bg-hero bg-cover flex flex-col justify-end items-left relative pl-6 pr-6 sm:pl-24 pb-6"
-        style={{ backgroundBlendMode: "normal, saturation" }}
+        className="w-screen min-h-[70vh] bg-cover flex flex-col justify-end items-left relative pl-6 pr-6 sm:pl-24 pb-8"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0,0,0,0.80), rgba(0.1,0,0,0.85)), linear-gradient(black, black), url('/images/backdrop.png'), url('/images/DSC01874.jpeg')",
+          backgroundBlendMode: "normal, saturation",
+        }}
         id="hero"
       >
-        <h1 className="w-fit text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-3 font-mono">
-          Our team
-        </h1>
-        <p className="text-white text-3xl font-mono">
-          {"< meet the people behind it all />"}
-        </p>
+        <div className="max-w-4xl">
+          <h1 className="w-fit text-transparent text-6xl sm:text-7xl lg:text-8xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-4 font-mono leading-tight">
+            Our team
+          </h1>
+          <p className="text-white text-xl sm:text-3xl font-mono leading-relaxed drop-shadow-lg">
+            {"< meet the people behind it all />"}
+          </p>
+        </div>
       </section>
       
       <div className="flex w-screen items-center bg-zinc-900 flex-col" id="content">
-        <section className="py-20 w-9/12 max-w-screen-lg justify-start">
-          <div className="relative top-[-3rem]">
-            <span className="text-gray-400 font-mono">
-              <a href="/" className="hover:underline text-blue-500">
+        <section className="py-16 sm:py-20 w-11/12 sm:w-9/12 max-w-screen-lg">
+          <div className="relative -top-6 sm:-top-12 mb-8">
+            <nav className="text-gray-400 font-mono text-sm">
+              <a href="/" className="hover:text-cyan-400 transition-colors duration-200">
                 Home
-              </a>{" "}
-              · Our team
-            </span>
+              </a>
+              <span className="mx-2 text-gray-500">·</span>
+              <span className="text-white">Our team</span>
+            </nav>
           </div>
           
-          <div id="organisers">
-            <h2 className="text-white text-4xl font-medium mb-2 font-mono">
-              the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">event coordinators</span>.
-            </h2>
-            <p className="text-white text-lg font-light mb-12 font-mono">
-              the event coordinators are made up of the verglas board of directors and outreach committee. they are responsible for relations between external parties, the planning of the event and overall project management.
-            </p>
+          <div id="organisers" className="space-y-12">
+            <div className="text-center mb-16">
+              <h2 className="text-white text-3xl sm:text-4xl font-medium mb-4 font-mono leading-tight">
+                the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">event coordinators</span>.
+              </h2>
+              <p className="text-white text-lg font-light font-mono leading-relaxed max-w-3xl mx-auto">
+                the event coordinators are made up of the verglas board of directors and outreach committee. they are responsible for relations between external parties, the planning of the event and overall project management.
+              </p>
+            </div>
 
-            <div className="flex flex-col gap-y-4">
-              <div className="flex flex-row justify-start items-center">
-                <img src={imgDan} className="aspect-square rounded-full shadow-md object-cover w-40 h-40" alt="Dan" />
-                <div className="flex flex-col ms-8">
-                  <p className="text-white text-2xl font-medium font-mono">
-                    Dan <span className="brightness-50">– Lead Event Coordinator</span>
-                  </p>
-                  <p className="text-gray-200 text-sm font-light mt-2 font-mono">
+            <div className="space-y-8">
+              <div className="group flex flex-col sm:flex-row items-center sm:items-start gap-6 p-6 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-2xl group-hover:shadow-purple-500/30 transition-all duration-300 flex-shrink-0">
+                  <img src={imgDan} className="w-32 h-32 sm:w-40 sm:h-40 object-cover transition-transform duration-300 group-hover:scale-105" alt="Dan" />
+                </div>
+                <div className="flex flex-col text-center sm:text-left flex-1">
+                  <h3 className="text-white text-xl sm:text-2xl font-medium font-mono mb-2">
+                    Dan Adams <span className="text-gray-400 font-light">– Lead Event Coordinator</span>
+                  </h3>
+                  <p className="text-gray-200 text-sm font-light leading-relaxed font-mono">
                     Ever since my mum told me that websites were made with code when I was in P2, I've been hooked. Throughout the past 10 years, I've been committed to developing my
                     skills and experiences with different programming languages. I help to run the Code Club in my school, and in the next few years I dream of studying Computer
                     Science at the University of Reykjavík.
@@ -94,13 +104,15 @@ const Team = (): JSX.Element => {
                 </div>
               </div>
               
-              <div className="flex flex-row justify-start items-center">
-                <img src={imgAideen} className="aspect-square rounded-full shadow-md object-cover w-40 h-40" alt="Aideen" />
-                <div className="flex flex-col ms-8">
-                  <p className="text-white text-2xl font-medium font-mono">
-                    Aideen <span className="brightness-50">– Lead Speaker</span>
-                  </p>
-                  <p className="text-gray-200 text-sm font-light mt-2 font-mono">
+              <div className="group flex flex-col sm:flex-row items-center sm:items-start gap-6 p-6 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-2xl group-hover:shadow-cyan-500/30 transition-all duration-300 flex-shrink-0">
+                  <img src={imgAideen} className="w-32 h-32 sm:w-40 sm:h-40 object-cover transition-transform duration-300 group-hover:scale-105" alt="Aideen" />
+                </div>
+                <div className="flex flex-col text-center sm:text-left flex-1">
+                  <h3 className="text-white text-xl sm:text-2xl font-medium font-mono mb-2">
+                    Dylan McKenzie <span className="text-gray-400 font-light">– Volunteer Coordinator & Logistics</span>
+                  </h3>
+                  <p className="text-gray-200 text-sm font-light leading-relaxed font-mono">
                     I've been passionate about technology and coding since primary school; so much so that I was called the ICT Co-ordinator by teachers. When I'm not at school
                     volunteering with the Code Club or the Rocket Club, I'm a member of the NICCY Youth Panel, where I have represented young people from NI in Brussels regarding
                     Children's Digital Rights.
@@ -108,140 +120,192 @@ const Team = (): JSX.Element => {
                 </div>
               </div>
               
-              <div className="flex flex-row justify-start items-center">
-                <img src={imgJake} className="aspect-square rounded-full shadow-md object-cover w-40" alt="Jake" />
-                <div className="flex flex-col ms-8">
-                  <p className="text-white text-2xl font-medium font-mono">
-                    Jake <span className="brightness-50">– Software Developer</span>
-                  </p>
-                  <p className="text-gray-200 text-sm font-light mt-2 font-mono">
+              <div className="group flex flex-col sm:flex-row items-center sm:items-start gap-6 p-6 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-2xl group-hover:shadow-purple-500/30 transition-all duration-300 flex-shrink-0">
+                  <img src={imgJake} className="w-32 h-32 sm:w-40 sm:h-40 object-cover transition-transform duration-300 group-hover:scale-105" alt="Jake" />
+                </div>
+                <div className="flex flex-col text-center sm:text-left flex-1">
+                  <h3 className="text-white text-xl sm:text-2xl font-medium font-mono mb-2">
+                    Jake Gilly <span className="text-gray-400 font-light">– Developer</span>
+                  </h3>
+                  <p className="text-gray-200 text-sm font-light leading-relaxed font-mono">
                     I love programming. I use languages like C/C++, Java, C# and Python for creating apps, scripts and programs. I also have interests in hardware and music.
                   </p>
                 </div>
               </div>
               
-              <div className="flex flex-row justify-start items-center">
-                <img src={imgMa} className="aspect-square rounded-full shadow-md object-cover w-40" alt="Matthew H" />
-                <div className="flex flex-col ms-8">
-                  <p className="text-white text-2xl font-medium font-mono">
-                    Matthew H <span className="brightness-50">– Lead Photographer</span>
-                  </p>
-                  <p className="text-gray-200 text-sm font-light mt-2 font-mono">
-                    
+              <div className="group flex flex-col sm:flex-row items-center sm:items-start gap-6 p-6 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-2xl group-hover:shadow-cyan-500/30 transition-all duration-300 flex-shrink-0">
+                  <img src={imgMa} className="w-32 h-32 sm:w-40 sm:h-40 object-cover transition-transform duration-300 group-hover:scale-105" alt="Matthew H" />
+                </div>
+                <div className="flex flex-col text-center sm:text-left flex-1">
+                  <h3 className="text-white text-xl sm:text-2xl font-medium font-mono mb-2">
+                    Matthew Hoey <span className="text-gray-400 font-light">– Photographer</span>
+                  </h3>
+                  <p className="text-gray-200 text-sm font-light leading-relaxed font-mono">
+                    Passionate about capturing the energy and excitement of coding events through photography.
                   </p>
                 </div>
               </div>
             </div>
           </div>
           
-          <div id="volunteers" className="mt-16">
-            <h2 className="text-white text-4xl font-medium mb-2 font-mono">
-              the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">volunteers</span>.
-            </h2>
-            <p className="text-white text-lg font-light mb-12 font-mono">
-              The volunteers are the people that will be on the floor at IglooCode - we'll be bringing one mentor per team to make sure the event runs smoothly, and to help with any
-              problems the students may have.
-            </p>
+          <div id="volunteers" className="mt-20">
+            <div className="text-center mb-16">
+              <h2 className="text-white text-3xl sm:text-4xl font-medium mb-4 font-mono leading-tight">
+                the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">volunteers</span>.
+              </h2>
+              <p className="text-white text-lg font-light mb-12 font-mono leading-relaxed max-w-3xl mx-auto">
+                The volunteers are the people that will be on the floor at IglooCode - we'll be bringing one mentor per team to make sure the event runs smoothly, and to help with any
+                problems the students may have.
+              </p>
+            </div>
             
-            <div className="grid grid-cols-5 gap-28 gap-y-8">
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgAxel} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Autumn" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Autumn</p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-purple-500/30 transition-all duration-300 mb-4">
+                  <img src={imgAxel} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Autumn" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Autumn</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgAxel} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Axel" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Axel</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-cyan-500/30 transition-all duration-300 mb-4">
+                  <img src={imgAxel} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Axel" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Axel</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Bébhinn" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Bébhinn</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-purple-500/30 transition-all duration-300 mb-4">
+                  <img src={imgAxel} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Bébhinn" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Bébhinn</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgBenF} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Ben F" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Ben F</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-cyan-500/30 transition-all duration-300 mb-4">
+                  <img src={imgBenF} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Ben F" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Ben F</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgBenT} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Ben T" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Ben T</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-purple-500/30 transition-all duration-300 mb-4">
+                  <img src={imgBenT} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Ben T" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Ben T</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgChris} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Chris" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Chris</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-cyan-500/30 transition-all duration-300 mb-4">
+                  <img src={imgChris} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Chris" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Chris</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgConnlaith} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Connlaith" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Connlaith</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-purple-500/30 transition-all duration-300 mb-4">
+                  <img src={imgConnlaith} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Connlaith" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Connlaith</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgDylan} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Dylan" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Dylan</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-cyan-500/30 transition-all duration-300 mb-4">
+                  <img src={imgDylan} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Dylan" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Dylan</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgEliza} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Eliza" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Eliza</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-purple-500/30 transition-all duration-300 mb-4">
+                  <img src={imgEliza} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Eliza" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Eliza</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgEmma} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Emma" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Emma</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-cyan-500/30 transition-all duration-300 mb-4">
+                  <img src={imgAxel} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Emma" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Fam</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgGrainne} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Gráinne" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Gráinne</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-purple-500/30 transition-all duration-300 mb-4">
+                  <img src={imgGrainne} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Gráinne" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Gráinne</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgHollie} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Holly" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Holly</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-cyan-500/30 transition-all duration-300 mb-4">
+                  <img src={imgHollie} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Holly" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Holly</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Josh" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Josh</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-purple-500/30 transition-all duration-300 mb-4">
+                  <img src={imgAxel} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Josh" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Josh</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgJosephi} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Josephi" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Josephi</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-cyan-500/30 transition-all duration-300 mb-4">
+                  <img src={imgJosephi} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Josephi" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Josephi</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgKayla} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Kayla" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Kayla</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-purple-500/30 transition-all duration-300 mb-4">
+                  <img src={imgKayla} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Kayla" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Kayla</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Michael" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Michael</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-cyan-500/30 transition-all duration-300 mb-4">
+                  <img src={imgAxel} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Michael" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Michael</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Nikki" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Nikki</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-purple-500/30 transition-all duration-300 mb-4">
+                  <img src={imgAxel} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Nikki" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Nikki</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Odhran" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Odhran</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-cyan-500/30 transition-all duration-300 mb-4">
+                  <img src={imgAxel} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Odhran" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Odhran</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgRyan} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Ryan" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Ryan</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-purple-500/30 transition-all duration-300 mb-4">
+                  <img src={imgRyan} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Ryan" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Ryan</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Samuel B" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Samuel B</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-cyan-500/30 transition-all duration-300 mb-4">
+                  <img src={imgAxel} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Samuel B" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Samuel B</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Sarah" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Sarah</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-purple-500/30 transition-all duration-300 mb-4">
+                  <img src={imgAxel} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Sarah" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Sarah</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Seth" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Seth</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-cyan-500/30 transition-all duration-300 mb-4">
+                  <img src={imgAxel} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Seth" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Seth</h3>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <img src={imgBlank} className="w-full aspect-square rounded-full shadow-md object-cover" alt="Vivian" />
-                <p className="text-white text-2xl font-medium mt-4 font-mono">Vivian</p>
+              <div className="group flex flex-col items-center text-center p-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-full shadow-lg group-hover:shadow-purple-500/30 transition-all duration-300 mb-4">
+                  <img src={imgAxel} className="w-20 h-20 sm:w-24 sm:h-24 object-cover transition-transform duration-300 group-hover:scale-105" alt="Vivian" />
+                </div>
+                <h3 className="text-white text-lg font-medium font-mono">Vivian</h3>
               </div>
             </div>
             
-            <div className="flex justify-center items-center mt-6">
-              <p className="text-white text-md font-light mt-4 font-mono">
+            <div className="text-center mt-12 p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50">
+              <p className="text-white text-lg font-light font-mono leading-relaxed">
                 Can you see yourself in our team?{" "}
-                <a className="text-sky-500 hover:underline hover:text-sky-600" href="/getinvolved/sixthform">
+                <a className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 hover:from-purple-400 hover:to-cyan-300 transition-all duration-300 font-medium" href="/getinvolved/sixthform">
                   Join now!
                 </a>
               </p>

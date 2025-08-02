@@ -25,20 +25,24 @@ export default function Volunteer(): JSX.Element {
 				<meta name="theme-color" content="#171717" />
 				<style type="text/css">
 					{`
-					html { margin: 0; height: 100%; overflow: hidden; }
-					iframe { position: absolute; top: 0; right: 0; bottom: 0; left: 0; border: 0; }
+					html { margin: 0; height: 100%; overflow: hidden; background: #18181b; }
+					body { background: #18181b; }
+					iframe { position: absolute; top: 0; right: 0; bottom: 0; left: 0; border: 0; background: #18181b; }
 					`}
 				</style>
 			</Helmet>
-			<iframe 
-				data-tally-src="https://tally.so/r/w2A5gD?transparentBackground=1" 
-				width="100%" 
-				height="100%" 
-				frameBorder="0" 
-				marginHeight={0} 
-				marginWidth={0} 
-				title="IglooCode 2024: Volunteer Application Form"
-			/>
+			<div className="min-h-screen bg-zinc-900">
+				<iframe 
+					data-tally-src="https://tally.so/r/w2A5gD?transparentBackground=1" 
+					width="100%" 
+					height="100%" 
+					frameBorder="0" 
+					marginHeight={0} 
+					marginWidth={0} 
+					title="IglooCode 2026: Volunteer Application Form"
+					className="min-h-screen"
+				/>
+			</div>
 		</>
 	)
 }

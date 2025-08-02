@@ -33,53 +33,77 @@ const GetInvolved = () => {
       </Helmet>
       
       <section
-        className="w-screen min-h-[60vh] bg-hero bg-cover flex flex-col justify-end items-left relative pl-6 pr-6 sm:pl-24 pb-6"
-        style={{ backgroundBlendMode: "normal, saturation" }}
+        className="w-screen min-h-[70vh] bg-cover flex flex-col justify-end items-left relative pl-6 pr-6 sm:pl-24 pb-8"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0,0,0,0.80), rgba(0.1,0,0,0.85)), linear-gradient(black, black), url('/images/backdrop.png'), url('/images/DSC01874.jpeg')",
+          backgroundBlendMode: "normal, saturation",
+        }}
         id="hero"
       >
-        <h1 className="w-fit text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-3 font-mono">
-          Get involved
-        </h1>
-        <p className="text-white text-3xl font-mono">
-          {"< a worthwhile experience for all />"}
-        </p>
+        <div className="max-w-4xl">
+          <h1 className="w-fit text-transparent text-6xl sm:text-7xl lg:text-8xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-4 font-mono leading-tight">
+            Get involved
+          </h1>
+          <p className="text-white text-xl sm:text-3xl font-mono leading-relaxed">
+            {"< a worthwhile experience for all />"}
+          </p>
+        </div>
       </section>
       
       <div className="flex w-screen items-center bg-zinc-900 flex-col" id="content">
-        <section className="py-20 w-9/12 max-w-screen-lg justify-start">
-          <div className="relative top-[-3rem]">
-            <span className="text-gray-400 font-mono">
-              <a href="/" className="hover:underline text-blue-500">
+        <section className="py-16 sm:py-20 w-11/12 sm:w-9/12 max-w-screen-lg">
+          <div className="relative -top-6 sm:-top-12 mb-8">
+            <nav className="font-mono text-gray-400 text-sm">
+              <a href="/" className="hover:underline text-blue-400 hover:text-blue-300 transition-colors">
                 Home
-              </a>{" "}
-              · Get involved
-            </span>
+              </a>
+              <span className="mx-2">·</span>
+              <span className="text-gray-300">Get involved</span>
+            </nav>
           </div>
           
-          <div id="about">
-            <div className="grid grid-cols-2 gap-12">
-              <div className="flex flex-col justify-center">
-                <h2 className="text-white text-4xl font-medium font-mono">
+          <div id="about" className="space-y-16">
+            <div className="text-center mb-16">
+              <h2 className="text-white text-3xl sm:text-4xl font-medium mb-4 font-mono leading-tight">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">opportunities</span> for everyone.
+              </h2>
+              <p className="text-white text-lg font-light font-mono leading-relaxed max-w-3xl mx-auto">
+                Whether you're a teacher looking to inspire your students or a sixth former wanting to make a difference, IglooCode has something for you.
+              </p>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12">
+              <div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-xl shadow-2xl mb-6 group-hover:shadow-purple-500/20 transition-all duration-500">
+                  <img src={imgHands} className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105" alt="Hands working together" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <h3 className="text-white text-2xl sm:text-3xl font-mono font-medium mb-4">
                   for <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">teachers</span>.
-                </h2>
-                <img src={imgHands} className="w-full h-[24rem] shadow-md object-cover my-6" alt="Hands working together" />
-                <p className="text-white text-center text-md font-thin pt-3 font-mono">
+                </h3>
+                <p className="text-white text-base font-light leading-relaxed mb-6 font-mono">
                   Give your students a day out to practice their skills in the real world, while making new friends and getting a first-hand insight to the industry.
                 </p>
-                <Link to="/f/school-interest" className="text-white hover:underline text-xl mt-4 border-[1px] border-gray-400 p-2 w-full text-center font-mono">
-                  ENTER YOUR SCHOOL
-                </Link>
+                <div className="text-white text-lg border-2 border-gray-400 p-4 w-full text-center font-mono rounded-lg backdrop-blur-sm bg-zinc-800/50">
+                  2026 APPLICATIONS COMING SOON
+                </div>
               </div>
-              <div className="flex flex-col justify-center">
-                <h2 className="text-white text-4xl font-medium font-mono">
+              
+              <div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
+                <div className="relative overflow-hidden rounded-xl shadow-2xl mb-6 group-hover:shadow-cyan-500/20 transition-all duration-500">
+                  <img src={imgCosmo} className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105" alt="Students working" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <h3 className="text-white text-2xl sm:text-3xl font-mono font-medium mb-4">
                   for <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">sixth formers</span>.
-                </h2>
-                <img src={imgCosmo} className="w-full h-[24rem] shadow-md object-cover my-6" alt="Students working" />
-                <p className="text-white text-center text-md font-thin pt-3 font-mono">
+                </h3>
+                <p className="text-white text-base font-light leading-relaxed mb-6 font-mono">
                   We're looking for keen sixth formers with a passion for IT and programming to give us a hand on the big day. Think you have what it takes?
                 </p>
-                <Link to="/getinvolved/sixthform" className="text-white hover:underline text-xl mt-4 border-[1px] border-gray-400 p-2 w-full text-center font-mono">
+                <Link to="/getinvolved/sixthform" className="group inline-flex items-center text-white hover:text-cyan-300 transition-all duration-300 text-lg border-2 border-cyan-500/50 hover:border-cyan-400 px-8 py-4 rounded-lg bg-cyan-600/20 hover:bg-cyan-600/30 backdrop-blur-sm hover:scale-105 font-mono w-full justify-center">
                   JOIN THE TEAM
+                  <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
                 </Link>
               </div>
             </div>
@@ -87,13 +111,14 @@ const GetInvolved = () => {
         </section>
       </div>
       
-      <section className="bg-hero bg-cover bg-sat flex items-center flex-col">
-        <div className="py-16 w-9/12 max-w-screen-lg flex items-center justify-center flex-col">
-          <p className="text-white text-4xl font-medium font-mono">
+      <section className="bg-zinc-900 flex items-center flex-col py-20">
+        <div className="w-11/12 sm:w-9/12 max-w-screen-lg flex items-center justify-center flex-col text-center space-y-8">
+          <h2 className="font-mono text-white text-3xl sm:text-4xl font-medium leading-tight">
             designed for your <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">enjoyment</span>.
-          </p>
-          <Link to="/perks" className="text-white hover:underline text-xl mt-4 border-[1px] border-gray-400 p-2 w-1/3 text-center font-mono">
-            PERKS FOR YOU
+          </h2>
+          <Link to="/perks" className="group inline-flex items-center text-white hover:text-purple-300 transition-all duration-300 text-lg border-2 border-purple-500/50 hover:border-purple-400 px-8 py-4 rounded-lg bg-purple-600/20 hover:bg-purple-600/30 backdrop-blur-sm hover:scale-105 font-mono">
+            DISCOVER PERKS
+            <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
           </Link>
         </div>
       </section>

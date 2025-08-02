@@ -35,92 +35,101 @@ function Teachers(): JSX.Element {
 			</Helmet>
 			
 			<section
-				className="w-screen min-h-[60vh] bg-hero bg-cover flex flex-col justify-end items-left relative pl-6 pr-6 sm:pl-24 pb-6"
-				style={{ backgroundBlendMode: "normal, saturation" }}
-				id="hero">
-				<h1 className="font-mono w-fit text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-3">For teachers</h1>
-				<p className="font-mono text-white text-3xl">{"< bring your students for an adventure />"}</p>
+				className="w-screen min-h-[70vh] bg-cover flex flex-col justify-end items-left relative pl-6 pr-6 sm:pl-24 pb-8"
+				style={{
+					backgroundImage:
+						"linear-gradient(rgba(0,0,0,0.80), rgba(0.1,0,0,0.85)), linear-gradient(black, black), url('/images/backdrop.png'), url('/images/DSC01874.jpeg')",
+					backgroundBlendMode: "normal, saturation",
+				}}
+				id="hero"
+			>
+				<div className="max-w-4xl">
+					<h1 className="font-mono w-fit text-transparent text-6xl sm:text-7xl lg:text-8xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-4 leading-tight">For teachers</h1>
+					<p className="font-mono text-white text-xl sm:text-3xl leading-relaxed drop-shadow-lg">{"< bring your students for an adventure />"}</p>
+				</div>
 			</section>
 			
 			<div className="flex w-screen items-center bg-zinc-900 flex-col" id="content">
-				<section className="py-20 w-9/12 max-w-screen-lg justify-start">
-					<div className="relative top-[-3rem]">
-						<span className="font-mono text-gray-400">
-							<Link to="/" className="hover:underline text-blue-500">
+				<section className="py-16 sm:py-20 w-11/12 sm:w-9/12 max-w-screen-lg">
+					<div className="relative -top-6 sm:-top-12 mb-8">
+						<nav className="font-mono text-gray-400 text-sm">
+							<Link to="/" className="hover:text-cyan-400 transition-colors duration-200">
 								Home
-							</Link>{" "}
-							·{" "}
-							<Link to="/getinvolved" className="hover:underline text-blue-500">
+							</Link>
+							<span className="mx-2 text-gray-500">·</span>
+							<Link to="/getinvolved" className="hover:text-cyan-400 transition-colors duration-200">
 								Get involved
-							</Link>{" "}
-							· For teachers
-						</span>
+							</Link>
+							<span className="mx-2 text-gray-500">·</span>
+							<span className="text-white">For teachers</span>
+						</nav>
 					</div>
 					
-					<div id="about">
-						<div className="grid grid-cols-2 gap-12">
-							<div className="flex flex-col justify-center">
-								<h2 className="font-mono text-white text-4xl font-medium">
+					<div id="about" className="space-y-16">
+						<div className="grid lg:grid-cols-2 gap-12 items-center">
+							<div className="space-y-6">
+								<h2 className="font-mono text-white text-3xl sm:text-4xl font-medium leading-tight">
 									give your students a <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">real-world</span> experience.
 								</h2>
-								<p className="font-mono text-white text-md font-thin pt-3">
-									IglooCode offers your students a unique opportunity to practice their programming skills in a competitive, collaborative environment alongside peers from across Northern Ireland.
-								</p>
-								<p className="font-mono text-white text-md font-thin pt-3">
-									Our event is designed to complement classroom learning while giving students hands-on experience with industry-standard tools and technologies. They'll work in teams, solve real problems, and gain valuable insights into the tech industry.
-								</p>
-								<p className="font-mono text-white text-md font-thin pt-3">
-									<strong className="font-semibold">What's included:</strong> Professional mentorship, industry guest speakers, free lunch, and take-home resources for continued learning.
-								</p>
+								<div className="space-y-4">
+									<p className="font-mono text-white text-base font-light leading-relaxed">
+										IglooCode offers your students a unique opportunity to practice their programming skills in a competitive, collaborative environment alongside peers from across Northern Ireland.
+									</p>
+									<p className="font-mono text-white text-base font-light leading-relaxed">
+										Our event is designed to complement classroom learning while giving students hands-on experience with industry-standard tools and technologies. They'll work in teams, solve real problems, and gain valuable insights into the tech industry.
+									</p>
+									<p className="font-mono text-white text-base font-light leading-relaxed">
+										<strong className="font-semibold text-purple-400">What's included:</strong> Professional mentorship, industry guest speakers, free lunch, and take-home resources for continued learning.
+									</p>
+								</div>
 							</div>
 							<div className="flex justify-center items-center">
-								<img src={imgHands} className="w-full h-[24rem] shadow-md object-cover" alt="Students collaborating" />
-							</div>
-						</div>
-						
-						<div className="grid grid-cols-1 gap-12 mt-16">
-							<div className="flex flex-col justify-center items-center text-center">
-								<h2 className="font-mono text-white text-4xl font-medium mb-6">
-									ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">register</span> your school?
-								</h2>
-								<p className="font-mono text-white text-md font-thin mb-6 max-w-3xl">
-									Give your students a day out to practice their skills in the real world, while making new friends and getting a first-hand insight into the tech industry. 
-									Registration is free and we provide everything your students need for the day.
-								</p>
-								<Link 
-									to="/f/school-interest" 
-									className="font-mono text-white hover:underline text-xl mt-4 border-[1px] border-gray-400 p-4 px-8 text-center hover:bg-gray-800 transition-colors"
-								>
-									REGISTER YOUR SCHOOL NOW
-								</Link>
-							</div>
-						</div>
-						
-						<div className="grid grid-cols-3 gap-8 mt-16">
-							<div className="flex flex-col items-center text-center p-6 bg-zinc-800 rounded-lg">
-								<div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mb-4">
-									<span className="font-mono text-white text-2xl font-bold">1</span>
+								<div className="group overflow-hidden rounded-xl shadow-2xl hover:shadow-purple-500/20 transition-all duration-500">
+									<img src={imgHands} className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105" alt="Students collaborating" />
 								</div>
-								<h3 className="font-mono text-white text-lg font-semibold mb-2">Register Interest</h3>
-								<p className="font-mono text-gray-300 text-sm">
+							</div>
+						</div>
+						
+						<div className="text-center p-12 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50">
+							<h2 className="font-mono text-white text-3xl sm:text-4xl font-medium mb-6 leading-tight">
+								ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">register</span> your school?
+							</h2>
+							<p className="font-mono text-white text-lg font-light mb-8 max-w-3xl mx-auto leading-relaxed">
+								Give your students a day out to practice their skills in the real world, while making new friends and getting a first-hand insight into the tech industry. 
+								Registration is free and we provide everything your students need for the day.
+							</p>
+							<div className="inline-block px-8 py-4 rounded-xl bg-gradient-to-r from-purple-500/20 to-cyan-400/20 backdrop-blur-sm border border-purple-500/30">
+								<p className="font-mono text-white text-lg font-medium">
+									2026 APPLICATIONS COMING SOON
+								</p>
+							</div>
+						</div>
+						
+						<div className="grid md:grid-cols-3 gap-8 mt-16">
+							<div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300 text-center">
+								<div className="bg-gradient-to-br from-purple-500/20 to-purple-700/20 backdrop-blur-sm border border-purple-500/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-purple-500/20">
+									<span className="font-mono text-purple-400 text-2xl font-bold">1</span>
+								</div>
+								<h3 className="font-mono text-white text-xl font-medium mb-4">Register Interest</h3>
+								<p className="font-mono text-gray-300 text-sm font-light leading-relaxed">
 									Fill out our school interest form to let us know you'd like to participate.
 								</p>
 							</div>
-							<div className="flex flex-col items-center text-center p-6 bg-zinc-800 rounded-lg">
-								<div className="w-16 h-16 bg-cyan-400 rounded-full flex items-center justify-center mb-4">
-									<span className="font-mono text-white text-2xl font-bold">2</span>
+							<div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-400/30 transition-all duration-300 text-center">
+								<div className="bg-gradient-to-br from-cyan-400/20 to-cyan-600/20 backdrop-blur-sm border border-cyan-400/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-cyan-400/20">
+									<span className="font-mono text-cyan-400 text-2xl font-bold">2</span>
 								</div>
-								<h3 className="font-mono text-white text-lg font-semibold mb-2">Receive Details</h3>
-								<p className="font-mono text-gray-300 text-sm">
+								<h3 className="font-mono text-white text-xl font-medium mb-4">Receive Details</h3>
+								<p className="font-mono text-gray-300 text-sm font-light leading-relaxed">
 									We'll send you all the information you need including date, venue, and student requirements.
 								</p>
 							</div>
-							<div className="flex flex-col items-center text-center p-6 bg-zinc-800 rounded-lg">
-								<div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mb-4">
-									<span className="font-mono text-white text-2xl font-bold">3</span>
+							<div className="group p-8 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300 text-center">
+								<div className="bg-gradient-to-br from-purple-500/20 to-purple-700/20 backdrop-blur-sm border border-purple-500/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-purple-500/20">
+									<span className="font-mono text-purple-400 text-2xl font-bold">3</span>
 								</div>
-								<h3 className="font-mono text-white text-lg font-semibold mb-2">Attend Event</h3>
-								<p className="font-mono text-gray-300 text-sm">
+								<h3 className="font-mono text-white text-xl font-medium mb-4">Attend Event</h3>
+								<p className="font-mono text-gray-300 text-sm font-light leading-relaxed">
 									Bring your students for an unforgettable day of coding, collaboration, and competition.
 								</p>
 							</div>
@@ -129,13 +138,18 @@ function Teachers(): JSX.Element {
 				</section>
 			</div>
 			
-			<section className="bg-hero bg-cover bg-sat flex items-center flex-col">
-				<div className="py-16 w-9/12 max-w-screen-lg flex items-center justify-center flex-col">
-					<p className="font-mono text-white text-4xl font-medium">
+			<section className="bg-zinc-900 flex items-center flex-col">
+				<div className="py-16 sm:py-20 w-11/12 sm:w-9/12 max-w-screen-lg flex items-center justify-center flex-col text-center">
+					<h2 className="font-mono text-white text-3xl sm:text-4xl font-medium mb-8 leading-tight">
 						designed for your students' <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">success</span>.
-					</p>
-					<Link to="/perks" className="font-mono text-white hover:underline text-xl mt-4 border-[1px] border-gray-400 p-2 w-1/3 text-center">
-						SEE THE PERKS
+					</h2>
+					<Link 
+						to="/perks" 
+						className="group inline-flex items-center justify-center px-8 py-4 rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/50 transition-all duration-300 hover:bg-zinc-700/50 hover:shadow-lg hover:shadow-purple-500/20"
+					>
+						<span className="font-mono text-white text-lg font-medium group-hover:text-purple-400 transition-colors duration-300">
+							SEE THE PERKS
+						</span>
 					</Link>
 				</div>
 			</section>
