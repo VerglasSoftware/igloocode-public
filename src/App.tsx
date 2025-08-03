@@ -8,7 +8,6 @@ import GetInvolved from './pages/GetInvolved'
 import Perks from './pages/Perks'
 import SixthForm from './pages/SixthForm'
 import Volunteer from './pages/Volunteer'
-import IsItIglooCode from './pages/IsItIglooCode'
 import Teachers from './pages/Teachers'
 
 function App(): JSX.Element {
@@ -23,8 +22,7 @@ function App(): JSX.Element {
           <Route path="/getinvolved/sixthform" element={<SixthForm />} />
           <Route path="/getinvolved/teachers" element={<Teachers />} />
           <Route path="/perks" element={<Perks />} />
-          <Route path="/isitigloocode" element={<IsItIglooCode />} />
-          <Route path="/f/volunteer" element={<Volunteer />} />
+          <Route path="/getinvolved/volunteer" element={<Volunteer />} />
         </Routes>
       </Router>
     </HelmetProvider>
