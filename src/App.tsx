@@ -1,9 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 
-// Import core pages that we know work
 import Home from './pages/Home'
-import About from './pages/About'
+import OurStory from './pages/OurStory'
 import Competition from './pages/Competition'
 import GetInvolved from './pages/GetInvolved'
 import Perks from './pages/Perks'
@@ -18,7 +17,7 @@ function App(): JSX.Element {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/ourstory" element={<OurStory />} />
           <Route path="/competition" element={<Competition />} />
           <Route path="/getinvolved" element={<GetInvolved />} />
           <Route path="/getinvolved/sixthform" element={<SixthForm />} />
