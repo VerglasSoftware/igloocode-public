@@ -88,8 +88,8 @@ function Home(): JSX.Element {
 				}}
 				id="hero"
 			>
-				<div className="flex flex-col items-center mb-8">
-					<h1 className="font-mono text-transparent text-8xl sm:text-9xl lg:text-[10rem] font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-4 hover:scale-105 transition-transform duration-700 ease-out cursor-default">
+				<div className="flex flex-col items-center mb-8 px-4">
+					<h1 className="font-mono text-transparent text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-4 hover:scale-105 transition-transform duration-700 ease-out cursor-default text-center">
 						IglooCode
 					</h1>
 					
@@ -109,37 +109,42 @@ function Home(): JSX.Element {
 					</div>
 				</div>
 
-				<div className="mb-8">
-					<Typewriter
-						options={{
-							strings: ["< solve challenges, score points, win prizes />"],
-							autoStart: true,
-							loop: true,
-							wrapperClassName: "font-mono text-white text-3xl sm:text-4xl text-center",
-							cursorClassName: "font-mono text-white text-3xl sm:text-4xl",
-							delay: 100,
-						}}
-					/>
+				<div className="mb-8 px-4 w-full flex justify-center">
+					<div className="max-w-4xl">
+						<div className="flex items-center justify-center text-center">
+							<Typewriter
+								options={{
+									strings: ["< solve challenges, score points, win prizes />"],
+									autoStart: true,
+									loop: true,
+									wrapperClassName: "font-mono text-white text-xl sm:text-2xl lg:text-3xl",
+									cursorClassName: "font-mono text-white text-xl sm:text-2xl lg:text-3xl",
+									delay: 100,
+								}}
+							/>
+						</div>
+					</div>
 				</div>
 
-				{/* Key Event Details */}
 				<div className="mb-8 space-y-4 text-center">
-					<div className="font-mono text-white text-xl font-medium flex items-center justify-center gap-2">
-						<Calendar className="w-5 h-5 text-purple-400" />
-						<span className="text-purple-400">15th April 2026</span>
-						<span className="mx-2">•</span>
-						<Users className="w-5 h-5 text-cyan-400" />
-						<span className="text-cyan-400">Ages 11-14</span>
+					<div className="font-mono text-white text-xl font-medium flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-2">
+						<div className="flex items-center gap-2">
+							<Calendar className="w-5 h-5 text-purple-400" />
+							<span className="text-purple-400">15th April 2026</span>
+						</div>
+						<span className="mx-2 hidden sm:inline">•</span>
+						<div className="flex items-center gap-2">
+							<Users className="w-5 h-5 text-cyan-400" />
+							<span className="text-cyan-400">Ages 11-14</span>
+						</div>
 					</div>
 					<div className="font-mono text-white text-lg flex items-center justify-center gap-2">
 						<MapPin className="w-5 h-5 text-white" />
-						QUB Computer Science Building
+						<span className="text-center">QUB Computer Science Building</span>
 					</div>
-				</div>
-				
-				<a 
+				</div>				<a 
 					href="#how-it-works"
-					className="relative font-mono text-gray-300 text-xl mt-4 px-8 py-4 bg-black hover:bg-black transition-all duration-300 hover:scale-105 cursor-pointer inline-block"
+					className="relative font-mono text-gray-300 text-lg sm:text-xl mt-4 px-6 sm:px-8 py-3 sm:py-4 bg-black hover:bg-black transition-all duration-300 hover:scale-105 cursor-pointer inline-block"
 					onClick={(e) => {
 						e.preventDefault();
 						document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' });
@@ -154,7 +159,6 @@ function Home(): JSX.Element {
 				</a>
 			</section>
 			
-			{/* How It Works Section */}
 			<section className="bg-zinc-900 flex items-center flex-col py-24" id="how-it-works">
 				<div className="w-11/12 sm:w-9/12 max-w-screen-lg text-center space-y-16">
 					<div className="space-y-6">
@@ -189,23 +193,23 @@ function Home(): JSX.Element {
 					
 					<div className="space-y-8">
 						<h4 className="font-mono text-white text-xl font-medium">Challenge Categories Include:</h4>
-						<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+						<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
 							{[
-								{ name: "Python", color: "from-yellow-400 to-green-500", icon: <Zap className="w-4 h-4" /> },
-								{ name: "C#", color: "from-purple-500 to-purple-700", icon: <FiCode className="w-4 h-4" /> },
-								{ name: "HTML & CSS", color: "from-orange-500 to-red-600", icon: <FiLayout className="w-4 h-4" /> },
-								{ name: "Scratch", color: "from-yellow-400 to-orange-500", icon: <FiPenTool className="w-4 h-4" /> },
-								{ name: "Micro:bit", color: "from-green-400 to-green-600", icon: <FiCpu className="w-4 h-4" /> },
-								{ name: "Logic Gates", color: "from-blue-400 to-blue-600", icon: <FiShare2 className="w-4 h-4" /> },
-								{ name: "Binary Manipulation", color: "from-cyan-400 to-blue-500", icon: <FiDatabase className="w-4 h-4" /> },
-								{ name: "& More!", color: "from-pink-400 to-purple-500", icon: <FiPlusCircle className="w-4 h-4" /> }
+								{ name: "Python", color: "from-yellow-400 to-green-500", icon: <Zap className="w-3 h-3 sm:w-4 sm:h-4" /> },
+								{ name: "C#", color: "from-purple-500 to-purple-700", icon: <FiCode className="w-3 h-3 sm:w-4 sm:h-4" /> },
+								{ name: "HTML & CSS", color: "from-orange-500 to-red-600", icon: <FiLayout className="w-3 h-3 sm:w-4 sm:h-4" /> },
+								{ name: "Scratch", color: "from-yellow-400 to-orange-500", icon: <FiPenTool className="w-3 h-3 sm:w-4 sm:h-4" /> },
+								{ name: "Micro:bit", color: "from-green-400 to-green-600", icon: <FiCpu className="w-3 h-3 sm:w-4 sm:h-4" /> },
+								{ name: "Logic Gates", color: "from-blue-400 to-blue-600", icon: <FiShare2 className="w-3 h-3 sm:w-4 sm:h-4" /> },
+								{ name: "Binary Manipulation", color: "from-cyan-400 to-blue-500", icon: <FiDatabase className="w-3 h-3 sm:w-4 sm:h-4" /> },
+								{ name: "& More!", color: "from-pink-400 to-purple-500", icon: <FiPlusCircle className="w-3 h-3 sm:w-4 sm:h-4" /> }
 							].map((category, index) => (
 								<div 
 									key={index}
-									className={`bg-gradient-to-r ${category.color} h-14 text-white font-mono text-sm font-medium text-center hover:scale-105 transition-transform duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl`}
+									className={`bg-gradient-to-r ${category.color} h-12 sm:h-14 text-white font-mono text-xs sm:text-sm font-medium text-center hover:scale-105 transition-transform duration-300 flex items-center justify-center gap-1 sm:gap-2 shadow-lg hover:shadow-xl px-2`}
 								>
 									{category.icon}
-									<span className="whitespace-nowrap text-xs sm:text-sm">{category.name}</span>
+									<span className="whitespace-nowrap leading-tight">{category.name}</span>
 								</div>
 							))}
 						</div>
@@ -225,7 +229,6 @@ function Home(): JSX.Element {
 				</div>
 			</section>
 			
-			{/* Highlights & Supporters Section */}
 			<section className="bg-zinc-900 flex items-center flex-col py-24">
 				<div className="w-11/12 sm:w-9/12 max-w-screen-lg space-y-20">
 					<div className="text-center">
@@ -234,7 +237,6 @@ function Home(): JSX.Element {
 						</h2>
 					</div>
 					
-					{/* Photo Gallery */}
 					<div className="grid lg:grid-cols-2 gap-8 mb-20">
 						<div className="group overflow-hidden shadow-2xl hover:shadow-purple-500/20 transition-all duration-500 h-64 lg:h-80">
 							<img src={imgScoreboard} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Competition Scoreboard" />
@@ -244,7 +246,6 @@ function Home(): JSX.Element {
 						</div>
 					</div>
 					
-					{/* Testimonial */}
 					<div className="relative">
 						<div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-cyan-400/10 blur-xl"></div>
 						<div className="relative bg-zinc-800/70 backdrop-blur-sm p-12 border border-zinc-700/50 shadow-2xl">
@@ -261,15 +262,14 @@ function Home(): JSX.Element {
 			
 			<div className="flex w-screen items-center bg-zinc-900 flex-col">
 				<section className="py-32 w-11/12 sm:w-9/12 max-w-screen-lg">
-					{/* Map and Event Details */}
 					<div className="text-center mb-16">
 						<h2 className="font-mono text-white text-3xl sm:text-4xl font-medium leading-tight">
 							Event <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Location</span>
 						</h2>
 					</div>
 					
-					<div className="grid lg:grid-cols-2 gap-16 items-stretch">
-						<div className="bg-zinc-800/50 backdrop-blur-sm overflow-hidden shadow-2xl border border-zinc-700/50 h-[450px]">
+					<div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-stretch">
+						<div className="bg-zinc-800/50 backdrop-blur-sm overflow-hidden shadow-2xl border border-zinc-700/50 h-[300px] sm:h-[400px] lg:h-[450px]">
 							<iframe
 								width="100%"
 								height="100%"
@@ -278,23 +278,23 @@ function Home(): JSX.Element {
 								className="border-0">
 							</iframe>
 						</div>
-						<div className="flex flex-col h-[450px]">
-							<div className="bg-zinc-800/50 backdrop-blur-sm p-12 border border-zinc-700/50 shadow-xl hover:border-purple-500/30 transition-all duration-300 h-full flex flex-col justify-center">
-								<h4 className="font-mono text-white text-2xl font-medium mb-8 flex items-center gap-3">
+						<div className="flex flex-col h-[300px] sm:h-[400px] lg:h-[450px]">
+							<div className="bg-zinc-800/50 backdrop-blur-sm p-6 sm:p-8 lg:p-12 border border-zinc-700/50 shadow-xl hover:border-purple-500/30 transition-all duration-300 h-full flex flex-col justify-center">
+								<h4 className="font-mono text-white text-xl sm:text-2xl font-medium mb-6 sm:mb-8 flex items-center gap-3">
 									📅 Event Details
 								</h4>
-								<div className="space-y-6 text-white font-mono">
-									<div className="border-l-4 border-purple-400 pl-6">
-										<p className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-2">IglooCode 2026</p>
-										<p className="text-base font-light">15th April 2026</p>
-										<p className="text-base font-light">10:30am - 3:30pm</p>
+								<div className="space-y-4 sm:space-y-6 text-white font-mono">
+									<div className="border-l-4 border-purple-400 pl-4 sm:pl-6">
+										<p className="text-base sm:text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-2">IglooCode 2026</p>
+										<p className="text-sm sm:text-base font-light">15th April 2026</p>
+										<p className="text-sm sm:text-base font-light">10:30am - 3:30pm</p>
 									</div>
-									<div className="border-l-4 border-cyan-400 pl-6">
-										<p className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-2">Location</p>
-										<p className="text-base font-light">QUB Computer Science Building</p>
-										<p className="text-base font-light">18 Malone Road</p>
-										<p className="text-base font-light">Belfast</p>
-										<p className="text-base font-light">BT9 5AF</p>
+									<div className="border-l-4 border-cyan-400 pl-4 sm:pl-6">
+										<p className="text-base sm:text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-2">Location</p>
+										<p className="text-sm sm:text-base font-light">QUB Computer Science Building</p>
+										<p className="text-sm sm:text-base font-light">18 Malone Road</p>
+										<p className="text-sm sm:text-base font-light">Belfast</p>
+										<p className="text-sm sm:text-base font-light">BT9 5AF</p>
 									</div>
 								</div>
 							</div>
@@ -303,7 +303,6 @@ function Home(): JSX.Element {
 				</section>
 			</div>
 			
-			{/* Final Call to Action */}
 			<section 
 				className="bg-cover flex items-center flex-col py-24"
 				style={{
@@ -319,36 +318,36 @@ function Home(): JSX.Element {
 						</h2>
 					</div>
 					
-					<div className="grid lg:grid-cols-2 gap-8 items-stretch">
-						<div className="group p-10 bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300 h-full flex flex-col">
-							<h3 className="text-white text-xl sm:text-2xl font-mono font-medium mb-6">
+					<div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
+						<div className="group p-6 sm:p-8 lg:p-10 bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300 h-full flex flex-col">
+							<h3 className="text-white text-lg sm:text-xl lg:text-2xl font-mono font-medium mb-4 sm:mb-6">
 								For <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Teachers</span>
 							</h3>
-							<p className="text-white text-base font-light leading-relaxed font-mono mb-6 flex-grow">
+							<p className="text-white text-sm sm:text-base font-light leading-relaxed font-mono mb-4 sm:mb-6 flex-grow">
 								Are you a teacher who thinks your students would enjoy this competitive coding environment? IglooCode is perfect for KS3 pupils interested in computing and technology.
 							</p>
-							<p className="text-base font-light leading-relaxed font-mono">
+							<p className="text-sm sm:text-base font-light leading-relaxed font-mono">
 								<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 font-medium">Students just need some experience in any ONE category to contribute meaningfully to a team!</span>
 							</p>
 						</div>
 						
-						<div className="group p-10 bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300 h-full flex flex-col">
-							<h3 className="text-white text-xl sm:text-2xl font-mono font-medium mb-6">
+						<div className="group p-6 sm:p-8 lg:p-10 bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300 h-full flex flex-col">
+							<h3 className="text-white text-lg sm:text-xl lg:text-2xl font-mono font-medium mb-4 sm:mb-6">
 								For <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Volunteers</span>
 							</h3>
-							<p className="text-white text-base font-light leading-relaxed font-mono mb-6 flex-grow">
+							<p className="text-white text-sm sm:text-base font-light leading-relaxed font-mono mb-4 sm:mb-6 flex-grow">
 								Are you a sixth former looking to get volunteering experience at a fast-paced, exciting tech event?
 							</p>
-							<p className="text-base font-light leading-relaxed font-mono">
+							<p className="text-sm sm:text-base font-light leading-relaxed font-mono">
 								<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 font-medium">Join our team and help make IglooCode amazing!</span>
 							</p>
 						</div>
 					</div>
 					
-					<div className="text-center">
+					<div className="text-center px-4">
 						<a 
 							href="/getinvolved"
-							className="relative font-mono text-gray-300 text-xl px-8 py-4 bg-black hover:bg-black transition-all duration-300 hover:scale-105 cursor-pointer inline-block"
+							className="relative font-mono text-gray-300 text-lg sm:text-xl px-6 sm:px-8 py-3 sm:py-4 bg-black hover:bg-black transition-all duration-300 hover:scale-105 cursor-pointer inline-block"
 							onClick={(e) => {
 								e.preventDefault();
 								window.location.href = '/getinvolved';
@@ -363,27 +362,26 @@ function Home(): JSX.Element {
 						</a>
 					</div>
 					
-					{/* Countdown Timer */}
-					<div className="text-center space-y-8 mt-20 border-t border-zinc-700/50 pt-20">
-						<h3 className="font-mono text-white text-2xl font-medium">
+					<div className="text-center space-y-6 sm:space-y-8 mt-16 sm:mt-20 border-t border-zinc-700/50 pt-16 sm:pt-20">
+						<h3 className="font-mono text-white text-xl sm:text-2xl font-medium">
 							The Countdown is <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">On</span>!
 						</h3>
-						<div className="flex flex-wrap justify-center gap-8">
-							<div className="flex flex-col justify-center items-center bg-zinc-800/50 backdrop-blur-sm p-8 border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300 hover:scale-105 min-w-[120px]">
-								<p className="font-mono text-white text-4xl font-bold" id="cd-months">0</p>
-								<p className="font-mono text-gray-300 text-lg">months</p>
+						<div className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8">
+							<div className="flex flex-col justify-center items-center bg-zinc-800/50 backdrop-blur-sm p-4 sm:p-6 lg:p-8 border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300 hover:scale-105 min-w-[100px] sm:min-w-[120px]">
+								<p className="font-mono text-white text-2xl sm:text-3xl lg:text-4xl font-bold" id="cd-months">0</p>
+								<p className="font-mono text-gray-300 text-sm sm:text-base lg:text-lg">months</p>
 							</div>
-							<div className="flex flex-col justify-center items-center bg-zinc-800/50 backdrop-blur-sm p-8 border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300 hover:scale-105 min-w-[120px]">
-								<p className="font-mono text-white text-4xl font-bold" id="cd-weeks">0</p>
-								<p className="font-mono text-gray-300 text-lg">weeks</p>
+							<div className="flex flex-col justify-center items-center bg-zinc-800/50 backdrop-blur-sm p-4 sm:p-6 lg:p-8 border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300 hover:scale-105 min-w-[100px] sm:min-w-[120px]">
+								<p className="font-mono text-white text-2xl sm:text-3xl lg:text-4xl font-bold" id="cd-weeks">0</p>
+								<p className="font-mono text-gray-300 text-sm sm:text-base lg:text-lg">weeks</p>
 							</div>
-							<div className="flex flex-col justify-center items-center bg-zinc-800/50 backdrop-blur-sm p-8 border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300 hover:scale-105 min-w-[120px]">
-								<p className="font-mono text-white text-4xl font-bold" id="cd-days">0</p>
-								<p className="font-mono text-gray-300 text-lg">days</p>
+							<div className="flex flex-col justify-center items-center bg-zinc-800/50 backdrop-blur-sm p-4 sm:p-6 lg:p-8 border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300 hover:scale-105 min-w-[100px] sm:min-w-[120px]">
+								<p className="font-mono text-white text-2xl sm:text-3xl lg:text-4xl font-bold" id="cd-days">0</p>
+								<p className="font-mono text-gray-300 text-sm sm:text-base lg:text-lg">days</p>
 							</div>
-							<div className="flex flex-col justify-center items-center bg-zinc-800/50 backdrop-blur-sm p-8 border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300 hover:scale-105 min-w-[120px]">
-								<p className="font-mono text-white text-4xl font-bold" id="cd-hours">0</p>
-								<p className="font-mono text-gray-300 text-lg">hours</p>
+							<div className="flex flex-col justify-center items-center bg-zinc-800/50 backdrop-blur-sm p-4 sm:p-6 lg:p-8 border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300 hover:scale-105 min-w-[100px] sm:min-w-[120px]">
+								<p className="font-mono text-white text-2xl sm:text-3xl lg:text-4xl font-bold" id="cd-hours">0</p>
+								<p className="font-mono text-gray-300 text-sm sm:text-base lg:text-lg">hours</p>
 							</div>
 						</div>
 					</div>
