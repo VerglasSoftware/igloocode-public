@@ -2,11 +2,10 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Typewriter from 'typewriter-effect'
 import Layout from '@components/Layout'
-import { FiBook, FiCode, FiGift } from 'react-icons/fi'
-import { Users } from 'lucide-react'
+import { FiCode, FiLayout, FiPenTool, FiCpu, FiShare2, FiDatabase, FiPlusCircle } from 'react-icons/fi'
+import { Users, Calendar, MapPin, Zap } from 'lucide-react'
 import imgScoreboard from '/images/DSC01768.jpeg'
 import imgLB from '/images/DSC01822.jpeg'
-import imgQUB from '/images/qub_transparent.png'
 import imgVerglas from '/images/wll.png'
 
 function Home(): JSX.Element {
@@ -113,7 +112,7 @@ function Home(): JSX.Element {
 				<div className="mb-8">
 					<Typewriter
 						options={{
-							strings: ["< build your skills together />"],
+							strings: ["< solve challenges, score points, win prizes />"],
 							autoStart: true,
 							loop: true,
 							wrapperClassName: "font-mono text-white text-3xl sm:text-4xl text-center",
@@ -122,200 +121,181 @@ function Home(): JSX.Element {
 						}}
 					/>
 				</div>
+
+				{/* Key Event Details */}
+				<div className="mb-8 space-y-4 text-center">
+					<div className="font-mono text-white text-xl font-medium flex items-center justify-center gap-2">
+						<Calendar className="w-5 h-5 text-purple-400" />
+						<span className="text-purple-400">15th April 2026</span>
+						<span className="mx-2">•</span>
+						<Users className="w-5 h-5 text-cyan-400" />
+						<span className="text-cyan-400">Ages 11-14</span>
+					</div>
+					<div className="font-mono text-white text-lg flex items-center justify-center gap-2">
+						<MapPin className="w-5 h-5 text-white" />
+						QUB Computer Science Building
+					</div>
+				</div>
 				
-				<div className="relative font-mono text-gray-300 text-xl mt-4 px-6 py-3 bg-black hover:bg-black transition-all duration-300 hover:scale-105 cursor-default">
+				<a 
+					href="#how-it-works"
+					className="relative font-mono text-gray-300 text-xl mt-4 px-8 py-4 bg-black hover:bg-black transition-all duration-300 hover:scale-105 cursor-pointer inline-block"
+					onClick={(e) => {
+						e.preventDefault();
+						document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' });
+					}}
+				>
 					<div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-cyan-400 to-purple-400 bg-[length:300%_100%] animate-[gradient_3s_ease-in-out_infinite] p-[2px]">
 						<div className="w-full h-full bg-black"></div>
 					</div>
 					<div className="relative z-10">
-						<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 font-semibold">2026 APPLICATIONS</span> COMING SOON
+						<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 font-semibold">How It Works</span>
 					</div>
-				</div>
+				</a>
+			</section>
+			
+			{/* How It Works Section */}
+			<section className="bg-zinc-900 flex items-center flex-col py-24" id="how-it-works">
+				<div className="w-11/12 sm:w-9/12 max-w-screen-lg text-center space-y-16">
+					<div className="space-y-6">
+						<h2 className="font-mono text-white text-3xl sm:text-4xl font-medium leading-tight">
+							A Coding Competition for <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Everyone</span>
+						</h2>
+						<h3 className="font-mono text-white text-xl sm:text-2xl font-light">
+							Jeopardy-Style Challenges • For All Skill Levels
+						</h3>
+					</div>
 
-				<div className="absolute bottom-0 mb-8 flex flex-col items-center">
-					<p className="font-mono text-white mb-3 text-sm sm:text-base">Hosted at</p>
-					<div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
-						<Link to="https://www.qub.ac.uk" className="transition-all duration-300 hover:scale-110">
-							<img src={imgQUB} className="w-20 sm:w-28 brightness-75 hover:brightness-90" alt="Queen's University Belfast" />
-						</Link>
+					<div className="grid md:grid-cols-2 gap-8 text-left">
+						<div className="bg-gradient-to-br from-purple-500/10 to-cyan-400/10 backdrop-blur-sm p-8 border border-purple-500/20 space-y-4">
+							<h4 className="font-mono text-white text-2xl font-semibold flex items-center gap-3">
+								<Zap className="w-6 h-6 text-cyan-400" />
+								How It Works
+							</h4>
+							<p className="font-mono text-white/80 text-lg font-light leading-relaxed">
+								IglooCode is a Jeopardy-style competition. Teams log onto our platform and face a board of challenges across various categories. Pick a challenge, solve it, and score points!
+							</p>
+						</div>
+						<div className="bg-gradient-to-br from-yellow-500/10 to-orange-500/10 backdrop-blur-sm p-8 border border-yellow-500/20 space-y-4">
+							<h4 className="font-mono text-white text-2xl font-semibold flex items-center gap-3">
+								<Users className="w-6 h-6 text-yellow-400" />
+								No Experience? No Problem.
+							</h4>
+							<p className="font-mono text-white/80 text-lg font-light leading-relaxed">
+								You don't need to be a coding expert. If you've ever tried Scratch, tinkered with HTML, or written a line of Python, you have what it takes to compete and win.
+							</p>
+						</div>
+					</div>
+					
+					<div className="space-y-8">
+						<h4 className="font-mono text-white text-xl font-medium">Challenge Categories Include:</h4>
+						<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+							{[
+								{ name: "Python", color: "from-yellow-400 to-green-500", icon: <Zap className="w-4 h-4" /> },
+								{ name: "C#", color: "from-purple-500 to-purple-700", icon: <FiCode className="w-4 h-4" /> },
+								{ name: "HTML & CSS", color: "from-orange-500 to-red-600", icon: <FiLayout className="w-4 h-4" /> },
+								{ name: "Scratch", color: "from-yellow-400 to-orange-500", icon: <FiPenTool className="w-4 h-4" /> },
+								{ name: "Micro:bit", color: "from-green-400 to-green-600", icon: <FiCpu className="w-4 h-4" /> },
+								{ name: "Logic Gates", color: "from-blue-400 to-blue-600", icon: <FiShare2 className="w-4 h-4" /> },
+								{ name: "Binary Manipulation", color: "from-cyan-400 to-blue-500", icon: <FiDatabase className="w-4 h-4" /> },
+								{ name: "& More!", color: "from-pink-400 to-purple-500", icon: <FiPlusCircle className="w-4 h-4" /> }
+							].map((category, index) => (
+								<div 
+									key={index}
+									className={`bg-gradient-to-r ${category.color} h-14 text-white font-mono text-sm font-medium text-center hover:scale-105 transition-transform duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl`}
+								>
+									{category.icon}
+									<span className="whitespace-nowrap text-xs sm:text-sm">{category.name}</span>
+								</div>
+							))}
+						</div>
+					</div>
+					
+					<div className="relative">
+						<div className="absolute inset-0 bg-gradient-to-r from-purple-400/20 via-cyan-400/20 to-purple-400/20 blur-lg"></div>
+						<div className="relative bg-zinc-900/80 backdrop-blur-sm p-8 border border-zinc-700/50">
+							<p className="font-mono text-white text-lg font-light leading-relaxed mb-4">
+								🏆 More difficult tasks are worth more points. The team with the most points at the end of the day wins!
+							</p>
+							<p className="font-mono text-white text-lg font-light leading-relaxed">
+								💡 Strategy tip: Teams win by specializing! One person tackles HTML/CSS, another focuses on Scratch, someone else handles logic puzzles. You don't need to know it all! <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 font-medium">This is the key to success!</span>
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
 			
-			<div className="flex w-screen items-center bg-zinc-900 flex-col" id="content">
-				<section className="py-24 w-9/12 max-w-screen-lg justify-start">
-					<div id="about" className="space-y-20">
-						<div className="grid lg:grid-cols-3 gap-12 lg:gap-16 items-center">
-							<div className="lg:col-span-2 space-y-8">
-								<h2 className="font-mono text-white text-3xl sm:text-4xl font-medium leading-tight">
-									captivating the next <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">generation</span>.
-								</h2>
-								<div className="space-y-6">
-									<p className="font-mono text-white text-lg font-semibold">
-										Build your skills together. Contribute to <em>your</em> future.
-									</p>
-									<p className="font-mono text-white text-base font-light leading-relaxed">
-										IglooCode is a programming competition for KS3 pupils from Northern Ireland, aimed at those looking to study IT or Digital
-										Technology at GCSE, or who have an interest in computers or programming.
-									</p>
-									<p className="font-mono text-white text-base font-light leading-relaxed">
-										This unique event, organised by a group of sixth-form and first-year university students from Belfast, Ballymena and Newry in partnership with some of NI's biggest tech companies, is an amazing
-										opportunity to test your computing skills in a competitive environment while hearing about careers in IT from some of the biggest names in the industry.
-									</p>
-									<p className="font-mono text-white text-base font-light leading-relaxed">We look forward to seeing you for our fourth year in 2026!</p>
-								</div>
-							</div>
-							<div className="flex justify-center lg:justify-end">
-								<div className="group overflow-hidden shadow-2xl hover:shadow-purple-500/20 transition-all duration-500">
-									<img src={imgLB} className="w-full max-w-sm lg:max-w-none lg:w-full h-64 lg:h-80 xl:h-96 object-cover transition-transform duration-500 group-hover:scale-105" alt="Competition environment" />
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div className="bg-zinc-800/50 backdrop-blur-sm p-12 border border-zinc-700/50 shadow-lg mt-24">
-						<blockquote className="text-white text-lg sm:text-xl font-light leading-relaxed font-mono text-center italic">
-							"A very well organised event and such a credit to the pupils that organised. A great system to add some competitive edge during the competition sessions. Well done to all."
-						</blockquote>
-					</div>
-					
-					<div id="skills" className="mt-24 space-y-16">
-						<div className="text-center mb-20">
-							<h2 className="font-mono text-white text-3xl sm:text-4xl font-medium leading-tight mb-8">
-								real life <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">skills</span> from
-								<br />
-								real life <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">companies</span>.
-							</h2>
-							<p className="font-mono text-white text-base font-light leading-relaxed max-w-3xl mx-auto">
-								What will I get from this? What will I learn? We've designed IglooCode to push your limits in coding and encourage you to research new things.
-							</p>
-						</div>
-						
-						<div className="grid lg:grid-cols-2 gap-12">
-							<div className="group p-12 bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-yellow-400/30 transition-all duration-300">
-								<div className="flex flex-row items-center mb-8">
-									<div className="bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 backdrop-blur-sm border border-yellow-400/30 w-20 h-20 flex items-center justify-center mr-8 flex-none transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-yellow-400/20">
-										<FiCode className="text-yellow-400 w-8 h-8" />
-									</div>
-									<div>
-										<h3 className="font-mono text-white text-xl font-medium mb-2">Coding experience</h3>
-										<p className="font-mono text-gray-300 text-sm font-light leading-relaxed">Test yourself and enhance your programming skills, while learning in the process.</p>
-									</div>
-								</div>
-							</div>
-							
-							<div className="group p-12 bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-red-500/30 transition-all duration-300">
-								<div className="flex flex-row items-center mb-8">
-									<div className="bg-gradient-to-br from-red-500/20 to-red-700/20 backdrop-blur-sm border border-red-500/30 w-20 h-20 flex items-center justify-center mr-8 flex-none transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-red-500/20">
-										<Users className="text-red-500 w-8 h-8" />
-									</div>
-									<div>
-										<h3 className="font-mono text-white text-xl font-medium mb-2">Teamwork skills</h3>
-										<p className="font-mono text-gray-300 text-sm font-light leading-relaxed">
-											Develop your skills working in a team with your friends but also strangers from other backgrounds.
-										</p>
-									</div>
-								</div>
-							</div>
-							
-							<div className="group p-12 bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-lime-500/30 transition-all duration-300">
-								<div className="flex flex-row items-center mb-8">
-									<div className="bg-gradient-to-br from-lime-500/20 to-lime-700/20 backdrop-blur-sm border border-lime-500/30 w-20 h-20 flex items-center justify-center mr-8 flex-none transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-lime-500/20">
-										<FiBook className="text-lime-400 w-8 h-8" />
-									</div>
-									<div>
-										<h3 className="font-mono text-white text-xl font-medium mb-2">Industry talks</h3>
-										<p className="font-mono text-gray-300 text-sm font-light leading-relaxed">Listen to talks about careers and education by some of the biggest tech companies in NI.</p>
-									</div>
-								</div>
-							</div>
-							
-							<div className="group p-12 bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-sky-500/30 transition-all duration-300">
-								<div className="flex flex-row items-center mb-8">
-									<div className="bg-gradient-to-br from-sky-500/20 to-sky-700/20 backdrop-blur-sm border border-sky-500/30 w-20 h-20 flex items-center justify-center mr-8 flex-none transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-sky-500/20">
-										<FiGift className="text-sky-500 w-8 h-8" />
-									</div>
-									<div>
-										<h3 className="font-mono text-white text-xl font-medium mb-2">Amazing prizes</h3>
-										<p className="font-mono text-gray-300 text-sm font-light leading-relaxed">
-											Be the winning team and take home unique prizes to display at your school for generations to come.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-			
+			{/* Highlights & Supporters Section */}
 			<section className="bg-zinc-900 flex items-center flex-col py-24">
-				<div className="w-11/12 sm:w-9/12 max-w-screen-lg flex items-center justify-center flex-col text-center space-y-12">
-					<h2 className="font-mono text-white text-3xl sm:text-4xl font-medium leading-tight">
-						inspiring our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">future</span>.
-					</h2>
-					<div className="relative font-mono text-white text-lg px-10 py-4 bg-black transition-all duration-300 hover:scale-105 cursor-pointer">
-						<div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-cyan-400 to-purple-400 bg-[length:300%_100%] animate-[gradient_3s_ease-in-out_infinite] p-[2px]">
-							<div className="w-full h-full bg-black"></div>
+				<div className="w-11/12 sm:w-9/12 max-w-screen-lg space-y-20">
+					<div className="text-center">
+						<h2 className="font-mono text-white text-3xl sm:text-4xl font-medium leading-tight mb-8">
+							Past Highlights & Our Amazing <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Supporters</span>
+						</h2>
+					</div>
+					
+					{/* Photo Gallery */}
+					<div className="grid lg:grid-cols-2 gap-8 mb-20">
+						<div className="group overflow-hidden shadow-2xl hover:shadow-purple-500/20 transition-all duration-500 h-64 lg:h-80">
+							<img src={imgScoreboard} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Competition Scoreboard" />
 						</div>
-						<Link to="/about" className="relative z-10 inline-flex items-center">
-							READ OUR STORY
-							<span className="ml-2">→</span>
-						</Link>
+						<div className="group overflow-hidden shadow-2xl hover:shadow-cyan-500/20 transition-all duration-500 h-64 lg:h-80">
+							<img src={imgLB} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Competition Environment" />
+						</div>
+					</div>
+					
+					{/* Testimonial */}
+					<div className="relative">
+						<div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-cyan-400/10 blur-xl"></div>
+						<div className="relative bg-zinc-800/70 backdrop-blur-sm p-12 border border-zinc-700/50 shadow-2xl">
+							<div className="text-center mb-6">
+								<span className="text-4xl">💬</span>
+							</div>
+							<blockquote className="text-white text-lg sm:text-xl font-light leading-relaxed font-mono text-center italic">
+								"A very well organised event and such a credit to the pupils that organised. A great system to add some competitive edge during the competition sessions. <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 font-medium not-italic">Well done to all.</span>"
+							</blockquote>
+						</div>
 					</div>
 				</div>
 			</section>
 			
 			<div className="flex w-screen items-center bg-zinc-900 flex-col">
-				<section className="py-20 sm:py-24 w-11/12 sm:w-9/12 max-w-screen-lg">
-					<div className="text-center mb-20">
-						<h2 className="text-white text-3xl sm:text-4xl font-medium mb-6 font-mono leading-tight">
-							supported by the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">biggest</span>.
+				<section className="py-32 w-11/12 sm:w-9/12 max-w-screen-lg">
+					{/* Map and Event Details */}
+					<div className="text-center mb-16">
+						<h2 className="font-mono text-white text-3xl sm:text-4xl font-medium leading-tight">
+							Event <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Location</span>
 						</h2>
-						<p className="text-white text-lg font-light font-mono leading-relaxed max-w-3xl mx-auto">
-							IglooCode has been made possible thanks to the generosity of some of the biggest IT companies in Northern Ireland.
-						</p>
 					</div>
 					
-					<div className="grid lg:grid-cols-2 gap-16 items-stretch mb-24">
-						<div className="flex justify-center items-stretch">
-							<div className="group overflow-hidden shadow-lg transition-all duration-300 w-full">
-								<img src={imgScoreboard} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" alt="Scoreboard" />
-							</div>
+					<div className="grid lg:grid-cols-2 gap-16 items-stretch">
+						<div className="bg-zinc-800/50 backdrop-blur-sm overflow-hidden shadow-2xl border border-zinc-700/50 h-[450px]">
+							<iframe
+								width="100%"
+								height="100%"
+								src="https://api.mapbox.com/styles/v1/igloocode/clbc5xptx000614ozjjfo8pbo.html?title=false&access_token=pk.eyJ1IjoiaWdsb29jb2RlIiwiYSI6ImNsYmM1eDYyNDBjeGIzdnBlbG02dXh5ZnEifQ.7nYfmE8arqyIS2NT8rCnlw&zoomwheel=false#16.52/54.581748/-5.937585"
+								title="QUB Location Map"
+								className="border-0">
+							</iframe>
 						</div>
-						<div className="space-y-12">
-							<div className="group p-10 bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300">
-								<h3 className="text-white text-xl sm:text-2xl font-mono font-medium mb-6">
-									getting yourself <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">involved</span>.
-								</h3>
-								<p className="text-white text-base font-light leading-relaxed font-mono mb-6">
-									IglooCode is an event full of opportunities and experiences for everyone. Are you a teacher that thinks your students would enjoy the competitive environment? Or
-									are you a sixth former who'd like to get some volunteering experience at a fast-paced event?
-								</p>
-								<div className="relative inline-block font-mono text-blue-400 text-sm font-light">
-									<div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-400 bg-[length:300%_100%] p-[1px]">
-										<div className="w-full h-full bg-zinc-900"></div>
+						<div className="flex flex-col h-[450px]">
+							<div className="bg-zinc-800/50 backdrop-blur-sm p-12 border border-zinc-700/50 shadow-xl hover:border-purple-500/30 transition-all duration-300 h-full flex flex-col justify-center">
+								<h4 className="font-mono text-white text-2xl font-medium mb-8 flex items-center gap-3">
+									📅 Event Details
+								</h4>
+								<div className="space-y-6 text-white font-mono">
+									<div className="border-l-4 border-purple-400 pl-6">
+										<p className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-2">IglooCode 2026</p>
+										<p className="text-base font-light">15th April 2026</p>
+										<p className="text-base font-light">10:30am - 3:30pm</p>
 									</div>
-									<Link to="/getinvolved" className="relative z-10 block px-4 py-2 bg-black hover:bg-zinc-900 transition-colors">
-										Ready to take part? →
-									</Link>
-								</div>
-							</div>
-							
-							<div className="group p-10 bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-green-500/30 transition-all duration-300">
-								<h3 className="text-white text-xl sm:text-2xl font-mono font-medium mb-6">
-									we're in it for <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">everyone</span>.
-								</h3>
-								<p className="text-white text-base font-light leading-relaxed font-mono mb-6">
-									100 kids is a lot - a lot of personalities, a lot of interests, and a lot of skills. We're offering hundreds of tasks across over 10 categories to make sure there's
-									something for everyone.
-								</p>
-								<div className="relative inline-block font-mono text-blue-400 text-sm font-light">
-									<div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-400 bg-[length:300%_100%] p-[1px]">
-										<div className="w-full h-full bg-zinc-900"></div>
+									<div className="border-l-4 border-cyan-400 pl-6">
+										<p className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-2">Location</p>
+										<p className="text-base font-light">QUB Computer Science Building</p>
+										<p className="text-base font-light">18 Malone Road</p>
+										<p className="text-base font-light">Belfast</p>
+										<p className="text-base font-light">BT9 5AF</p>
 									</div>
-									<Link to="/competition" className="relative z-10 block px-4 py-2 bg-black hover:bg-zinc-900 transition-colors">
-										How does IglooCode work? →
-									</Link>
 								</div>
 							</div>
 						</div>
@@ -323,81 +303,92 @@ function Home(): JSX.Element {
 				</section>
 			</div>
 			
+			{/* Final Call to Action */}
 			<section 
-				className="bg-cover flex items-center flex-col py-20"
+				className="bg-cover flex items-center flex-col py-24"
 				style={{
 					backgroundImage:
 						"linear-gradient(rgba(0,0,0,0.80), rgba(0.1,0,0,0.85)), linear-gradient(black, black), url('/images/backdrop.png'), url('/images/DSC01874.jpeg')",
 					backgroundBlendMode: "normal, saturation",
 				}}
 			>
-				<div className="w-11/12 sm:w-9/12 max-w-screen-lg flex items-center justify-center flex-col text-center space-y-8">
-					<h2 className="font-mono text-white text-3xl sm:text-4xl font-medium leading-tight">
-						the countdown is <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">on</span>.
-					</h2>
-					<div className="flex flex-wrap justify-center gap-8">
-						<div className="flex flex-col justify-center items-center">
-							<p className="font-mono text-white text-4xl font-bold" id="cd-months">0</p>
-							<p className="font-mono text-gray-300 text-lg">months</p>
+				<div className="w-11/12 sm:w-9/12 max-w-screen-lg space-y-16">
+					<div className="text-center">
+						<h2 className="font-mono text-white text-3xl sm:text-4xl font-medium leading-tight mb-8">
+							Ready to Join the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Challenge</span>?
+						</h2>
+					</div>
+					
+					<div className="grid lg:grid-cols-2 gap-8 items-stretch">
+						<div className="group p-10 bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300 h-full flex flex-col">
+							<h3 className="text-white text-xl sm:text-2xl font-mono font-medium mb-6">
+								For <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Teachers</span>
+							</h3>
+							<p className="text-white text-base font-light leading-relaxed font-mono mb-6 flex-grow">
+								Are you a teacher who thinks your students would enjoy this competitive coding environment? IglooCode is perfect for KS3 pupils interested in computing and technology.
+							</p>
+							<p className="text-base font-light leading-relaxed font-mono">
+								<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 font-medium">Students just need some experience in any ONE category to contribute meaningfully to a team!</span>
+							</p>
 						</div>
-						<div className="flex flex-col justify-center items-center">
-							<p className="font-mono text-white text-4xl font-bold" id="cd-weeks">0</p>
-							<p className="font-mono text-gray-300 text-lg">weeks</p>
+						
+						<div className="group p-10 bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300 h-full flex flex-col">
+							<h3 className="text-white text-xl sm:text-2xl font-mono font-medium mb-6">
+								For <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Volunteers</span>
+							</h3>
+							<p className="text-white text-base font-light leading-relaxed font-mono mb-6 flex-grow">
+								Are you a sixth former looking to get volunteering experience at a fast-paced, exciting tech event?
+							</p>
+							<p className="text-base font-light leading-relaxed font-mono">
+								<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 font-medium">Join our team and help make IglooCode amazing!</span>
+							</p>
 						</div>
-						<div className="flex flex-col justify-center items-center">
-							<p className="font-mono text-white text-4xl font-bold" id="cd-days">0</p>
-							<p className="font-mono text-gray-300 text-lg">days</p>
-						</div>
-						<div className="flex flex-col justify-center items-center">
-							<p className="font-mono text-white text-4xl font-bold" id="cd-hours">0</p>
-							<p className="font-mono text-gray-300 text-lg">hours</p>
+					</div>
+					
+					<div className="text-center">
+						<a 
+							href="/getinvolved"
+							className="relative font-mono text-gray-300 text-xl px-8 py-4 bg-black hover:bg-black transition-all duration-300 hover:scale-105 cursor-pointer inline-block"
+							onClick={(e) => {
+								e.preventDefault();
+								window.location.href = '/getinvolved';
+							}}
+						>
+							<div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-cyan-400 to-purple-400 bg-[length:300%_100%] animate-[gradient_3s_ease-in-out_infinite] p-[2px]">
+								<div className="w-full h-full bg-black"></div>
+							</div>
+							<div className="relative z-10">
+								<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 font-semibold">Express Your Interest →</span>
+							</div>
+						</a>
+					</div>
+					
+					{/* Countdown Timer */}
+					<div className="text-center space-y-8 mt-20 border-t border-zinc-700/50 pt-20">
+						<h3 className="font-mono text-white text-2xl font-medium">
+							The Countdown is <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">On</span>!
+						</h3>
+						<div className="flex flex-wrap justify-center gap-8">
+							<div className="flex flex-col justify-center items-center bg-zinc-800/50 backdrop-blur-sm p-8 border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300 hover:scale-105 min-w-[120px]">
+								<p className="font-mono text-white text-4xl font-bold" id="cd-months">0</p>
+								<p className="font-mono text-gray-300 text-lg">months</p>
+							</div>
+							<div className="flex flex-col justify-center items-center bg-zinc-800/50 backdrop-blur-sm p-8 border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300 hover:scale-105 min-w-[120px]">
+								<p className="font-mono text-white text-4xl font-bold" id="cd-weeks">0</p>
+								<p className="font-mono text-gray-300 text-lg">weeks</p>
+							</div>
+							<div className="flex flex-col justify-center items-center bg-zinc-800/50 backdrop-blur-sm p-8 border border-zinc-700/50 hover:border-purple-500/30 transition-all duration-300 hover:scale-105 min-w-[120px]">
+								<p className="font-mono text-white text-4xl font-bold" id="cd-days">0</p>
+								<p className="font-mono text-gray-300 text-lg">days</p>
+							</div>
+							<div className="flex flex-col justify-center items-center bg-zinc-800/50 backdrop-blur-sm p-8 border border-zinc-700/50 hover:border-cyan-500/30 transition-all duration-300 hover:scale-105 min-w-[120px]">
+								<p className="font-mono text-white text-4xl font-bold" id="cd-hours">0</p>
+								<p className="font-mono text-gray-300 text-lg">hours</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			
-			<div className="flex w-screen items-center bg-zinc-900 flex-col">
-				<section className="py-16 sm:py-20 w-11/12 sm:w-9/12 max-w-screen-lg">
-					<div className="text-center mb-16">
-						<h2 className="text-white text-3xl sm:text-4xl font-medium mb-4 font-mono leading-tight">
-							we're ready to invest in our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">future</span>.
-						</h2>
-						<h3 className="text-white text-2xl sm:text-3xl font-medium font-mono leading-tight">
-							are you ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">win</span>?
-						</h3>
-					</div>
-					
-					<div className="grid lg:grid-cols-2 gap-16 items-center">
-						<div className="bg-zinc-800/50 backdrop-blur-sm overflow-hidden shadow-lg">
-							<iframe
-								width="100%"
-								height="400"
-								src="https://api.mapbox.com/styles/v1/igloocode/clbc5xptx000614ozjjfo8pbo.html?title=false&access_token=pk.eyJ1IjoiaWdsb29jb2RlIiwiYSI6ImNsYmM1eDYyNDBjeGIzdnBlbG02dXh5ZnEifQ.7nYfmE8arqyIS2NT8rCnlw&zoomwheel=false#16.52/54.581748/-5.937585"
-								title="QUB Location Map"
-								className="border-0">
-							</iframe>
-						</div>
-						<div className="space-y-8">
-							<div className="bg-zinc-800/50 backdrop-blur-sm p-10 border border-zinc-700/50">
-								<h4 className="font-mono text-white text-xl font-medium mb-6">Event Details</h4>
-								<div className="space-y-4 text-white font-mono">
-									<p className="text-base font-light">
-										<span className="font-medium text-purple-400">IglooCode 2026</span><br />
-										15th April 2026<br />
-										10:30am - 3:30pm
-									</p>
-									<p className="text-base font-light">
-										<span className="font-medium text-cyan-400">QUB Computer Science Building</span><br />
-										18 Malone Road<br />
-										Belfast<br />
-										BT9 5AF
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
 		</Layout>
 	)
 }
