@@ -99,7 +99,7 @@ const GetInvolved = () => {
                       <Clock className="w-5 h-5 text-purple-400 mt-1 flex-shrink-0" />
                       <div>
                         <p className="font-mono text-white font-medium">Full Day Experience</p>
-                        <p className="font-mono text-white/70 text-sm">Transport and refreshments provided</p>
+                        <p className="font-mono text-white/70 text-sm">Refreshments provided</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
