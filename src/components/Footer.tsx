@@ -1,14 +1,13 @@
 import { Link } from 'react-router-dom'
 
 interface FooterProps {
-	session?: any; // You can replace with proper session type later
+	session?: any;
 }
 
 export default function Footer({ session }: FooterProps): JSX.Element {
 	return (
 		<>
 			<footer className="p-8 bg-neutral-900 border-t border-neutral-700 shadow-2xl flex items-center justify-center flex-col relative overflow-hidden">
-				{/* Background gradient overlay */}
 				<div className="absolute inset-0 bg-gradient-to-t from-purple-900/5 to-transparent"></div>
 				
 				<div className="relative z-10 flex flex-row mb-8 group">
@@ -27,7 +26,7 @@ export default function Footer({ session }: FooterProps): JSX.Element {
 					<Link to="/about" className="font-mono text-sm text-neutral-200 hover:text-white hover:underline transition-all duration-300 hover:translate-x-1">
 						Our story
 					</Link>
-					<Link to="https://verglas.io/people" className="font-mono text-sm text-neutral-200 hover:text-white hover:underline transition-all duration-300 hover:translate-x-1">
+					<Link to="https://verglas.io/#/people" className="font-mono text-sm text-neutral-200 hover:text-white hover:underline transition-all duration-300 hover:translate-x-1">
 						Meet the team
 					</Link>
 					<div></div>

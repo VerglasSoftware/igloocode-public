@@ -147,7 +147,7 @@ export default function OurStory(): JSX.Element {
           </h2>
           <div className="text-center px-4">
             <a 
-              href="https://verglas.io/people"
+              href="https://verglas.io/#/people"
               target="_blank"
               rel="noopener noreferrer"
               className="relative font-mono text-gray-300 text-lg sm:text-xl px-6 sm:px-8 py-3 sm:py-4 bg-black hover:bg-black transition-all duration-300 hover:scale-105 cursor-pointer inline-block"

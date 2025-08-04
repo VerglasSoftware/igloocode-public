@@ -345,13 +345,9 @@ function Home(): JSX.Element {
 					</div>
 					
 					<div className="text-center px-4">
-						<a 
-							href="/getinvolved"
+						<Link
+							to="/getinvolved" 
 							className="relative font-mono text-gray-300 text-lg sm:text-xl px-6 sm:px-8 py-3 sm:py-4 bg-black hover:bg-black transition-all duration-300 hover:scale-105 cursor-pointer inline-block"
-							onClick={(e) => {
-								e.preventDefault();
-								window.location.href = '/getinvolved';
-							}}
 						>
 							<div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-cyan-400 to-purple-400 bg-[length:300%_100%] animate-[gradient_3s_ease-in-out_infinite] p-[2px]">
 								<div className="w-full h-full bg-black"></div>
@@ -359,7 +355,7 @@ function Home(): JSX.Element {
 							<div className="relative z-10">
 								<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 font-semibold">Express Your Interest →</span>
 							</div>
-						</a>
+						</Link>
 					</div>
 					
 					<div className="text-center space-y-6 sm:space-y-8 mt-16 sm:mt-20 border-t border-zinc-700/50 pt-16 sm:pt-20">
