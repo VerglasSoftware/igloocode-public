@@ -85,7 +85,7 @@ const GetInvolved = () => {
                 </div>
                 <div className="space-y-6 flex-grow">
                   <p className="font-mono text-white/80 text-lg font-light leading-relaxed">
-                    Give your KS3 students an unforgettable experience where they can showcase their coding skills, collaborate with peers from across Northern Ireland, and gain real-world industry insights.
+                    Give your KS3 students an unforgettable experience where they can showcase their coding skills, collaborate with peers, and gain real-world industry insights.
                   </p>
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
@@ -197,7 +197,7 @@ const GetInvolved = () => {
                   Why Get <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Involved</span>?
                 </h3>
                 <p className="font-mono text-white/80 text-lg font-light leading-relaxed mb-8 max-w-3xl mx-auto">
-                  IglooCode isn't just another competition—it's a celebration of creativity, problem-solving, and the incredible potential of young minds. Whether you're bringing students or volunteering, you'll be part of something that makes a real difference.
+                  IglooCode isn't just another competition-it's a celebration of creativity, problem-solving, and the incredible potential of young minds. Whether you're bringing students or volunteering, you'll be part of something that makes a real difference.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 text-left">
                   <div className="space-y-2">
