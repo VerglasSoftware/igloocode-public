@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet-async';
 import Layout from "@components/Layout";
 import Typewriter from 'typewriter-effect';
@@ -147,8 +146,10 @@ export default function OurStory(): JSX.Element {
             The People Behind <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">It All</span>
           </h2>
           <div className="text-center px-4">
-            <Link 
-              to="/team"
+            <a 
+              href="https://verglas.io/#/people"
+              target="_blank"
+              rel="noopener noreferrer"
               className="relative font-mono text-gray-300 text-lg sm:text-xl px-6 sm:px-8 py-3 sm:py-4 bg-black hover:bg-black transition-all duration-300 hover:scale-105 cursor-pointer inline-block"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-cyan-400 to-purple-400 bg-[length:300%_100%] animate-[gradient_3s_ease-in-out_infinite] p-[2px]">
@@ -157,7 +158,7 @@ export default function OurStory(): JSX.Element {
               <div className="relative z-10">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 font-semibold">Meet The Team →</span>
               </div>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

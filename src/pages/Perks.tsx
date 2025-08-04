@@ -287,8 +287,10 @@ const Perks = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 font-semibold">Get Involved →</span>
               </div>
             </Link>
-            <Link 
-              to="/team"
+            <a 
+              href="https://verglas.io/#/people"
+              target="_blank"
+              rel="noopener noreferrer"
               className="relative font-mono text-gray-300 text-lg sm:text-xl px-6 sm:px-8 py-3 sm:py-4 bg-black hover:bg-black transition-all duration-300 hover:scale-105 cursor-pointer inline-block"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-purple-400 to-cyan-400 bg-[length:300%_100%] animate-[gradient_3s_ease-in-out_infinite] p-[2px]">
@@ -297,7 +299,7 @@ const Perks = () => {
               <div className="relative z-10">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 font-semibold">Meet the Team →</span>
               </div>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
