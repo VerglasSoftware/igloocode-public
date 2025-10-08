@@ -19,14 +19,14 @@ function Index() {
 				<meta name="theme-color" content="#171717" />
 			</Head>
 
-			<section className="w-screen min-h-screen bg-hero bg-cover flex flex-col justify-center items-center relative px-4" style={{ backgroundBlendMode: "normal, saturation" }}>
+			<section className="w-screen min-h-screen bg-hero bg-cover flex flex-col justify-center items-center relative px-4 pt-24" style={{ backgroundBlendMode: "normal, saturation" }}>
 				<div className="text-center max-w-4xl">
 					<h1 className={`${red_hat_mono.className} text-transparent text-6xl sm:text-8xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-2 leading-none pb-2`}>
 						IglooCode
 					</h1>
 					<div className="flex items-center justify-center mb-6">
-						<span className={`${red_hat_mono.className} text-gray-400 text-sm mr-2`}>by</span>
-						<a href="https://verglas.io/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity duration-200">
+						<span className={`${red_hat_mono.className} text-gray-400 text-sm mr-2 leading-tight`}>by</span>
+						<a href="https://verglas.io/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity duration-200 flex items-center">
 							<Image src="/images/wll.png" alt="Verglas" width={50} height={13} className="opacity-75 hover:opacity-100" />
 						</a>
 					</div>
@@ -70,7 +70,7 @@ function Index() {
 					</div>
 				</div>
 
-				<div className="absolute bottom-0 mb-8 flex flex-col items-center">
+				<div className="mt-12 mb-8 flex flex-col items-center">
 					<p className={`${red_hat_mono.className} text-gray-400 mb-4 text-sm`}>Proudly supported by</p>
 					<div className="flex flex-row justify-center items-center gap-8 opacity-75 hover:opacity-100 transition-opacity">
 						<Image src={imgLIT} alt="Liberty IT" className="h-8 w-auto" />
@@ -125,17 +125,17 @@ function Index() {
 				</div>
 			</section>
 
-			<section className="bg-zinc-800 py-16">
+			<section className="bg-zinc-800 py-12 md:py-16 pb-20 md:pb-16">
 				<div className="max-w-4xl mx-auto px-4 text-center">
-					<div className="flex items-center justify-center mb-6">
-						<a href="https://verglas.io/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity duration-200">
+					<div className="flex items-center justify-center mb-4 md:mb-6">
+						<a href="https://verglas.io/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity duration-200 flex items-center">
 							<Image src="/images/wll.png" alt="Verglas" width={160} height={43} className="opacity-90 hover:opacity-100" />
 						</a>
 					</div>
-					<h2 className={`${red_hat_mono.className} text-white text-2xl sm:text-3xl font-bold mb-4`}>
+					<h2 className={`${red_hat_mono.className} text-white text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4`}>
 						Built by <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Young Innovators</span>
 					</h2>
-					<p className={`${red_hat_mono.className} text-gray-400 text-lg mb-6 max-w-2xl mx-auto leading-relaxed`}>
+					<p className={`${red_hat_mono.className} text-gray-400 text-base md:text-lg mb-4 md:mb-6 max-w-2xl mx-auto leading-relaxed`}>
 						IglooCode is created by Verglas, an NI tech startup developing software solutions to give students a competitive classroom edge. We believe young people should lead the charge in tech education.
 					</p>
 					<div className="flex items-center justify-center text-gray-500 text-sm">
@@ -144,7 +144,7 @@ function Index() {
 				</div>
 			</section>
 
-			<section className="bg-gradient-to-br from-purple-900/80 via-zinc-900 to-cyan-900/80 py-16">
+			<section className="bg-gradient-to-br from-purple-900/80 via-zinc-900 to-cyan-900/80 py-20 md:py-16 mt-8 md:mt-0">
 				<div className="max-w-4xl mx-auto text-center px-4">
 					<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-6`}>
 						Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Code</span>?
