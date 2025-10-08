@@ -73,7 +73,7 @@ function About() {
 							</div>
 						</div>
 						<div className="flex justify-center">
-							<Image src={imgTeam} alt="IglooCode team and participants" className="rounded-lg shadow-lg w-full max-w-md object-cover" />
+							<Image src="/images/cat-spinning.gif" width={400} height={400} alt="IglooCode team and participants" className="rounded-lg shadow-lg w-full max-w-md object-cover" unoptimized />
 						</div>
 					</div>
 
