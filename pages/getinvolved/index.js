@@ -2,92 +2,148 @@ import { Red_Hat_Mono } from "next/font/google";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 import React from "react";
 import Layout, { siteTitle } from "../../components/public/layout";
-import imgCosmo from "../../public/images/IMG_0679.jpeg";
-import imgHands from "../../public/images/60A456C6-0BA2-43F1-B30E-97211DF2C6D9.jpeg";
+import imgStudents from "../../public/images/DSC01856.jpeg";
+import { FiUsers, FiBookOpen, FiHeart, FiMail } from "react-icons/fi";
 const red_hat_mono = Red_Hat_Mono({ subsets: ["latin"] });
 
-function Index() {
+function GetInvolved() {
 	return (
 		<Layout>
 			<Head>
-				<title>Get involved - {siteTitle}</title>
+				<title>Get Involved - {siteTitle}</title>
+				<meta name="description" content="Join IglooCode as a student team, teacher, or volunteer. Multiple ways to get involved in Northern Ireland's premier coding competition." />
 				<meta name="theme-color" content="#171717" />
 			</Head>
-			<Script id="update-header">
-				{`window.onscroll = function() {
-					var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-					var navbar = document.getElementById("navbar");
-					if (scrollTop >= document.getElementById("content").offsetTop) {
-						navbar.classList.add("bg-zinc-900");
-						navbar.classList.add("bg-sat");
-					} else {
-						navbar.classList.remove("bg-zinc-900");
-						navbar.classList.remove("bg-sat");
-					}
-				}`}
-			</Script>
-			<section
-				className="w-screen min-h-[60vh] bg-hero bg-cover flex flex-col justify-end items-left relative pl-6 pr-6 sm:pl-24 pb-6"
-				style={{ backgroundBlendMode: "normal, saturation" }}
-				id="hero">
-				<h1 className={`${red_hat_mono.className} w-fit text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-3`}>Get involved</h1>
-				<p className={`${red_hat_mono.className} text-white text-3xl`}>{"< a worthwhile experience for all />"}</p>
+
+			{/* Hero Section */}
+			<section className="w-screen min-h-[60vh] bg-hero bg-cover flex flex-col justify-end items-left relative pl-6 pr-6 sm:pl-24 pb-6" style={{ backgroundBlendMode: "normal, saturation" }}>
+				<h1 className={`${red_hat_mono.className} w-fit text-transparent text-5xl sm:text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-3`}>
+					Get Involved
+				</h1>
+				<p className={`${red_hat_mono.className} text-white text-xl sm:text-3xl`}>
+					{"< join northern ireland's coding community />"}
+				</p>
 			</section>
-			<div className="flex w-screen items-center bg-zinc-900 flex-col" id="content">
-				<section className="py-20 w-9/12 max-w-screen-lg justify-start">
-					<div className="relative top-[-3rem]">
+
+			{/* Content Section */}
+			<section className="bg-zinc-900 py-20">
+				<div className="max-w-6xl mx-auto px-4">
+					{/* Navigation Breadcrumb */}
+					<div className="mb-12">
 						<span className={`${red_hat_mono.className} text-gray-400`}>
-							<a href="/" className="hover:underline text-blue-500">
-								Home
-							</a>{" "}
-							· Get involved
+							<Link href="/" className="hover:underline text-blue-500">Home</Link> · Get Involved
 						</span>
 					</div>
-					<div id="about">
-						<div className="grid grid-cols-2 gap-12">
-							<div className="flex flex-col justify-center">
-								<h2 className={`${red_hat_mono.className} text-white text-4xl font-medium`}>
-									for <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">teachers</span>.
-								</h2>
-								<Image src={imgHands} className="w-full h-[24rem] shadow-md object-cover my-6" />
-								<p className={`${red_hat_mono.className} text-white text-center text-md font-thin pt-3`}>
-									Give your students a day out to practice their skills in the real world, while making new friends and getting a first-hand insight to the industry.
-								</p>
-								<Link href="/f/school-interest" className={`${red_hat_mono.className} text-white hover:underline text-xl mt-4 border-[1px] border-gray-400 p-2 w-full text-center`}>
-									ENTER YOUR SCHOOL
-								</Link>
-							</div>
-							<div className="flex flex-col justify-center">
-								<h2 className={`${red_hat_mono.className} text-white text-4xl font-medium`}>
-									for <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">sixth formers</span>.
-								</h2>
-								<Image src={imgCosmo} className="w-full h-[24rem] shadow-md object-cover my-6" />
-								<p className={`${red_hat_mono.className} text-white text-center text-md font-thin pt-3`}>
-									We're looking for keen sixth formers with a passion for IT and programming to give us a hand on the big day. Think you have what it takes?
-								</p>
-								<Link href="/getinvolved/sixthform" className={`${red_hat_mono.className} text-white hover:underline text-xl mt-4 border-[1px] border-gray-400 p-2 w-full text-center`}>
-									JOIN THE TEAM
-								</Link>
-							</div>
+
+					{/* Main Content */}
+					<div className="grid lg:grid-cols-2 gap-12 mb-16">
+						<div>
+							<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-6`}>
+								Multiple Ways to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Participate</span>
+							</h2>
+							<p className={`${red_hat_mono.className} text-gray-300 text-lg mb-8 leading-relaxed`}>
+								Whether you're a student ready to code, a teacher wanting to inspire your pupils, or someone looking to volunteer, 
+								there's a place for you in the IglooCode community.
+							</p>
+							<p className={`${red_hat_mono.className} text-gray-400 text-base`}>
+								IglooCode 2025 applications will open early in the new year. Sign up below to be notified when registration begins.
+							</p>
+						</div>
+						<div className="flex justify-center">
+							<Image src={imgStudents} alt="Students collaborating at IglooCode" className="rounded-lg shadow-lg w-full max-w-md object-cover" />
 						</div>
 					</div>
-				</section>
-			</div>
-			<section className="bg-hero bg-cover bg-sat flex items-center flex-col">
-				<div className="py-16 w-9/12 max-w-screen-lg flex items-center justify-center flex-col">
-					<p className={`${red_hat_mono.className} text-white text-4xl font-medium`}>
-						designed for your <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">enjoyment</span>.
-					</p>
-					<Link href="/perks" className={`${red_hat_mono.className} text-white hover:underline text-xl mt-4 border-[1px] border-gray-400 p-2 w-1/3 text-center`}>
-						PERKS FOR YOU
-					</Link>
+
+					{/* Ways to Get Involved */}
+					<div className="grid md:grid-cols-3 gap-8 mb-16">
+						{/* For Students */}
+						<div className="bg-zinc-800 rounded-lg p-8 hover:bg-zinc-700 transition-colors border border-zinc-700">
+							<div className="bg-purple-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+								<FiUsers className="text-purple-400 w-8 h-8" />
+							</div>
+							<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>For Students</h3>
+							<p className={`${red_hat_mono.className} text-gray-400 mb-6`}>
+								KS3 pupils (ages 11-14) from Northern Ireland schools can compete in teams of 2-4 students.
+							</p>
+							<ul className={`${red_hat_mono.className} text-gray-300 text-sm space-y-2 mb-6`}>
+								<li>• Form teams with friends or classmates</li>
+								<li>• No prior coding experience required</li>
+								<li>• Challenges for all skill levels</li>
+								<li>• Win prizes for your school</li>
+							</ul>
+							<p className={`${red_hat_mono.className} text-purple-400 text-sm`}>
+								Registration opens early 2025
+							</p>
+						</div>
+
+						{/* For Teachers */}
+						<div className="bg-zinc-800 rounded-lg p-8 hover:bg-zinc-700 transition-colors border border-zinc-700">
+							<div className="bg-cyan-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+								<FiBookOpen className="text-cyan-400 w-8 h-8" />
+							</div>
+							<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>For Teachers</h3>
+							<p className={`${red_hat_mono.className} text-gray-400 mb-6`}>
+								Bring your students to experience competitive programming and industry insights.
+							</p>
+							<ul className={`${red_hat_mono.className} text-gray-300 text-sm space-y-2 mb-6`}>
+								<li>• Free event for schools</li>
+								<li>• Professional development opportunity</li>
+								<li>• Network with other educators</li>
+								<li>• Inspire students' tech careers</li>
+							</ul>
+							<p className={`${red_hat_mono.className} text-cyan-400 text-sm`}>
+								Contact us for school registration
+							</p>
+						</div>
+
+						{/* For Volunteers */}
+						<div className="bg-zinc-800 rounded-lg p-8 hover:bg-zinc-700 transition-colors border border-zinc-700">
+							<div className="bg-green-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+								<FiHeart className="text-green-400 w-8 h-8" />
+							</div>
+							<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>For Volunteers</h3>
+							<p className={`${red_hat_mono.className} text-gray-400 mb-6`}>
+								Sixth form and university students can help run the event and mentor participants.
+							</p>
+							<ul className={`${red_hat_mono.className} text-gray-300 text-sm space-y-2 mb-6`}>
+								<li>• Gain valuable event experience</li>
+								<li>• Mentor younger students</li>
+								<li>• Build your CV</li>
+								<li>• Make industry connections</li>
+							</ul>
+							<p className={`${red_hat_mono.className} text-green-400 text-sm`}>
+								Volunteer applications open soon
+							</p>
+						</div>
+					</div>
+
+					{/* Contact Section */}
+					<div className="bg-gradient-to-r from-purple-500/10 to-cyan-400/10 rounded-lg p-8 text-center">
+						<FiMail className="text-gray-400 w-12 h-12 mx-auto mb-6" />
+						<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>
+							Ready to Get Started?
+						</h3>
+						<p className={`${red_hat_mono.className} text-gray-300 mb-6 max-w-2xl mx-auto`}>
+							Have questions or want to register your interest? Get in touch with our team - we'd love to hear from you!
+						</p>
+						<div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+							<a 
+								href="mailto:hello@igloocode.com" 
+								className={`${red_hat_mono.className} bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200`}
+							>
+								Email Us
+							</a>
+							<span className={`${red_hat_mono.className} text-gray-400 text-sm`}>
+								or follow us on social media for updates
+							</span>
+						</div>
+					</div>
 				</div>
 			</section>
 		</Layout>
 	);
 }
 
-export default Index;
+export default GetInvolved;

@@ -43,3 +43,61 @@ footer {
 .bg-sat {
 	background-blend-mode: normal, saturation;
 }
+
+/* Accessibility improvements */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.focus\:not-sr-only:focus {
+	position: static;
+	width: auto;
+	height: auto;
+	padding: 0.5rem 1rem;
+	margin: 0;
+	overflow: visible;
+	clip: auto;
+	white-space: normal;
+}
+
+/* High contrast focus indicators */
+*:focus {
+	outline: 2px solid #a855f7;
+	outline-offset: 2px;
+}
+
+/* Better button and link focus states */
+button:focus,
+a:focus {
+	outline: 2px solid #a855f7;
+	outline-offset: 2px;
+}
+
+/* Ensure minimum touch target size on mobile */
+@media (max-width: 768px) {
+	button,
+	a {
+		min-height: 44px;
+		min-width: 44px;
+	}
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
