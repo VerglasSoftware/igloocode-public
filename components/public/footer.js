@@ -1,4 +1,4 @@
-import { Red_Hat_Mono } from "@next/font/google";
+import { Red_Hat_Mono } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ export default function Footer({ session }) {
 				<div className="flex flex-row mb-6">
 					<Image src="/images/icl.png?color=purple&shade=600" height={28} width={28} alt="IglooCode" className="brightness-100" />
 					<Link href="/" className={`${red_hat_mono.className} ml-4 text-transparent text-lg font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400`}>
-						IglooCode
+						okay garmin
 					</Link>
 				</div>
 				<div className="grid sm:grid-cols-4 gap-2 sm:gap-8 w-1/2">

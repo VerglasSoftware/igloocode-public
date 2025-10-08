@@ -1,4 +1,4 @@
-import { Red_Hat_Mono } from "@next/font/google";
+import { Red_Hat_Mono } from "next/font/google";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";

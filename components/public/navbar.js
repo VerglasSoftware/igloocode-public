@@ -1,4 +1,4 @@
-import { Red_Hat_Mono } from "@next/font/google";
+import { Red_Hat_Mono } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
