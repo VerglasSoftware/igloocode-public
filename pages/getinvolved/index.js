@@ -17,7 +17,6 @@ function GetInvolved() {
 				<meta name="theme-color" content="#171717" />
 			</Head>
 
-			{/* Hero Section */}
 			<section className="w-screen min-h-[30vh] bg-hero bg-cover flex flex-col justify-end items-left relative pl-6 pr-6 sm:pl-24 pb-6" style={{ backgroundBlendMode: "normal, saturation" }}>
 				<h1 className={`${red_hat_mono.className} w-fit text-transparent text-5xl sm:text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-3`}>
 					Get Involved
@@ -27,17 +26,14 @@ function GetInvolved() {
 				</p>
 			</section>
 
-			{/* Content Section */}
 			<section className="bg-zinc-900 py-20">
 				<div className="max-w-6xl mx-auto px-4">
-					{/* Navigation Breadcrumb */}
 					<div className="mb-12">
 						<span className={`${red_hat_mono.className} text-gray-400`}>
 							<Link href="/" className="hover:underline text-blue-500">Home</Link> · Get Involved
 						</span>
 					</div>
 
-					{/* Main Content */}
 					<div className="grid lg:grid-cols-2 gap-12 mb-16">
 						<div>
 							<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-6`}>
@@ -56,9 +52,7 @@ function GetInvolved() {
 						</div>
 					</div>
 
-					{/* Ways to Get Involved */}
 					<div className="grid md:grid-cols-3 gap-8 mb-16">
-						{/* For Students */}
 						<div className="bg-zinc-800 rounded-lg p-8 hover:bg-zinc-700 transition-colors border border-zinc-700">
 							<div className="bg-purple-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
 								<FiUsers className="text-purple-400 w-8 h-8" />
@@ -81,7 +75,6 @@ function GetInvolved() {
 							</p>
 						</div>
 
-						{/* For Teachers */}
 						<div className="bg-zinc-800 rounded-lg p-8 hover:bg-zinc-700 transition-colors border border-zinc-700">
 							<div className="bg-cyan-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
 								<FiBookOpen className="text-cyan-400 w-8 h-8" />
@@ -101,7 +94,6 @@ function GetInvolved() {
 							</Link>
 						</div>
 
-						{/* For Volunteers */}
 						<div className="bg-zinc-800 rounded-lg p-8 hover:bg-zinc-700 transition-colors border border-zinc-700">
 							<div className="bg-green-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
 								<FiHeart className="text-green-400 w-8 h-8" />
@@ -122,7 +114,6 @@ function GetInvolved() {
 						</div>
 					</div>
 
-					{/* Contact Section */}
 					<div className="bg-gradient-to-r from-purple-500/10 to-cyan-400/10 rounded-lg p-8 text-center">
 						<FiMail className="text-gray-400 w-12 h-12 mx-auto mb-6" />
 						<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>

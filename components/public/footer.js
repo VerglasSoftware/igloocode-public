@@ -8,9 +8,7 @@ export default function Footer({ session }) {
 	return (
 		<footer className="bg-zinc-800 border-t border-gray-700" role="contentinfo">
 			<div className="max-w-6xl mx-auto px-4 py-8 md:py-12">
-				{/* Main Footer Content */}
 				<div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8">
-					{/* Brand Section */}
 					<div className="col-span-1 md:col-span-2">
 						<div className="flex items-center mb-3 md:mb-4">
 							<Image src="/images/icl.png" height={28} width={28} alt="IglooCode logo" className="brightness-100 mr-2 md:mr-3" />
@@ -23,11 +21,12 @@ export default function Footer({ session }) {
 						</p>
 						<div className="flex items-center text-gray-500 text-xs">
 							<span className={`${red_hat_mono.className} mr-2`}>by</span>
-							<Image src="/images/wll.png" alt="Verglas" width={60} height={16} className="opacity-75" />
+							<a href="https://verglas.io/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity duration-200">
+								<Image src="/images/wll.png" alt="Verglas" width={60} height={16} className="opacity-75 hover:opacity-100" />
+							</a>
 						</div>
 					</div>
 
-					{/* Navigation Links */}
 					<div className="col-span-1">
 						<h3 className={`${red_hat_mono.className} text-white font-semibold mb-3 md:mb-4 text-xs md:text-sm uppercase tracking-wider`}>
 							Quick Links
@@ -51,7 +50,6 @@ export default function Footer({ session }) {
 						</ul>
 					</div>
 
-					{/* Partners */}
 					<div className="col-span-1">
 						<h3 className={`${red_hat_mono.className} text-white font-semibold mb-3 md:mb-4 text-xs md:text-sm uppercase tracking-wider`}>
 							Partners
@@ -70,7 +68,6 @@ export default function Footer({ session }) {
 					</div>
 				</div>
 
-				{/* Bottom Section */}
 				<div className="border-t border-gray-700 pt-4 md:pt-6">
 					<div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
 						<div className="text-center md:text-left">

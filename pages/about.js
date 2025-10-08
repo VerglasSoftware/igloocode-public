@@ -18,7 +18,6 @@ function About() {
 				<meta name="theme-color" content="#171717" />
 			</Head>
 
-			{/* Hero Section */}
 			<section className="w-screen min-h-[30vh] bg-hero bg-cover flex flex-col justify-end items-left relative pl-6 pr-6 sm:pl-24 pb-6" style={{ backgroundBlendMode: "normal, saturation" }}>
 				<h1 className={`${red_hat_mono.className} w-fit text-transparent text-5xl sm:text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-3`}>
 					About IglooCode
@@ -28,17 +27,14 @@ function About() {
 				</p>
 			</section>
 
-			{/* Main Content */}
 			<section className="bg-zinc-900 py-20">
 				<div className="max-w-6xl mx-auto px-4">
-					{/* Navigation Breadcrumb */}
 					<div className="mb-12">
 						<span className={`${red_hat_mono.className} text-gray-400`}>
 							<Link href="/" className="hover:underline text-blue-500">Home</Link> · About
 						</span>
 					</div>
 
-					{/* Mission Section */}
 					<div className="grid lg:grid-cols-2 gap-12 mb-16">
 						<div>
 							<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-6`}>
@@ -77,7 +73,6 @@ function About() {
 						</div>
 					</div>
 
-					{/* Story Section */}
 					<div className="bg-zinc-800 rounded-lg p-8 mb-16">
 						<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-6 text-center`}>
 							How It All <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Started</span>
@@ -128,7 +123,6 @@ function About() {
 						</div>
 					</div>
 
-					{/* CTA Section */}
 					<div className="bg-gradient-to-r from-purple-500/10 to-cyan-400/10 rounded-lg p-8 text-center">
 						<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>
 							Ready to Join Our Community?

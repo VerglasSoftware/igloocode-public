@@ -20,7 +20,6 @@ export default function SchoolRegistration() {
 
 			<main className="min-h-screen bg-gradient-to-br from-zinc-900 via-gray-900 to-black pt-20">
 				<div className="max-w-6xl mx-auto px-4 py-12">
-					{/* Header */}
 					<div className="text-center mb-8">
 						<h1 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-4`}>
 							Register Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">School</span>
@@ -29,7 +28,6 @@ export default function SchoolRegistration() {
 							Join IglooCode 2025 - the perfect opportunity for KS3 students to explore coding together, in a fun and interactive way.
 						</p>
 						
-						{/* Navigation Breadcrumb */}
 						<div className="mb-8">
 							<span className={`${red_hat_mono.className} text-gray-400 text-sm`}>
 								<Link href="/" className="hover:underline text-blue-400">Home</Link> · 
@@ -39,7 +37,6 @@ export default function SchoolRegistration() {
 						</div>
 					</div>
 
-					{/* Form Type Switcher */}
 					<div className="flex justify-center mb-8">
 						<div className="bg-zinc-800 p-1 rounded-lg flex">
 							<button
@@ -67,9 +64,7 @@ export default function SchoolRegistration() {
 						</div>
 					</div>
 
-					{/* Dynamic Content Based on Form Type */}
 					<div className="grid lg:grid-cols-3 gap-8">
-						{/* Information Panel */}
 						<div className="lg:col-span-1">
 							<div className="bg-zinc-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-6 sticky top-8">
 								{formType === "school" ? (
@@ -151,7 +146,6 @@ export default function SchoolRegistration() {
 							</div>
 						</div>
 
-						{/* Form Panel */}
 						<div className="lg:col-span-2">
 							<div className="bg-white/5 backdrop-blur-sm border border-gray-700 rounded-lg overflow-hidden">
 								<div className={`${red_hat_mono.className} px-6 py-4 border-b border-gray-600`}>
@@ -184,7 +178,6 @@ export default function SchoolRegistration() {
 						</div>
 					</div>
 
-					{/* Call to Action */}
 					<div className="text-center mt-12 pt-8 border-t border-gray-700">
 						<p className={`${red_hat_mono.className} text-gray-400 text-sm mb-4`}>
 							Want to learn more about IglooCode?

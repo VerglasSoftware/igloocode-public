@@ -27,13 +27,21 @@ export default function Navbar() {
 					<div className="flex items-center">
 						<div className="flex-shrink-0 flex items-center">
 							<Image src="/images/icl.png" height={24} width={24} alt="IglooCode logo" className="brightness-100 mr-3" />
-							<Link 
-								href="/" 
-								className={classNames("text-transparent text-lg sm:text-xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400", red_hat_mono.className)}
-								aria-label="IglooCode home"
-							>
-								IglooCode
-							</Link>
+							<div className="flex flex-col">
+								<Link 
+									href="/" 
+									className={classNames("text-transparent text-lg sm:text-xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400", red_hat_mono.className)}
+									aria-label="IglooCode home"
+								>
+									IglooCode
+								</Link>
+								<div className="flex items-center -mt-1">
+									<span className={`${red_hat_mono.className} text-gray-400 text-xs mr-1`}>by</span>
+									<a href="https://verglas.io/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity duration-200">
+										<Image src="/images/wll.png" alt="Verglas" width={40} height={11} className="opacity-75 hover:opacity-100" />
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 
