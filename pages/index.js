@@ -22,14 +22,18 @@ function Index() {
 			{/* Hero Section */}
 			<section className="w-screen min-h-screen bg-hero bg-cover flex flex-col justify-center items-center relative px-4" style={{ backgroundBlendMode: "normal, saturation" }}>
 				<div className="text-center max-w-4xl">
-					<h1 className={`${red_hat_mono.className} text-transparent text-5xl sm:text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-6`}>
+					<h1 className={`${red_hat_mono.className} text-transparent text-6xl sm:text-8xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-2 leading-none pb-2`}>
 						IglooCode
 					</h1>
+					<div className="flex items-center justify-center mb-6">
+						<span className={`${red_hat_mono.className} text-gray-400 text-sm mr-2`}>by</span>
+						<Image src="/images/wll.png" alt="Verglas" width={50} height={13} className="opacity-75" />
+					</div>
 					<p className={`${red_hat_mono.className} text-white text-xl sm:text-2xl mb-8 leading-relaxed`}>
 						Northern Ireland's premier <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 font-semibold">coding competition</span> for KS3 students
 					</p>
 					<p className={`${red_hat_mono.className} text-gray-300 text-lg mb-12 max-w-2xl mx-auto`}>
-						Test your programming skills, make lifelong friends, and learn from industry experts in this exciting capture-the-flag competition.
+						<span className="text-cyan-400 font-semibold">No coding experience? No problem!</span> Test your programming skills, make lifelong friends, and learn from industry experts in this exciting capture-the-flag competition.
 					</p>
 
 					{/* Key Info Cards */}
@@ -46,8 +50,8 @@ function Index() {
 						</div>
 						<div className="bg-black/30 backdrop-blur-sm border border-gray-700 rounded-lg p-6">
 							<FiMapPin className="text-green-400 w-8 h-8 mx-auto mb-4" />
-							<p className={`${red_hat_mono.className} text-white font-semibold`}>At QUB</p>
-							<p className={`${red_hat_mono.className} text-gray-400 text-sm mt-2`}>Computer Science Building</p>
+							<p className={`${red_hat_mono.className} text-white font-semibold`}>Free Event</p>
+							<p className={`${red_hat_mono.className} text-gray-400 text-sm mt-2`}>No cost to participate</p>
 						</div>
 						<div className="bg-black/30 backdrop-blur-sm border border-gray-700 rounded-lg p-6">
 							<FiAward className="text-yellow-400 w-8 h-8 mx-auto mb-4" />
@@ -123,8 +127,26 @@ function Index() {
 				</div>
 			</section>
 
+			{/* About Verglas Section */}
+			<section className="bg-zinc-800 py-16">
+				<div className="max-w-4xl mx-auto px-4 text-center">
+					<div className="flex items-center justify-center mb-6">
+						<Image src="/images/wll.png" alt="Verglas" width={120} height={32} className="opacity-90" />
+					</div>
+					<h2 className={`${red_hat_mono.className} text-white text-2xl sm:text-3xl font-bold mb-4`}>
+						Built by <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Young Innovators</span>
+					</h2>
+					<p className={`${red_hat_mono.className} text-gray-400 text-lg mb-6 max-w-2xl mx-auto leading-relaxed`}>
+						IglooCode is created by Verglas, an 18-21 year old startup developing software solutions to give students a competitive classroom edge. We believe young people should lead the charge in tech education.
+					</p>
+					<div className="flex items-center justify-center text-gray-500 text-sm">
+						<span className={`${red_hat_mono.className}`}>Empowering the next generation through code</span>
+					</div>
+				</div>
+			</section>
+
 			{/* Simple CTA Section */}
-			<section className="bg-gradient-to-r from-purple-500/20 to-cyan-400/20 py-16">
+			<section className="bg-gradient-to-br from-purple-900/80 via-zinc-900 to-cyan-900/80 py-16">
 				<div className="max-w-4xl mx-auto text-center px-4">
 					<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-6`}>
 						Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Code</span>?

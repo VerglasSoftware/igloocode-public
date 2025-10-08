@@ -18,7 +18,7 @@ function GetInvolved() {
 			</Head>
 
 			{/* Hero Section */}
-			<section className="w-screen min-h-[60vh] bg-hero bg-cover flex flex-col justify-end items-left relative pl-6 pr-6 sm:pl-24 pb-6" style={{ backgroundBlendMode: "normal, saturation" }}>
+			<section className="w-screen min-h-[30vh] bg-hero bg-cover flex flex-col justify-end items-left relative pl-6 pr-6 sm:pl-24 pb-6" style={{ backgroundBlendMode: "normal, saturation" }}>
 				<h1 className={`${red_hat_mono.className} w-fit text-transparent text-5xl sm:text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-3`}>
 					Get Involved
 				</h1>
@@ -65,12 +65,12 @@ function GetInvolved() {
 							</div>
 							<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>For Students</h3>
 							<p className={`${red_hat_mono.className} text-gray-400 mb-6`}>
-								KS3 pupils (ages 11-14) from Northern Ireland schools can compete in teams of 2-4 students.
+								KS3 pupils (ages 11-14) from Northern Ireland schools can compete in teams of 2-4 students. <strong className="text-cyan-400">Complete beginners welcome!</strong>
 							</p>
 							<ul className={`${red_hat_mono.className} text-gray-300 text-sm space-y-2 mb-6`}>
+								<li>• <strong>Zero coding experience required</strong> - we'll teach you!</li>
 								<li>• Form teams with friends or classmates</li>
-								<li>• No prior coding experience required</li>
-								<li>• Challenges for all skill levels</li>
+								<li>• Challenges designed for complete beginners to advanced</li>
 								<li>• Win prizes for your school</li>
 							</ul>
 							<p className={`${red_hat_mono.className} text-purple-400 text-sm`}>
@@ -93,9 +93,9 @@ function GetInvolved() {
 								<li>• Network with other educators</li>
 								<li>• Inspire students' tech careers</li>
 							</ul>
-							<p className={`${red_hat_mono.className} text-cyan-400 text-sm`}>
-								Contact us for school registration
-							</p>
+							<Link href="/register/school" className={`${red_hat_mono.className} inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200`}>
+								Register Your School
+							</Link>
 						</div>
 
 						{/* For Volunteers */}
@@ -113,9 +113,9 @@ function GetInvolved() {
 								<li>• Build your CV</li>
 								<li>• Make industry connections</li>
 							</ul>
-							<p className={`${red_hat_mono.className} text-green-400 text-sm`}>
-								Volunteer applications open soon
-							</p>
+							<Link href="/register/volunteer" className={`${red_hat_mono.className} inline-block bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200`}>
+								Register to Volunteer
+							</Link>
 						</div>
 					</div>
 

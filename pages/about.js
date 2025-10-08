@@ -19,7 +19,7 @@ function About() {
 			</Head>
 
 			{/* Hero Section */}
-			<section className="w-screen min-h-[60vh] bg-hero bg-cover flex flex-col justify-end items-left relative pl-6 pr-6 sm:pl-24 pb-6" style={{ backgroundBlendMode: "normal, saturation" }}>
+			<section className="w-screen min-h-[30vh] bg-hero bg-cover flex flex-col justify-end items-left relative pl-6 pr-6 sm:pl-24 pb-6" style={{ backgroundBlendMode: "normal, saturation" }}>
 				<h1 className={`${red_hat_mono.className} w-fit text-transparent text-5xl sm:text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-3`}>
 					About IglooCode
 				</h1>

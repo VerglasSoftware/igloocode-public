@@ -11,51 +11,99 @@ function classNames(...classes) {
 
 export default function Navbar() {
 	const router = useRouter();
+	const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+	
 	const navigation = [
 		{ name: "Home", href: "/", current: router.route == "/" },
 		{ name: "About", href: "/about", current: router.route == "/about" || router.route == "/team" },
 		{ name: "Get Involved", href: "/getinvolved", current: router.route.startsWith("/getinvolved") },
 	];
+	
 	return (
-		<nav className="fixed w-screen z-50 bg-cover bg-bottom" id="navbar" role="navigation" aria-label="Main navigation">
-			<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-				<div className="relative flex items-center justify-between h-16">
-					<div className="flex-grow flex justify-center">
+		<nav className="fixed w-full z-50 bg-black/80 backdrop-blur-sm border-b border-gray-800" id="navbar" role="navigation" aria-label="Main navigation">
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div className="flex items-center justify-between h-16">
+					{/* Logo */}
+					<div className="flex items-center">
 						<div className="flex-shrink-0 flex items-center">
-							<div className="flex grow shrink mr-5 hidden sm:block">
-								<Image src="/images/icl.png" height={28} width={28} alt="IglooCode logo" className="brightness-100" />
-							</div>
+							<Image src="/images/icl.png" height={24} width={24} alt="IglooCode logo" className="brightness-100 mr-3" />
 							<Link 
 								href="/" 
-								className={classNames("text-transparent text-lg font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400", red_hat_mono.className)}
+								className={classNames("text-transparent text-lg sm:text-xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400", red_hat_mono.className)}
 								aria-label="IglooCode home"
 							>
 								IglooCode
 							</Link>
 						</div>
-						<div className="hidden sm:block sm:ml-6 sm:justify-self-end flex-grow">
-							<ul className="flex space-x-4 justify-end" role="menubar">
-								{navigation.map((item) => (
-									<li key={item.name} role="none">
-										<Link
-											href={item.href}
-											className={classNames(
-												item.current
-													? `text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400 border-white border-b-[1px]`
-													: "text-gray-300 hover:text-white focus:text-white",
-												`px-3 py-2 text-md font-medium ${red_hat_mono.className} transition-colors duration-200`,
-											)}
-											aria-current={item.current ? "page" : undefined}
-											role="menuitem"
-										>
-											{item.name}
-										</Link>
-									</li>
-								))}
-							</ul>
-						</div>
+					</div>
+
+					{/* Desktop Navigation */}
+					<div className="hidden md:block">
+						<ul className="flex space-x-6" role="menubar">
+							{navigation.map((item) => (
+								<li key={item.name} role="none">
+									<Link
+										href={item.href}
+										className={classNames(
+											item.current
+												? `text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400 border-b-2 border-purple-500`
+												: "text-gray-300 hover:text-white focus:text-white",
+											`px-3 py-2 text-sm font-medium ${red_hat_mono.className} transition-colors duration-200`,
+										)}
+										aria-current={item.current ? "page" : undefined}
+										role="menuitem"
+									>
+										{item.name}
+									</Link>
+								</li>
+							))}
+						</ul>
+					</div>
+
+					{/* Mobile menu button */}
+					<div className="md:hidden">
+						<button
+							onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+							className="text-gray-300 hover:text-white focus:text-white p-2"
+							aria-expanded={mobileMenuOpen}
+							aria-label="Toggle mobile menu"
+						>
+							<svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								{mobileMenuOpen ? (
+									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+								) : (
+									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+								)}
+							</svg>
+						</button>
 					</div>
 				</div>
+
+				{/* Mobile menu */}
+				{mobileMenuOpen && (
+					<div className="md:hidden bg-black/95 backdrop-blur-sm border-t border-gray-800">
+						<ul className="px-4 py-4 space-y-2" role="menu">
+							{navigation.map((item) => (
+								<li key={item.name} role="none">
+									<Link
+										href={item.href}
+										className={classNames(
+											item.current
+												? `text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400`
+												: "text-gray-300 hover:text-white",
+											`block px-3 py-2 text-base font-medium ${red_hat_mono.className} transition-colors duration-200`,
+										)}
+										aria-current={item.current ? "page" : undefined}
+										role="menuitem"
+										onClick={() => setMobileMenuOpen(false)}
+									>
+										{item.name}
+									</Link>
+								</li>
+							))}
+						</ul>
+					</div>
+				)}
 			</div>
 		</nav>
 	);

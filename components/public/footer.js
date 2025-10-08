@@ -2,92 +2,93 @@ import { Red_Hat_Mono } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 
-import Script from "next/script";
-
 const red_hat_mono = Red_Hat_Mono({ subsets: ["latin"] });
 
 export default function Footer({ session }) {
 	return (
-		<>
-			<footer className="p-6 bg-neutral-800 rounded-t-dlg shadow flex items-center justify-center flex-col">
-				<div className="flex flex-row mb-6">
-					<Image src="/images/icl.png?color=purple&shade=600" height={28} width={28} alt="IglooCode" className="brightness-100" />
-					<Link href="/" className={`${red_hat_mono.className} ml-4 text-transparent text-lg font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400`}>
-						okay garmin
-					</Link>
-				</div>
-				<div className="grid sm:grid-cols-4 gap-2 sm:gap-8 w-1/2">
-					<div className="sm:flex items-end justify-end">
-						<span className={`${red_hat_mono.className} text-md text-neutral-100 font-semibold`}>ABOUT |</span>
+		<footer className="bg-zinc-800 border-t border-gray-700" role="contentinfo">
+			<div className="max-w-6xl mx-auto px-4 py-8 md:py-12">
+				{/* Main Footer Content */}
+				<div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8">
+					{/* Brand Section */}
+					<div className="col-span-1 md:col-span-2">
+						<div className="flex items-center mb-3 md:mb-4">
+							<Image src="/images/icl.png" height={28} width={28} alt="IglooCode logo" className="brightness-100 mr-2 md:mr-3" />
+							<Link href="/" className={`${red_hat_mono.className} text-transparent text-lg md:text-xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400`}>
+								IglooCode
+							</Link>
+						</div>
+						<p className={`${red_hat_mono.className} text-gray-400 text-xs md:text-sm mb-3 md:mb-4 max-w-md leading-relaxed`}>
+							Northern Ireland's premier coding competition for KS3 students. Inspiring the next generation of programmers through fun, competitive challenges.
+						</p>
+						<div className="flex items-center text-gray-500 text-xs">
+							<span className={`${red_hat_mono.className} mr-2`}>by</span>
+							<Image src="/images/wll.png" alt="Verglas" width={60} height={16} className="opacity-75" />
+						</div>
 					</div>
-					<Link href="/about" className={`${red_hat_mono.className} text-md text-neutral-200 hover:underline`}>
-						Our story
-					</Link>
-					<Link href="/team" className={`${red_hat_mono.className} text-md text-neutral-200 hover:underline`}>
-						Meet the team
-					</Link>
-					<Link href="/contact" className={`${red_hat_mono.className} text-md text-neutral-200 hover:underline`}>
-						Contact us
-					</Link>
-				</div>
-				<div className="grid sm:grid-cols-4 gap-2 sm:gap-8 w-1/2 pt-2">
-					<div className="sm:flex items-end justify-end">
-						<span className={`${red_hat_mono.className} text-md text-neutral-100 font-semibold`}>COMPETITION |</span>
-					</div>
-					<Link href="/competition" className={`${red_hat_mono.className} text-md text-neutral-200 hover:underline`}>
-						How it works
-					</Link>
-					<Link href="/partners" className={`${red_hat_mono.className} text-md text-neutral-200 hover:underline`}>
-						Our partners
-					</Link>
-					<Link href="/getinvolved/teachers" className={`${red_hat_mono.className} text-md text-neutral-200 hover:underline`}>
-						Apply now
-					</Link>
-				</div>
-				<div className="grid sm:grid-cols-4 gap-2 sm:gap-8 w-1/2 pt-2">
-					<div className="sm:flex items-end justify-end">
-						<span className={`${red_hat_mono.className} text-md text-neutral-100 font-semibold`}>GET INVOLVED |</span>
-					</div>
-					<Link href="/perks" className={`${red_hat_mono.className} text-md text-neutral-200 hover:underline`}>
-						Perks for you
-					</Link>
-					<Link href="/getinvolved/teachers" className={`${red_hat_mono.className} text-md text-neutral-200 hover:underline`}>
-						For teachers
-					</Link>
-					<Link href="/getinvolved/sixthform" className={`${red_hat_mono.className} text-md text-neutral-200 hover:underline`}>
-						For sixth form
-					</Link>
-				</div>
-				<p className={`${red_hat_mono.className} text-sm text-neutral-400 text-center mt-6`}>
-					© {new Date(Date.now()).getFullYear()} Verglas Software Limited. All Rights Reserved.
-					<br />
-					Website by{" "}
-					<a href="https://dandabs.io/" className="hover:underline">
-						Daniel Adams
-					</a>
-					{" "}and{" "}
-					<a href="https://github.com/JakeyGilly" className="hover:underline">
-						Jake Gillman
-					</a>.
-					<br />
-					<span className="text-[0.6rem] leading-[0.9rem] text-center">IglooCode is not associated with Slemish College or Strathearn School and any publications from us do not represent their views.</span>
-					<br />
-					<span className="text-[0.6rem] text-center">'IglooCode' is a trading name of Verglas Software Limited, a company registered in England and Wales (no. 14838037). {/*Registered office: 82A James Carter Road, Mildenhall, Suffolk, IP28 7DE.*/}</span>
-				</p>
-			</footer>
 
-			{process.env.NODE_ENV == "production" ? (
-				<>
-					<Script src="https://www.googletagmanager.com/gtag/js?id=G-SLRW9XGVWW" />
-					<Script id="analytics">
-						{`window.dataLayer = window.dataLayer || [];
-				  function gtag(){dataLayer.push(arguments);}
-				  gtag('js', new Date());
-				
-				  gtag('config', 'G-SLRW9XGVWW'${!session ? "" : ', { "user_id": "' + session.id + '" }'});`}
-					</Script>
-				</>
-			) : null}
-		</>
+					{/* Navigation Links */}
+					<div className="col-span-1">
+						<h3 className={`${red_hat_mono.className} text-white font-semibold mb-3 md:mb-4 text-xs md:text-sm uppercase tracking-wider`}>
+							Quick Links
+						</h3>
+						<ul className="space-y-2">
+							<li>
+								<Link href="/about" className={`${red_hat_mono.className} text-gray-400 hover:text-white text-xs md:text-sm transition-colors duration-200`}>
+									About IglooCode
+								</Link>
+							</li>
+							<li>
+								<Link href="/getinvolved" className={`${red_hat_mono.className} text-gray-400 hover:text-white text-xs md:text-sm transition-colors duration-200`}>
+									Get Involved
+								</Link>
+							</li>
+							<li>
+								<a href="mailto:hello@igloocode.com" className={`${red_hat_mono.className} text-gray-400 hover:text-white text-xs md:text-sm transition-colors duration-200`}>
+									Contact Us
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					{/* Partners */}
+					<div className="col-span-1">
+						<h3 className={`${red_hat_mono.className} text-white font-semibold mb-3 md:mb-4 text-xs md:text-sm uppercase tracking-wider`}>
+							Partners
+						</h3>
+						<div className="space-y-2 md:space-y-3">
+							<div className="flex items-center">
+								<Image src="/images/LIT-logo.webp" alt="Liberty IT" width={80} height={20} className="opacity-75 hover:opacity-100 transition-opacity" />
+							</div>
+							<div className="flex items-center">
+								<Image src="/images/kainos_transparent.webp" alt="Kainos" width={80} height={20} className="opacity-75 hover:opacity-100 transition-opacity" />
+							</div>
+							<div className="flex items-center">
+								<Image src="/images/qub_transparent.png" alt="Queen's University Belfast" width={80} height={20} className="opacity-75 hover:opacity-100 transition-opacity" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				{/* Bottom Section */}
+				<div className="border-t border-gray-700 pt-4 md:pt-6">
+					<div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
+						<div className="text-center md:text-left">
+							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>
+								© 2024 Verglas (NI) Limited. IglooCode is a trademark of Verglas (NI) Limited.
+							</p>
+							<p className={`${red_hat_mono.className} text-gray-600 text-xs mt-1`}>
+								Registered in Northern Ireland (no. NI716105). Office 218, 92 Castle Street, Belfast, BT1 1HE.
+							</p>
+						</div>
+						<div className="text-center md:text-right">
+							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>
+								Made with ❤️ by young people, for young people
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	);
 }
