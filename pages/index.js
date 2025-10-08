@@ -33,7 +33,7 @@ function Index() {
 						Northern Ireland's premier <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 font-semibold">coding competition</span> for KS3 students
 					</p>
 					<p className={`${red_hat_mono.className} text-gray-300 text-lg mb-12 max-w-2xl mx-auto`}>
-						<span className="text-cyan-400 font-semibold">No coding experience? No problem!</span> Test your programming skills, make lifelong friends, and learn from industry experts in this exciting capture-the-flag competition.
+						<span className="text-cyan-400 font-semibold">No coding experience? No problem!</span> Teamwork is the most important part, not knowing it all! Make lifelong friends, and learn from industry experts in this exciting capture-the-flag competition.
 					</p>
 
 					{/* Key Info Cards */}
@@ -46,12 +46,12 @@ function Index() {
 						<div className="bg-black/30 backdrop-blur-sm border border-gray-700 rounded-lg p-6">
 							<FiCalendar className="text-cyan-400 w-8 h-8 mx-auto mb-4" />
 							<p className={`${red_hat_mono.className} text-white font-semibold`}>Annual Event</p>
-							<p className={`${red_hat_mono.className} text-gray-400 text-sm mt-2`}>Next event: 2025</p>
+							<p className={`${red_hat_mono.className} text-gray-400 text-sm mt-2`}>Next event: 2026</p>
 						</div>
 						<div className="bg-black/30 backdrop-blur-sm border border-gray-700 rounded-lg p-6">
 							<FiMapPin className="text-green-400 w-8 h-8 mx-auto mb-4" />
-							<p className={`${red_hat_mono.className} text-white font-semibold`}>Free Event</p>
-							<p className={`${red_hat_mono.className} text-gray-400 text-sm mt-2`}>No cost to participate</p>
+							<p className={`${red_hat_mono.className} text-white font-semibold`}>QUB</p>
+							<p className={`${red_hat_mono.className} text-gray-400 text-sm mt-2`}>Computer Science Building</p>
 						</div>
 						<div className="bg-black/30 backdrop-blur-sm border border-gray-700 rounded-lg p-6">
 							<FiAward className="text-yellow-400 w-8 h-8 mx-auto mb-4" />

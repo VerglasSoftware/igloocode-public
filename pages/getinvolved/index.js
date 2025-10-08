@@ -65,12 +65,15 @@ function GetInvolved() {
 							</div>
 							<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>For Students</h3>
 							<p className={`${red_hat_mono.className} text-gray-400 mb-6`}>
-								KS3 pupils (ages 11-14) from Northern Ireland schools can compete in teams of 2-4 students. <strong className="text-cyan-400">Complete beginners welcome!</strong>
+								KS3 pupils (ages 11-14) from Northern Irish schools can compete in teams of 2-4 students.
+							</p>
+							<p className={`${red_hat_mono.className} text-gray-400 mb-6`}>
+								<strong className="text-cyan-400">Complete beginners welcome!</strong>
 							</p>
 							<ul className={`${red_hat_mono.className} text-gray-300 text-sm space-y-2 mb-6`}>
-								<li>• <strong>Zero coding experience required</strong> - we'll teach you!</li>
+								<li>• <strong>Zero coding experience required</strong> - Teamwork makes the dream work!</li>
 								<li>• Form teams with friends or classmates</li>
-								<li>• Challenges designed for complete beginners to advanced</li>
+								<li>• Challenges designed for complete beginners to advanced whizz kids!</li>
 								<li>• Win prizes for your school</li>
 							</ul>
 							<p className={`${red_hat_mono.className} text-purple-400 text-sm`}>

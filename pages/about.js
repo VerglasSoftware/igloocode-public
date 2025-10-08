@@ -90,8 +90,8 @@ function About() {
 									to learn, compete, and inspire each other?
 								</p>
 								<p className={`${red_hat_mono.className} text-gray-400 mb-4`}>
-									Founded by a group of passionate sixth-form and university students who met at a coding summer school, 
-									IglooCode has grown from a small local event to Northern Ireland's premier coding competition for young people.
+									Founded by a group of passionate sixth-form and university students who met at a coding summer camp, 
+									IglooCode has grown from a small idea to an even bigger coding competition for young people.
 								</p>
 								<p className={`${red_hat_mono.className} text-gray-400`}>
 									With support from leading tech companies like Liberty IT, Kainos, and Queen's University Belfast, 

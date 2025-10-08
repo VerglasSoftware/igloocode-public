@@ -75,7 +75,7 @@ export default function Footer({ session }) {
 					<div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
 						<div className="text-center md:text-left">
 							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>
-								© 2024 Verglas (NI) Limited. IglooCode is a trademark of Verglas (NI) Limited.
+								© 2025 Verglas (NI) Limited. IglooCode is a trademark of Verglas (NI) Limited.
 							</p>
 							<p className={`${red_hat_mono.className} text-gray-600 text-xs mt-1`}>
 								Registered in Northern Ireland (no. NI716105). Office 218, 92 Castle Street, Belfast, BT1 1HE.

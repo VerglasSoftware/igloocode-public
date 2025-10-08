@@ -26,7 +26,7 @@ export default function SchoolRegistration() {
 							Register Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">School</span>
 						</h1>
 						<p className={`${red_hat_mono.className} text-gray-400 text-lg max-w-3xl mx-auto mb-6`}>
-							Join IglooCode 2025 - the perfect opportunity for KS3 students to explore coding, regardless of their experience level.
+							Join IglooCode 2025 - the perfect opportunity for KS3 students to explore coding together, in a fun and interactive way.
 						</p>
 						
 						{/* Navigation Breadcrumb */}
@@ -134,7 +134,7 @@ export default function SchoolRegistration() {
 											</li>
 											<li className="flex items-start">
 												<span className="text-purple-400 mr-2">•</span>
-												<span><strong>Be part of something special</strong> in NI's tech community</span>
+												<span><strong>Be part of something special</strong> in the IglooCode community</span>
 											</li>
 										</ul>
 									</>
