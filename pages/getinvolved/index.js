@@ -130,7 +130,16 @@ function GetInvolved() {
 								Email us
 							</a>
 							<span className={`${red_hat_mono.className} text-gray-400 text-sm`}>
-								or follow us on social media for updates
+								or follow us on{" "}
+								<a 
+									href="https://www.instagram.com/igloocode/" 
+									target="_blank" 
+									rel="noopener noreferrer"
+									className="text-purple-400 hover:text-purple-300 transition-colors duration-200 underline"
+								>
+									Instagram
+								</a>
+								{" "}for updates
 							</span>
 						</div>
 					</div>
