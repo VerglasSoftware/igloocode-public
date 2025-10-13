@@ -27,7 +27,7 @@ export default function Footer({ session }) {
 						</div>
 					</div>
 
-					<div className="grid grid-cols-2 gap-6 col-span-1 md:col-span-2">
+					<div className="grid grid-cols-3 gap-6 col-span-1 md:col-span-2">
 						<div>
 							<h3 className={`${red_hat_mono.className} text-white font-semibold mb-3 md:mb-4 text-xs md:text-sm uppercase tracking-wider`}>
 								Quick links
@@ -43,9 +43,27 @@ export default function Footer({ session }) {
 										Get involved
 									</Link>
 								</li>
+							</ul>
+						</div>
+
+						<div>
+							<h3 className={`${red_hat_mono.className} text-white font-semibold mb-3 md:mb-4 text-xs md:text-sm uppercase tracking-wider`}>
+								Contact
+							</h3>
+							<ul className="space-y-2">
 								<li>
-									<a href="mailto:hello@igloocode.com" className={`${red_hat_mono.className} text-gray-400 hover:text-white text-xs md:text-sm transition-colors duration-200`}>
-										Contact us
+									<a href="mailto:igloocode@verglas.io" className={`${red_hat_mono.className} text-gray-400 hover:text-white text-xs md:text-sm transition-colors duration-200`}>
+										Event enquiries
+									</a>
+								</li>
+								<li>
+									<a href="mailto:media@verglas.io" className={`${red_hat_mono.className} text-gray-400 hover:text-white text-xs md:text-sm transition-colors duration-200`}>
+										Press & media
+									</a>
+								</li>
+								<li>
+									<a href="tel:+442896943669" className={`${red_hat_mono.className} text-gray-400 hover:text-white text-xs md:text-sm transition-colors duration-200`}>
+										028 9694 3669
 									</a>
 								</li>
 							</ul>
@@ -57,10 +75,14 @@ export default function Footer({ session }) {
 							</h3>
 							<div className="space-y-2 md:space-y-3">
 								<div className="flex items-center">
-									<Image src="/images/LIT-logo.webp" alt="Liberty IT" width={70} height={18} className="opacity-75 hover:opacity-100 transition-opacity md:w-20 md:h-5" />
+									<div className="w-20 h-5 bg-gray-600 rounded-sm flex items-center justify-center opacity-75">
+										<span className={`${red_hat_mono.className} text-gray-400 text-xs`}>Partner 1</span>
+									</div>
 								</div>
 								<div className="flex items-center">
-									<Image src="/images/kainos_transparent.webp" alt="Kainos" width={70} height={18} className="opacity-75 hover:opacity-100 transition-opacity md:w-20 md:h-5" />
+									<div className="w-20 h-5 bg-gray-600 rounded-sm flex items-center justify-center opacity-75">
+										<span className={`${red_hat_mono.className} text-gray-400 text-xs`}>Partner 2</span>
+									</div>
 								</div>
 								<div className="flex items-center">
 									<Image src="/images/qub_transparent.png" alt="Queen's University Belfast" width={70} height={18} className="opacity-75 hover:opacity-100 transition-opacity md:w-20 md:h-5" />

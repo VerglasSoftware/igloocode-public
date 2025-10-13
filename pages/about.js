@@ -102,7 +102,7 @@ function About() {
 									IglooCode has grown from a small idea to an even bigger coding competition for young people.
 								</p>
 								<p className={`${red_hat_mono.className} text-gray-400`}>
-									With support from leading tech companies like Liberty IT, Kainos, and Queen's University Belfast, 
+									With support from our partners and Queen's University Belfast, 
 									we continue to expand our reach and impact across the region.
 								</p>
 							</div>
@@ -173,7 +173,7 @@ function About() {
 							<Link href="/getinvolved" className={`${red_hat_mono.className} bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200`}>
 								Get involved
 							</Link>
-							<a href="mailto:hello@igloocode.com" className={`${red_hat_mono.className} text-white border border-gray-400 px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all duration-200`}>
+							<a href="mailto:igloocode@verglas.io" className={`${red_hat_mono.className} text-white border border-gray-400 px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all duration-200`}>
 								Contact us
 							</a>
 						</div>

@@ -124,10 +124,10 @@ function GetInvolved() {
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
 							<a 
-								href="mailto:hello@igloocode.com" 
+								href="mailto:igloocode@verglas.io" 
 								className={`${red_hat_mono.className} bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200`}
 							>
-								Email Us
+								Email us
 							</a>
 							<span className={`${red_hat_mono.className} text-gray-400 text-sm`}>
 								or follow us on social media for updates

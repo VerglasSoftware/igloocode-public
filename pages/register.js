@@ -158,8 +158,8 @@ export default function Registration() {
 								<div className="mt-6 pt-6 border-t border-gray-600">
 									<p className={`${red_hat_mono.className} text-gray-400 text-xs`}>
 										Need help? Email us at{" "}
-										<a href="mailto:hello@igloocode.com" className="text-blue-400 hover:text-blue-300 transition-colors">
-											hello@igloocode.com
+										<a href="mailto:igloocode@verglas.io" className="text-blue-400 hover:text-blue-300 transition-colors">
+											igloocode@verglas.io
 										</a>
 									</p>
 								</div>

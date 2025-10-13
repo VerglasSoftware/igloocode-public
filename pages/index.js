@@ -3,8 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Layout, { siteTitle } from "../components/public/layout";
-import imgKainos from "../public/images/kainos_transparent.webp";
-import imgLIT from "../public/images/LIT-logo.webp";
 import imgQUB from "../public/images/qub_transparent.png";
 import Link from "next/link";
 import { FiCalendar, FiUsers, FiAward, FiMapPin } from "react-icons/fi";
@@ -88,7 +86,7 @@ function Index() {
 				</div>
 
 													{/* remove 'hidden' below when we get video */}
-				<div className="max-w-4xl mx-auto px-4 text-center mt-16 hidden">
+				<div className="max-w-4xl mx-auto px-4 text-center mt-16">
 					<h2 className={`${red_hat_mono.className} text-white text-2xl sm:text-3xl font-bold mb-6`}>
 						How it works
 					</h2>
@@ -109,8 +107,12 @@ function Index() {
 
 					<p className={`${red_hat_mono.className} text-gray-400 mb-6 text-sm`}>Proudly supported by</p>
 					<div className="flex flex-row justify-center items-center gap-8 opacity-75 hover:opacity-100 transition-opacity">
-						<Image src={imgLIT} alt="Liberty IT" className="h-8 w-auto" />
-						<Image src={imgKainos} alt="Kainos" className="h-8 w-auto" />
+						<div className="h-8 w-24 bg-gray-600 rounded-sm flex items-center justify-center">
+							<span className={`${red_hat_mono.className} text-gray-400 text-xs`}>Partner 1</span>
+						</div>
+						<div className="h-8 w-24 bg-gray-600 rounded-sm flex items-center justify-center">
+							<span className={`${red_hat_mono.className} text-gray-400 text-xs`}>Partner 2</span>
+						</div>
 						<Image src={imgQUB} alt="Queen's University Belfast" className="h-8 w-auto" />
 					</div>
 				</div>

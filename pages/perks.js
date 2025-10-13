@@ -156,8 +156,8 @@ function Perks() {
 										passion with the field and discover what you're able to do with your newly developed skills.
 									</p>
 									<p className={`${red_hat_mono.className} text-white text-md font-thin pt-3`}>
-										Hear from experts from Liberty IT, one of the biggest tech companies in Belfast and Dublin. Uncover career opportunities, next steps after KS3 and options with
-										LIT themselves.
+										Hear from industry experts and partners from leading tech companies. Uncover career opportunities, next steps after KS3 and 
+										discover potential pathways in the tech industry.
 									</p>
 								</div>
 								<div className="flex flex-col justify-center">
