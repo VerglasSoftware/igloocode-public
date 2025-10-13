@@ -89,7 +89,7 @@ function GetInvolved() {
 								<li>• Network with other educators</li>
 								<li>• Inspire students' tech careers</li>
 							</ul>
-							<Link href="/register/school" className={`${red_hat_mono.className} inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200`}>
+							<Link href="/register?tab=school" className={`${red_hat_mono.className} inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200`}>
 								Register Your School
 							</Link>
 						</div>
@@ -108,7 +108,7 @@ function GetInvolved() {
 								<li>• Build your CV</li>
 								<li>• Make industry connections</li>
 							</ul>
-							<Link href="/register/volunteer" className={`${red_hat_mono.className} inline-block bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200`}>
+							<Link href="/register?tab=volunteer" className={`${red_hat_mono.className} inline-block bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200`}>
 								Register to Volunteer
 							</Link>
 						</div>

@@ -1,20 +1,33 @@
-import Layout from "../../components/public/layout";
+import Layout from "../components/public/layout";
 import { Red_Hat_Mono } from "next/font/google";
 import Head from "next/head";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import { FiUsers, FiHeart } from "react-icons/fi";
 
 const red_hat_mono = Red_Hat_Mono({ subsets: ["latin"] });
 
-export default function SchoolRegistration() {
+export default function Registration() {
 	const [formType, setFormType] = useState("school");
+	const router = useRouter();
+
+	useEffect(() => {
+		if (router.query.tab === "volunteer") {
+			setFormType("volunteer");
+		} else {
+			setFormType("school");
+		}
+	}, [router.query.tab]);
 
 	return (
 		<Layout>
 			<Head>
-				<title>School Registration - IglooCode</title>
-				<meta name="description" content="Register your school for IglooCode - Northern Ireland's premier coding competition for KS3 students" />
+				<title>{`${formType === "school" ? "School Registration" : "Volunteer Registration"} - IglooCode`}</title>
+				<meta name="description" content={formType === "school" 
+					? "Register your school for IglooCode - Northern Ireland's premier coding competition for KS3 students" 
+					: "Join the IglooCode volunteer team and help inspire the next generation of coders"
+				} />
 				<meta name="theme-color" content="#171717" />
 			</Head>
 
@@ -22,17 +35,24 @@ export default function SchoolRegistration() {
 				<div className="max-w-6xl mx-auto px-4 py-12">
 					<div className="text-center mb-8">
 						<h1 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-4`}>
-							Register Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">School</span>
+							{formType === "school" ? (
+								<>Register Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">School</span></>
+							) : (
+								<>Volunteer with <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">IglooCode</span></>
+							)}
 						</h1>
 						<p className={`${red_hat_mono.className} text-gray-400 text-lg max-w-3xl mx-auto mb-6`}>
-							Join IglooCode 2025 - the perfect opportunity for KS3 students to explore coding together, in a fun and interactive way.
+							{formType === "school" 
+								? "Join IglooCode 2025 - the perfect opportunity for KS3 students to explore coding together, in a fun and interactive way."
+								: "Help us inspire the next generation of programmers. Join our volunteer team for IglooCode 2025."
+							}
 						</p>
 						
 						<div className="mb-8">
 							<span className={`${red_hat_mono.className} text-gray-400 text-sm`}>
 								<Link href="/" className="hover:underline text-blue-400">Home</Link> · 
 								<Link href="/getinvolved" className="hover:underline text-blue-400 ml-1">Get Involved</Link> · 
-								<span className="ml-1">School Registration</span>
+								<span className="ml-1">{formType === "school" ? "School Registration" : "Volunteer Registration"}</span>
 							</span>
 						</div>
 					</div>
@@ -40,7 +60,7 @@ export default function SchoolRegistration() {
 					<div className="flex justify-center mb-8">
 						<div className="bg-zinc-800 p-1 rounded-lg flex">
 							<button
-								onClick={() => setFormType("school")}
+								onClick={() => {setFormType("school"); router.push('/register?tab=school', undefined, { shallow: true });}}
 								className={`${red_hat_mono.className} px-6 py-3 rounded-md text-sm font-semibold transition-all duration-200 flex items-center ${
 									formType === "school"
 										? "bg-cyan-500 text-white shadow-lg"
@@ -51,7 +71,7 @@ export default function SchoolRegistration() {
 								School/Teacher
 							</button>
 							<button
-								onClick={() => setFormType("volunteer")}
+								onClick={() => {setFormType("volunteer"); router.push('/register?tab=volunteer', undefined, { shallow: true });}}
 								className={`${red_hat_mono.className} px-6 py-3 rounded-md text-sm font-semibold transition-all duration-200 flex items-center ${
 									formType === "volunteer"
 										? "bg-purple-500 text-white shadow-lg"
@@ -66,7 +86,7 @@ export default function SchoolRegistration() {
 
 					<div className="grid lg:grid-cols-3 gap-8">
 						<div className="lg:col-span-1">
-							<div className="bg-zinc-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-6 sticky top-8">
+							<div className="bg-zinc-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-6 sticky top-24">
 								{formType === "school" ? (
 									<>
 										<h3 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4 flex items-center`}>

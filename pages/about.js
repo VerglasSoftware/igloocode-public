@@ -2,14 +2,27 @@ import { Red_Hat_Mono } from "next/font/google";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Layout, { siteTitle } from "../components/public/layout";
 import imgTeam from "../public/images/IMG_3652.png";
 import imgEvent from "../public/images/DSC01776.jpg";
-import { FiUsers, FiCalendar, FiMapPin, FiMail } from "react-icons/fi";
+import { FiUsers, FiCalendar, FiMapPin, FiMail, FiX } from "react-icons/fi";
 const red_hat_mono = Red_Hat_Mono({ subsets: ["latin"] });
 
 function About() {
+	const [selectedImage, setSelectedImage] = useState(null);
+	
+	const galleryImages = [
+		{ src: "/images/DSC01776.jpg", alt: "Students coding together" },
+		{ src: "/images/DSC01822.jpeg", alt: "Competition day atmosphere" },
+		{ src: "/images/DSC01856.jpeg", alt: "Team collaboration" },
+		{ src: "/images/DSC01864.jpeg", alt: "Students presenting solutions" },
+		{ src: "/images/IMG_0660.jpeg", alt: "Award ceremony" },
+		{ src: "/images/IMG_0679.jpeg", alt: "Networking and fun" },
+		{ src: "/images/DSC01890.jpeg", alt: "Industry mentors helping" },
+		{ src: "/images/scoreboard.jpeg", alt: "Competition scoreboard" }
+	];
+
 	return (
 		<Layout>
 			<Head>
@@ -122,9 +135,36 @@ function About() {
 						</div>
 					</div>
 
+					<div className="mb-16">
+						<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-6 text-center`}>
+							Previous <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">events</span>
+						</h2>
+						<p className={`${red_hat_mono.className} text-gray-400 text-lg text-center mb-8 max-w-2xl mx-auto`}>
+							Take a look at the highlights from our past competitions
+						</p>
+						
+						<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+							{galleryImages.map((image, index) => (
+								<div 
+									key={index}
+									className="aspect-square bg-zinc-800 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-200 cursor-pointer"
+									onClick={() => setSelectedImage(image)}
+								>
+									<Image 
+										src={image.src} 
+										alt={image.alt} 
+										width={300} 
+										height={300} 
+										className="w-full h-full object-cover" 
+									/>
+								</div>
+							))}
+						</div>
+					</div>
+
 					<div className="bg-gradient-to-r from-purple-500/10 to-cyan-400/10 rounded-lg p-8 text-center">
 						<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>
-							Ready to Join Our Community?
+							Ready to join our community?
 						</h3>
 						<p className={`${red_hat_mono.className} text-gray-300 mb-6 max-w-2xl mx-auto`}>
 							Whether you're a student, teacher, or just passionate about coding education, there's a place for you in the IglooCode community.
@@ -140,6 +180,39 @@ function About() {
 					</div>
 				</div>
 			</section>
+
+			{selectedImage && (
+				<div 
+					className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4"
+					onClick={() => setSelectedImage(null)}
+				>
+					<div className="relative max-w-4xl max-h-full">
+						<button
+							onClick={() => setSelectedImage(null)}
+							className="absolute top-4 right-4 text-white bg-black bg-opacity-50 hover:bg-opacity-75 rounded-full p-2 transition-all duration-200 z-10"
+						>
+							<FiX className="w-6 h-6" />
+						</button>
+						<div 
+							className="relative"
+							onClick={(e) => e.stopPropagation()}
+						>
+							<Image
+								src={selectedImage.src}
+								alt={selectedImage.alt}
+								width={800}
+								height={600}
+								className="max-w-full max-h-[80vh] object-contain rounded-lg"
+							/>
+							<div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 rounded-b-lg">
+								<p className={`${red_hat_mono.className} text-white text-sm`}>
+									{selectedImage.alt}
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			)}
 		</Layout>
 	);
 }

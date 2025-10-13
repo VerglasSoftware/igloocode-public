@@ -88,6 +88,24 @@ function Index() {
 				</div>
 
 				<div className="max-w-4xl mx-auto px-4 text-center mt-16">
+					<h2 className={`${red_hat_mono.className} text-white text-2xl sm:text-3xl font-bold mb-6`}>
+						How it works
+					</h2>
+					
+					<div className="bg-zinc-800 rounded-lg p-8 mb-12 aspect-video flex items-center justify-center border-2 border-dashed border-gray-600">
+						<div className="text-center">
+							<div className="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+								<svg className="w-8 h-8 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+									<path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+								</svg>
+							</div>
+							<h3 className={`${red_hat_mono.className} text-white text-lg font-semibold mb-2`}>Video coming soon</h3>
+							<p className={`${red_hat_mono.className} text-gray-400 text-sm`}>
+								Learn about the competition format, how to enter teams, and what to expect on the day
+							</p>
+						</div>
+					</div>
+
 					<p className={`${red_hat_mono.className} text-gray-400 mb-6 text-sm`}>Proudly supported by</p>
 					<div className="flex flex-row justify-center items-center gap-8 opacity-75 hover:opacity-100 transition-opacity">
 						<Image src={imgLIT} alt="Liberty IT" className="h-8 w-auto" />
@@ -101,7 +119,7 @@ function Index() {
 				<div className="max-w-6xl mx-auto px-4">
 					<div className="text-center mb-16">
 						<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-4`}>
-							What You'll <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Gain</span>
+							What you'll <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">gain</span>
 						</h2>
 						<p className={`${red_hat_mono.className} text-gray-400 text-lg max-w-4xl mx-auto`}>
 							More than just a competition - it's your gateway to the tech industry
@@ -113,7 +131,7 @@ function Index() {
 							<div className="bg-purple-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
 								<FiAward className="text-purple-400 w-8 h-8" />
 							</div>
-							<h3 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Programming Skills</h3>
+							<h3 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Programming skills</h3>
 							<p className={`${red_hat_mono.className} text-gray-400`}>
 								Solve real coding challenges and learn new programming concepts through hands-on practice.
 							</p>
@@ -123,7 +141,7 @@ function Index() {
 							<div className="bg-cyan-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
 								<FiUsers className="text-cyan-400 w-8 h-8" />
 							</div>
-							<h3 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Make Friends</h3>
+							<h3 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Make friends</h3>
 							<p className={`${red_hat_mono.className} text-gray-400`}>
 								Connect with like-minded students from across Northern Ireland who share your passion for tech.
 							</p>
@@ -133,7 +151,7 @@ function Index() {
 							<div className="bg-green-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
 								<FiMapPin className="text-green-400 w-8 h-8" />
 							</div>
-							<h3 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Industry Insights</h3>
+							<h3 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Industry insights</h3>
 							<p className={`${red_hat_mono.className} text-gray-400`}>
 								Hear from professionals at leading tech companies about careers and opportunities in IT.
 							</p>
@@ -161,10 +179,11 @@ function Index() {
 				</div>
 			</section>
 
-			<section className="bg-gradient-to-br from-purple-900/80 via-zinc-900 to-cyan-900/80 py-20 md:py-16 mt-8 md:mt-0">
-				<div className="max-w-4xl mx-auto text-center px-4">
+			<section className="bg-hero bg-cover bg-center relative py-20 md:py-16 mt-8 md:mt-0">
+				<div className="absolute inset-0 bg-gradient-to-br from-purple-900/60 via-zinc-900/70 to-cyan-900/60"></div>
+				<div className="max-w-4xl mx-auto text-center px-4 relative z-10">
 					<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-6`}>
-						Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Code</span>?
+						Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">code</span>?
 					</h2>
 					<p className={`${red_hat_mono.className} text-gray-300 text-lg mb-8 max-w-2xl mx-auto`}>
 						Applications for IglooCode 2025 will open soon. Don't miss your chance to be part of Northern Ireland's biggest coding competition for young people.
