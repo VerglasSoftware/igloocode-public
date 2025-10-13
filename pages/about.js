@@ -51,7 +51,7 @@ function About() {
 					<div className="grid lg:grid-cols-2 gap-12 mb-16">
 						<div>
 							<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-6`}>
-								Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Mission</span>
+								Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">mission</span>
 							</h2>
 							<p className={`${red_hat_mono.className} text-gray-300 text-lg mb-6 leading-relaxed`}>
 								IglooCode is Northern Ireland's premier coding competition for young people, designed to inspire the next generation 
@@ -88,7 +88,7 @@ function About() {
 
 					<div className="bg-zinc-800 rounded-lg p-8 mb-16">
 						<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-6 text-center`}>
-							How It All <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Started</span>
+							How it all <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">started</span>
 						</h3>
 						<div className="grid md:grid-cols-2 gap-8 items-center">
 							<Image src={imgEvent} alt="IglooCode competition in action" className="rounded-lg shadow-md w-full object-cover" />
@@ -111,11 +111,11 @@ function About() {
 
 					<div className="text-center mb-16">
 						<h3 className={`${red_hat_mono.className} text-white text-3xl font-bold mb-8`}>
-							What Makes Us <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Different</span>
+							What makes us <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">different</span>
 						</h3>
 						<div className="grid md:grid-cols-3 gap-8">
 							<div className="bg-zinc-800 rounded-lg p-6">
-								<h4 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Student-Led</h4>
+								<h4 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Student-led</h4>
 								<p className={`${red_hat_mono.className} text-gray-400`}>
 									Organized by young people, for young people. We understand what makes coding fun and engaging.
 								</p>
@@ -127,7 +127,7 @@ function About() {
 								</p>
 							</div>
 							<div className="bg-zinc-800 rounded-lg p-6">
-								<h4 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Industry-Connected</h4>
+								<h4 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Industry-connected</h4>
 								<p className={`${red_hat_mono.className} text-gray-400`}>
 									Direct connections to Northern Ireland's leading tech companies and career opportunities.
 								</p>
@@ -171,10 +171,10 @@ function About() {
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
 							<Link href="/getinvolved" className={`${red_hat_mono.className} bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200`}>
-								Get Involved
+								Get involved
 							</Link>
 							<a href="mailto:hello@igloocode.com" className={`${red_hat_mono.className} text-white border border-gray-400 px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all duration-200`}>
-								Contact Us
+								Contact us
 							</a>
 						</div>
 					</div>

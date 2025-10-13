@@ -12,14 +12,14 @@ function GetInvolved() {
 	return (
 		<Layout>
 			<Head>
-				<title>Get Involved - {siteTitle}</title>
+				<title>Get involved - {siteTitle}</title>
 				<meta name="description" content="Join IglooCode as a student team, teacher, or volunteer. Multiple ways to get involved in Northern Ireland's premier coding competition." />
 				<meta name="theme-color" content="#171717" />
 			</Head>
 
 			<section className="w-screen min-h-[30vh] bg-hero bg-cover flex flex-col justify-end items-left relative pl-6 pr-6 sm:pl-24 pb-6 pt-24" style={{ backgroundBlendMode: "normal, saturation" }}>
 				<h1 className={`${red_hat_mono.className} w-fit text-transparent text-5xl sm:text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 pb-3`}>
-					Get Involved
+					Get involved
 				</h1>
 				<p className={`${red_hat_mono.className} text-white text-xl sm:text-3xl`}>
 					{"< join northern ireland's coding community />"}
@@ -30,14 +30,14 @@ function GetInvolved() {
 				<div className="max-w-6xl mx-auto px-4">
 					<div className="mb-12">
 						<span className={`${red_hat_mono.className} text-gray-400`}>
-							<Link href="/" className="hover:underline text-blue-500">Home</Link> · Get Involved
+							<Link href="/" className="hover:underline text-blue-500">Home</Link> · Get involved
 						</span>
 					</div>
 
 					<div className="grid lg:grid-cols-2 gap-12 mb-16">
 						<div>
 							<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-6`}>
-								Multiple Ways to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Participate</span>
+								Multiple ways to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">participate</span>
 							</h2>
 							<p className={`${red_hat_mono.className} text-gray-300 text-lg mb-8 leading-relaxed`}>
 								Whether you're a student ready to code, a teacher wanting to inspire your pupils, or someone looking to volunteer, 
@@ -57,7 +57,7 @@ function GetInvolved() {
 							<div className="bg-purple-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
 								<FiUsers className="text-purple-400 w-8 h-8" />
 							</div>
-							<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>For Students</h3>
+							<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>For students</h3>
 							<p className={`${red_hat_mono.className} text-gray-400 mb-6`}>
 								KS3 pupils (ages 11-14) from Northern Irish schools can compete in teams of 2-4 students.
 							</p>
@@ -79,7 +79,7 @@ function GetInvolved() {
 							<div className="bg-cyan-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
 								<FiBookOpen className="text-cyan-400 w-8 h-8" />
 							</div>
-							<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>For Teachers</h3>
+							<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>For teachers</h3>
 							<p className={`${red_hat_mono.className} text-gray-400 mb-6`}>
 								Bring your students to experience competitive programming and industry insights.
 							</p>
@@ -90,7 +90,7 @@ function GetInvolved() {
 								<li>• Inspire students' tech careers</li>
 							</ul>
 							<Link href="/register?tab=school" className={`${red_hat_mono.className} inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200`}>
-								Register Your School
+								Register your school
 							</Link>
 						</div>
 
@@ -98,7 +98,7 @@ function GetInvolved() {
 							<div className="bg-green-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
 								<FiHeart className="text-green-400 w-8 h-8" />
 							</div>
-							<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>For Volunteers</h3>
+							<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>For volunteers</h3>
 							<p className={`${red_hat_mono.className} text-gray-400 mb-6`}>
 								Sixth form and university students can help run the event and mentor participants.
 							</p>
@@ -109,7 +109,7 @@ function GetInvolved() {
 								<li>• Make industry connections</li>
 							</ul>
 							<Link href="/register?tab=volunteer" className={`${red_hat_mono.className} inline-block bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200`}>
-								Register to Volunteer
+								Register to volunteer
 							</Link>
 						</div>
 					</div>
@@ -117,7 +117,7 @@ function GetInvolved() {
 					<div className="bg-gradient-to-r from-purple-500/10 to-cyan-400/10 rounded-lg p-8 text-center">
 						<FiMail className="text-gray-400 w-12 h-12 mx-auto mb-6" />
 						<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>
-							Ready to Get Started?
+							Ready to get started?
 						</h3>
 						<p className={`${red_hat_mono.className} text-gray-300 mb-6 max-w-2xl mx-auto`}>
 							Have questions or want to register your interest? Get in touch with our team - we'd love to hear from you!

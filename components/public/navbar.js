@@ -16,7 +16,7 @@ export default function Navbar() {
 	const navigation = [
 		{ name: "Home", href: "/", current: router.route == "/" },
 		{ name: "About", href: "/about", current: router.route == "/about" || router.route == "/team" },
-		{ name: "Get Involved", href: "/getinvolved", current: router.route.startsWith("/getinvolved") },
+		{ name: "Get involved", href: "/getinvolved", current: router.route.startsWith("/getinvolved") },
 	];
 	
 	return (

@@ -36,7 +36,7 @@ export default function Registration() {
 					<div className="text-center mb-8">
 						<h1 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-4`}>
 							{formType === "school" ? (
-								<>Register Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">School</span></>
+								<>Register your <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">school</span></>
 							) : (
 								<>Volunteer with <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">IglooCode</span></>
 							)}
@@ -51,8 +51,8 @@ export default function Registration() {
 						<div className="mb-8">
 							<span className={`${red_hat_mono.className} text-gray-400 text-sm`}>
 								<Link href="/" className="hover:underline text-blue-400">Home</Link> · 
-								<Link href="/getinvolved" className="hover:underline text-blue-400 ml-1">Get Involved</Link> · 
-								<span className="ml-1">{formType === "school" ? "School Registration" : "Volunteer Registration"}</span>
+								<Link href="/getinvolved" className="hover:underline text-blue-400 ml-1">Get involved</Link> · 
+								<span className="ml-1">{formType === "school" ? "School registration" : "Volunteer registration"}</span>
 							</span>
 						</div>
 					</div>
@@ -91,7 +91,7 @@ export default function Registration() {
 									<>
 										<h3 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4 flex items-center`}>
 											<FiUsers className="mr-2 text-cyan-400" />
-											For Schools & Teachers
+											For schools & teachers
 										</h3>
 										<ul className={`${red_hat_mono.className} text-gray-300 space-y-3 text-sm`}>
 											<li className="flex items-start">
@@ -124,7 +124,7 @@ export default function Registration() {
 									<>
 										<h3 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4 flex items-center`}>
 											<FiHeart className="mr-2 text-purple-400" />
-											For Volunteers
+											For volunteers
 										</h3>
 										<ul className={`${red_hat_mono.className} text-gray-300 space-y-3 text-sm`}>
 											<li className="flex items-start">
@@ -170,7 +170,7 @@ export default function Registration() {
 							<div className="bg-white/5 backdrop-blur-sm border border-gray-700 rounded-lg overflow-hidden">
 								<div className={`${red_hat_mono.className} px-6 py-4 border-b border-gray-600`}>
 									<h2 className="text-white text-lg font-semibold">
-										{formType === "school" ? "School Registration Form" : "Volunteer Registration Form"}
+										{formType === "school" ? "School registration form" : "Volunteer registration form"}
 									</h2>
 									<p className="text-gray-400 text-sm mt-1">
 										{formType === "school" 
@@ -188,7 +188,7 @@ export default function Registration() {
 										frameBorder="0" 
 										marginHeight={0} 
 										marginWidth={0} 
-										title={formType === "school" ? "School Registration Form" : "Volunteer Registration Form"}
+										title={formType === "school" ? "School registration form" : "Volunteer registration form"}
 										className="rounded-lg"
 									>
 										Loading form...
@@ -207,7 +207,7 @@ export default function Registration() {
 								About IglooCode
 							</Link>
 							<Link href="/getinvolved" className={`${red_hat_mono.className} text-gray-400 hover:text-white px-6 py-2 text-sm transition-colors duration-200`}>
-								← Back to Get Involved
+								← Back to get involved
 							</Link>
 						</div>
 					</div>

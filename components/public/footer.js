@@ -30,7 +30,7 @@ export default function Footer({ session }) {
 					<div className="grid grid-cols-2 gap-6 col-span-1 md:col-span-2">
 						<div>
 							<h3 className={`${red_hat_mono.className} text-white font-semibold mb-3 md:mb-4 text-xs md:text-sm uppercase tracking-wider`}>
-								Quick Links
+								Quick links
 							</h3>
 							<ul className="space-y-2">
 								<li>
@@ -40,12 +40,12 @@ export default function Footer({ session }) {
 								</li>
 								<li>
 									<Link href="/getinvolved" className={`${red_hat_mono.className} text-gray-400 hover:text-white text-xs md:text-sm transition-colors duration-200`}>
-										Get Involved
+										Get involved
 									</Link>
 								</li>
 								<li>
 									<a href="mailto:hello@igloocode.com" className={`${red_hat_mono.className} text-gray-400 hover:text-white text-xs md:text-sm transition-colors duration-200`}>
-										Contact Us
+										Contact us
 									</a>
 								</li>
 							</ul>
