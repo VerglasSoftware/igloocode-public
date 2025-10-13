@@ -87,7 +87,8 @@ function Index() {
 					</div>
 				</div>
 
-				<div className="max-w-4xl mx-auto px-4 text-center mt-16">
+													{/* remove 'hidden' below when we get video */}
+				<div className="max-w-4xl mx-auto px-4 text-center mt-16 hidden">
 					<h2 className={`${red_hat_mono.className} text-white text-2xl sm:text-3xl font-bold mb-6`}>
 						How it works
 					</h2>
