@@ -19,7 +19,7 @@ function Index() {
 				<meta name="theme-color" content="#171717" />
 			</Head>
 
-			<section className="w-screen min-h-screen bg-hero bg-cover flex flex-col justify-center items-center relative px-4 pt-24" style={{ backgroundBlendMode: "normal, saturation" }}>
+			<section className="w-screen h-[60vh] bg-hero bg-cover flex flex-col justify-center items-center relative px-4 pt-16" style={{ backgroundBlendMode: "normal, saturation" }}>
 				<div className="text-center max-w-4xl">
 					<h1 className={`${red_hat_mono.className} text-transparent text-6xl sm:text-8xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-2 leading-none pb-2`}>
 						IglooCode
@@ -30,36 +30,12 @@ function Index() {
 							<Image src="/images/wll.png" alt="Verglas" width={50} height={13} className="opacity-75 hover:opacity-100" />
 						</a>
 					</div>
-					<p className={`${red_hat_mono.className} text-white text-xl sm:text-2xl mb-8 leading-relaxed`}>
-						Northern Ireland's premier <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 font-semibold">coding competition</span> for KS3 students
+					<p className={`${red_hat_mono.className} text-white text-lg sm:text-xl mb-6 leading-relaxed`}>
+						Code. Compete. Die.
 					</p>
-					<p className={`${red_hat_mono.className} text-gray-300 text-lg mb-12 max-w-2xl mx-auto`}>
-						<span className="text-cyan-400 font-semibold">No coding experience? No problem!</span> Teamwork is the most important part, not knowing it all! Make lifelong friends, and learn from industry experts in this exciting capture-the-flag competition.
+					<p className={`${red_hat_mono.className} text-gray-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto`}>
+						Northern Ireland's premier coding competition for KS3 students
 					</p>
-
-					<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-						<div className="bg-black/30 backdrop-blur-sm border border-gray-700 rounded-lg p-6">
-							<FiUsers className="text-purple-400 w-8 h-8 mx-auto mb-4" />
-							<p className={`${red_hat_mono.className} text-white font-semibold`}>For KS3 Students</p>
-							<p className={`${red_hat_mono.className} text-gray-400 text-sm mt-2`}>Ages 11-14 from NI schools</p>
-						</div>
-						<div className="bg-black/30 backdrop-blur-sm border border-gray-700 rounded-lg p-6">
-							<FiCalendar className="text-cyan-400 w-8 h-8 mx-auto mb-4" />
-							<p className={`${red_hat_mono.className} text-white font-semibold`}>Annual Event</p>
-							<p className={`${red_hat_mono.className} text-gray-400 text-sm mt-2`}>Next event: 2026</p>
-						</div>
-						<div className="bg-black/30 backdrop-blur-sm border border-gray-700 rounded-lg p-6">
-							<FiMapPin className="text-green-400 w-8 h-8 mx-auto mb-4" />
-							<p className={`${red_hat_mono.className} text-white font-semibold`}>QUB</p>
-							<p className={`${red_hat_mono.className} text-gray-400 text-sm mt-2`}>Computer Science Building</p>
-						</div>
-						<div className="bg-black/30 backdrop-blur-sm border border-gray-700 rounded-lg p-6">
-							<FiAward className="text-yellow-400 w-8 h-8 mx-auto mb-4" />
-							<p className={`${red_hat_mono.className} text-white font-semibold`}>Win Prizes</p>
-							<p className={`${red_hat_mono.className} text-gray-400 text-sm mt-2`}>For you and your school</p>
-						</div>
-					</div>
-
 					<div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
 						<Link href="/getinvolved" className={`${red_hat_mono.className} bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200`}>
 							Get Involved
@@ -69,9 +45,50 @@ function Index() {
 						</Link>
 					</div>
 				</div>
+			</section>
 
-				<div className="mt-12 mb-8 flex flex-col items-center">
-					<p className={`${red_hat_mono.className} text-gray-400 mb-4 text-sm`}>Proudly supported by</p>
+			<section className="bg-zinc-900 py-16">
+				<div className="max-w-4xl mx-auto px-4 text-center">
+					<h2 className={`${red_hat_mono.className} text-white text-2xl sm:text-3xl font-bold mb-6`}>
+						What is <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">IglooCode</span>?
+					</h2>
+					<p className={`${red_hat_mono.className} text-gray-300 text-lg mb-8 max-w-3xl mx-auto leading-relaxed`}>
+						An exciting capture-the-flag style competition where teams of KS3 students work together to solve coding challenges. 
+						No experience required - teamwork and problem-solving skills are what matter most!
+					</p>
+					<p className={`${red_hat_mono.className} text-gray-400 text-base mb-12 max-w-2xl mx-auto leading-relaxed`}>
+						Teams compete in rounds of programming puzzles, learn from industry experts, and make lifelong friendships. 
+						It's about collaboration, creativity, and having fun with code.
+					</p>
+				</div>
+
+				<div className="max-w-6xl mx-auto px-4">
+					<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+						<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors text-center">
+							<FiUsers className="text-purple-400 w-8 h-8 mx-auto mb-4" />
+							<h3 className={`${red_hat_mono.className} text-white font-semibold mb-2`}>For KS3 Students</h3>
+							<p className={`${red_hat_mono.className} text-gray-400 text-sm`}>Ages 11-14 from NI schools</p>
+						</div>
+						<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors text-center">
+							<FiCalendar className="text-cyan-400 w-8 h-8 mx-auto mb-4" />
+							<h3 className={`${red_hat_mono.className} text-white font-semibold mb-2`}>Annual Event</h3>
+							<p className={`${red_hat_mono.className} text-gray-400 text-sm`}>Next event: 2026</p>
+						</div>
+						<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors text-center">
+							<FiMapPin className="text-green-400 w-8 h-8 mx-auto mb-4" />
+							<h3 className={`${red_hat_mono.className} text-white font-semibold mb-2`}>QUB</h3>
+							<p className={`${red_hat_mono.className} text-gray-400 text-sm`}>Computer Science Building</p>
+						</div>
+						<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors text-center">
+							<FiAward className="text-yellow-400 w-8 h-8 mx-auto mb-4" />
+							<h3 className={`${red_hat_mono.className} text-white font-semibold mb-2`}>Win Prizes</h3>
+							<p className={`${red_hat_mono.className} text-gray-400 text-sm`}>For you and your school</p>
+						</div>
+					</div>
+				</div>
+
+				<div className="max-w-4xl mx-auto px-4 text-center mt-16">
+					<p className={`${red_hat_mono.className} text-gray-400 mb-6 text-sm`}>Proudly supported by</p>
 					<div className="flex flex-row justify-center items-center gap-8 opacity-75 hover:opacity-100 transition-opacity">
 						<Image src={imgLIT} alt="Liberty IT" className="h-8 w-auto" />
 						<Image src={imgKainos} alt="Kainos" className="h-8 w-auto" />
@@ -86,14 +103,14 @@ function Index() {
 						<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-4`}>
 							What You'll <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Gain</span>
 						</h2>
-						<p className={`${red_hat_mono.className} text-gray-400 text-lg max-w-2xl mx-auto`}>
+						<p className={`${red_hat_mono.className} text-gray-400 text-lg max-w-4xl mx-auto`}>
 							More than just a competition - it's your gateway to the tech industry
 						</p>
 					</div>
 
 					<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-						<div className="bg-zinc-800 rounded-lg p-8 hover:bg-zinc-700 transition-colors">
-							<div className="bg-purple-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+						<div className="bg-zinc-800 rounded-lg p-8 hover:bg-zinc-700 transition-colors text-center">
+							<div className="bg-purple-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
 								<FiAward className="text-purple-400 w-8 h-8" />
 							</div>
 							<h3 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Programming Skills</h3>
@@ -102,8 +119,8 @@ function Index() {
 							</p>
 						</div>
 
-						<div className="bg-zinc-800 rounded-lg p-8 hover:bg-zinc-700 transition-colors">
-							<div className="bg-cyan-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+						<div className="bg-zinc-800 rounded-lg p-8 hover:bg-zinc-700 transition-colors text-center">
+							<div className="bg-cyan-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
 								<FiUsers className="text-cyan-400 w-8 h-8" />
 							</div>
 							<h3 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Make Friends</h3>
@@ -112,8 +129,8 @@ function Index() {
 							</p>
 						</div>
 
-						<div className="bg-zinc-800 rounded-lg p-8 hover:bg-zinc-700 transition-colors">
-							<div className="bg-green-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+						<div className="bg-zinc-800 rounded-lg p-8 hover:bg-zinc-700 transition-colors text-center">
+							<div className="bg-green-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
 								<FiMapPin className="text-green-400 w-8 h-8" />
 							</div>
 							<h3 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Industry Insights</h3>

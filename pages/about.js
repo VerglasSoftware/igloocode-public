@@ -96,7 +96,6 @@ function About() {
 						</div>
 					</div>
 
-					{/* What Makes Us Different */}
 					<div className="text-center mb-16">
 						<h3 className={`${red_hat_mono.className} text-white text-3xl font-bold mb-8`}>
 							What Makes Us <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">Different</span>

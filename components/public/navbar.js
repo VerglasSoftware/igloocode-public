@@ -23,7 +23,6 @@ export default function Navbar() {
 		<nav className="fixed w-full z-50 bg-black/80 backdrop-blur-sm border-b border-gray-800" id="navbar" role="navigation" aria-label="Main navigation">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between h-16">
-					{/* Logo */}
 					<div className="flex items-center">
 						<div className="flex-shrink-0 flex items-center">
 							<Image src="/images/icl.png" height={24} width={24} alt="IglooCode logo" className="brightness-100 mr-3" />
@@ -45,7 +44,6 @@ export default function Navbar() {
 						</div>
 					</div>
 
-					{/* Desktop Navigation */}
 					<div className="hidden md:block">
 						<ul className="flex space-x-6" role="menubar">
 							{navigation.map((item) => (
@@ -68,7 +66,6 @@ export default function Navbar() {
 						</ul>
 					</div>
 
-					{/* Mobile menu button */}
 					<div className="md:hidden">
 						<button
 							onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -87,7 +84,6 @@ export default function Navbar() {
 					</div>
 				</div>
 
-				{/* Mobile menu */}
 				{mobileMenuOpen && (
 					<div className="md:hidden bg-black/95 backdrop-blur-sm border-t border-gray-800">
 						<ul className="px-4 py-4 space-y-2" role="menu">

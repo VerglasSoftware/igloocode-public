@@ -27,7 +27,6 @@ export default function Footer({ session }) {
 						</div>
 					</div>
 
-					{/* Quick Links and Partners side by side on both mobile and desktop */}
 					<div className="grid grid-cols-2 gap-6 col-span-1 md:col-span-2">
 						<div>
 							<h3 className={`${red_hat_mono.className} text-white font-semibold mb-3 md:mb-4 text-xs md:text-sm uppercase tracking-wider`}>
