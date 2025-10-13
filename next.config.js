@@ -1,6 +1,19 @@
 module.exports = {
 	images: {
-		domains: ["tailwindui.com", "s.gravatar.com", "ui-avatars.com"],
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'tailwindui.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 's.gravatar.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'ui-avatars.com',
+			},
+		],
 		dangerouslyAllowSVG: true,
 	},
 };

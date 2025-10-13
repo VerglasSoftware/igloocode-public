@@ -41,6 +41,9 @@ function Index() {
 						<Link href="/about" className={`${red_hat_mono.className} text-white border border-gray-400 px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all duration-200`}>
 							Learn more
 						</Link>
+						<Link href="/companies" className={`${red_hat_mono.className} text-purple-400 border border-purple-400 px-8 py-3 rounded-lg font-semibold hover:bg-purple-400/10 transition-all duration-200`}>
+							Partner with us
+						</Link>
 					</div>
 				</div>
 			</section>
