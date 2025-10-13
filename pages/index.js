@@ -182,8 +182,8 @@ function Index() {
 				</div>
 			</section>
 
-			<section className="bg-hero bg-cover bg-center relative py-20 md:py-16 mt-8 md:mt-0">
-				<div className="absolute inset-0 bg-gradient-to-br from-purple-900/60 via-zinc-900/70 to-cyan-900/60"></div>
+			<section className="relative bg-cover bg-center py-20 md:py-16 mt-8 md:mt-0" style={{ backgroundImage: "url('/images/DSC01856.jpeg')" }}>
+				<div className="absolute inset-0 bg-gradient-to-br from-purple-900/70 via-zinc-900/80 to-cyan-900/70"></div>
 				<div className="max-w-4xl mx-auto text-center px-4 relative z-10">
 					<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-6`}>
 						Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">code</span>?
