@@ -43,7 +43,7 @@ function Index() {
 						</Link>
 						{/* <Link href="/companies" className={`${red_hat_mono.className} text-purple-400 border border-purple-400 px-8 py-3 rounded-lg font-semibold hover:bg-purple-400/10 transition-all duration-200`}>
 							Partner with us
-						</Link> -- Do we keep this? not sure maybe too many buttons on second thought. here it is if its needed.*/}
+						</Link> -- Do we keep this? not sure maybe too many buttons on second thought... here it is if its needed.*/}
 					</div>
 				</div>
 			</section>
