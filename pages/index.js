@@ -29,7 +29,7 @@ function Index() {
 						</a>
 					</div>
 					<p className={`${red_hat_mono.className} text-white text-lg sm:text-xl mb-6 leading-relaxed`}>
-						Code. Compete. Die.
+						Code. Compete. Connect.
 					</p>
 					<p className={`${red_hat_mono.className} text-gray-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto`}>
 						Northern Ireland's premier coding competition for KS3 students
