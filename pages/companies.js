@@ -161,41 +161,6 @@ function Companies() {
 						</div>
 					</div>
 
-					<div className="text-center mb-16">
-						<h3 className={`${red_hat_mono.className} text-white text-3xl font-bold mb-8`}>
-							Partnership <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">opportunities</span>
-						</h3>
-						<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-							<div className="bg-zinc-800 rounded-lg p-6 border-l-4 border-purple-500">
-								<h4 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Title sponsor</h4>
-								<ul className={`${red_hat_mono.className} text-gray-400 text-sm space-y-2 mb-4`}>
-									<li>• Logo on all materials</li>
-									<li>• Speaking opportunities</li>
-									<li>• Dedicated networking space</li>
-									<li>• Impact report co-branding</li>
-								</ul>
-							</div>
-							<div className="bg-zinc-800 rounded-lg p-6 border-l-4 border-cyan-500">
-								<h4 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Category sponsor</h4>
-								<ul className={`${red_hat_mono.className} text-gray-400 text-sm space-y-2 mb-4`}>
-									<li>• idek, naming rights?</li>
-									<li>• Prize presentation</li>
-									<li>• Mentor opportunities</li>
-									<li>• Social media features</li>
-								</ul>
-							</div>
-							<div className="bg-zinc-800 rounded-lg p-6 border-l-4 border-green-500">
-								<h4 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Supporting partner</h4>
-								<ul className={`${red_hat_mono.className} text-gray-400 text-sm space-y-2 mb-4`}>
-									<li>• Logo placement</li>
-									<li>• Volunteer opportunities</li>
-									<li>• Student engagement</li>
-									<li>• Network access</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
 					<div className="bg-gradient-to-r from-purple-500/10 to-cyan-400/10 rounded-lg p-8 text-center">
 						<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>
 							Ready to invest in the future?
