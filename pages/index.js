@@ -185,7 +185,7 @@ function Index() {
 				</div>
 			</section>
 
-			<section className="relative bg-cover bg-center py-20 md:py-16 mt-8 md:mt-0" style={{ backgroundImage: "url('/images/DSC01856.jpeg')" }}>
+			<section className="relative bg-cover bg-center py-20 md:py-16" style={{ backgroundImage: "url('/images/DSC01856.jpeg')" }}>
 				<div className="absolute inset-0 bg-gradient-to-br from-purple-900/70 via-zinc-900/80 to-cyan-900/70"></div>
 				<div className="max-w-4xl mx-auto text-center px-4 relative z-10">
 					<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-6`}>
@@ -201,6 +201,49 @@ function Index() {
 						<Link href="/about" className={`${red_hat_mono.className} text-white border border-gray-400 px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all duration-200`}>
 							Our story
 						</Link>
+					</div>
+				</div>
+			</section>
+
+			<section className="bg-zinc-800 py-20">
+				<div className="max-w-6xl mx-auto px-4">
+					<div className="text-center mb-12">
+						<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-4`}>
+							What people <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">say</span>
+						</h2>
+						<p className={`${red_hat_mono.className} text-gray-400 text-lg`}>
+							Hear from students and teachers who've experienced IglooCode
+						</p>
+					</div>
+
+					<div className="grid md:grid-cols-2 gap-6 mb-8">
+						<div className="bg-zinc-900 rounded-lg p-6 hover:bg-zinc-900/80 transition-colors">
+							<p className={`${red_hat_mono.className} text-gray-300 text-sm mb-4 italic leading-relaxed`}>
+								"The tasks were engaging and fun. I enjoyed the novelty of the suite and the general environment and atmosphere."
+							</p>
+							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Student participant</p>
+						</div>
+
+						<div className="bg-zinc-900 rounded-lg p-6 hover:bg-zinc-900/80 transition-colors">
+							<p className={`${red_hat_mono.className} text-gray-300 text-sm mb-4 italic leading-relaxed`}>
+								"Excellently run event. Very professional. Thanks and we look forward to coming next year again."
+							</p>
+							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Teacher</p>
+						</div>
+
+						<div className="bg-zinc-900 rounded-lg p-6 hover:bg-zinc-900/80 transition-colors">
+							<p className={`${red_hat_mono.className} text-gray-300 text-sm mb-4 italic leading-relaxed`}>
+								"It helped me to learn something new"
+							</p>
+							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Student participant</p>
+						</div>
+
+						<div className="bg-zinc-900 rounded-lg p-6 hover:bg-zinc-900/80 transition-colors">
+							<p className={`${red_hat_mono.className} text-gray-300 text-sm mb-4 italic leading-relaxed`}>
+								"Outstanding experience for our pupils (including the sixth years)! Please run this again!"
+							</p>
+							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Teacher</p>
+						</div>
 					</div>
 				</div>
 			</section>

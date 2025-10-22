@@ -161,6 +161,27 @@ function Companies() {
 						</div>
 					</div>
 
+					<div className="mb-16">
+						<h3 className={`${red_hat_mono.className} text-white text-3xl font-bold mb-8 text-center`}>
+							What our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">partners say</span>
+						</h3>
+						<div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+							<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors">
+								<p className={`${red_hat_mono.className} text-gray-300 text-sm mb-4 italic leading-relaxed`}>
+									"We are delighted that our STEM committee were able to support this fantastic coding event for schools organised by three A Level students"
+								</p>
+								<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Partner organisation</p>
+							</div>
+
+							<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors">
+								<p className={`${red_hat_mono.className} text-gray-300 text-sm mb-4 italic leading-relaxed`}>
+									"Great to be involved in such an amazing event that helps get the younger generation into coding. Well done and congratulations on running a very successful event."
+								</p>
+								<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Partner organisation</p>
+							</div>
+						</div>
+					</div>
+
 					<div className="bg-gradient-to-r from-purple-500/10 to-cyan-400/10 rounded-lg p-8 text-center">
 						<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-4`}>
 							Ready to invest in the future?
