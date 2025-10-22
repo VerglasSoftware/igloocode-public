@@ -29,7 +29,7 @@ function Index() {
 						</a>
 					</div>
 					<p className={`${red_hat_mono.className} text-white text-lg sm:text-xl mb-6 leading-relaxed`}>
-						Code. Compete. Connect.
+						{"< Code. Compete. Connect. />"}
 					</p>
 					<p className={`${red_hat_mono.className} text-gray-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto`}>
 						Northern Ireland's premier coding competition for KS3 students
@@ -192,7 +192,7 @@ function Index() {
 						Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">code</span>?
 					</h2>
 					<p className={`${red_hat_mono.className} text-gray-300 text-lg mb-8 max-w-2xl mx-auto`}>
-						Applications for IglooCode 2025 will open soon. Don't miss your chance to be part of Northern Ireland's biggest coding competition for young people.
+						Applications for IglooCode 2026 will open soon. Don't miss your chance to be part of Northern Ireland's biggest coding competition for young people.
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<Link href="/getinvolved" className={`${red_hat_mono.className} bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200`}>

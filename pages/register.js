@@ -43,8 +43,8 @@ export default function Registration() {
 						</h1>
 						<p className={`${red_hat_mono.className} text-gray-400 text-lg max-w-3xl mx-auto mb-6`}>
 							{formType === "school" 
-								? "Join IglooCode 2025 - the perfect opportunity for KS3 students to explore coding together, in a fun and interactive way."
-								: "Help us inspire the next generation of programmers. Join our volunteer team for IglooCode 2025."
+								? "Join IglooCode 2026 - the perfect opportunity for KS3 students to explore coding together, in a fun and interactive way."
+								: "Help us inspire the next generation of programmers. Join our volunteer team for IglooCode 2026."
 							}
 						</p>
 						
@@ -174,7 +174,7 @@ export default function Registration() {
 									</h2>
 									<p className="text-gray-400 text-sm mt-1">
 										{formType === "school" 
-											? "Register your school's interest in participating in IglooCode 2025"
+											? "Register your school's interest in participating in IglooCode 2026"
 											: "Join our volunteer team and help make IglooCode amazing"
 										}
 									</p>

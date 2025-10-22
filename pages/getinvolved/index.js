@@ -44,7 +44,7 @@ function GetInvolved() {
 								there's a place for you in the IglooCode community.
 							</p>
 							<p className={`${red_hat_mono.className} text-gray-400 text-base`}>
-								IglooCode 2025 applications will open early in the new year. Sign up below to be notified when registration begins.
+								IglooCode 2026 applications will open early in the new year. Sign up below to be notified when registration begins.
 							</p>
 						</div>
 						<div className="flex justify-center">
@@ -71,7 +71,7 @@ function GetInvolved() {
 								<li>• Win prizes for your school</li>
 							</ul>
 							<p className={`${red_hat_mono.className} text-purple-400 text-sm`}>
-								Registration opens early 2025
+								Registration opens early 2026
 							</p>
 						</div>
 
