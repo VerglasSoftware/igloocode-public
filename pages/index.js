@@ -24,8 +24,8 @@ function Index() {
 					</h1>
 					<div className="flex items-center justify-center mb-6">
 						<span className={`${red_hat_mono.className} text-gray-400 text-sm mr-2 leading-tight`}>by</span>
-						<a href="https://verglas.io/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity duration-200 flex items-center">
-							<Image src="/images/wll.png" alt="Verglas" width={50} height={13} className="opacity-75 hover:opacity-100" />
+						<a href="https://verglas.io/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity duration-200 flex items-center" >
+							<Image src="/images/wll.png" alt="Verglas" width={50} height={13} className="opacity-75 hover:opacity-100 align-middle" style={{ marginTop: '3px' }} />
 						</a>
 					</div>
 					<p className={`${red_hat_mono.className} text-white text-lg sm:text-xl mb-6 leading-relaxed`}>

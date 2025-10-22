@@ -75,7 +75,7 @@ function Companies() {
 							Partnership <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">benefits</span>
 						</h3>
 						<div className="grid md:grid-cols-3 gap-8">
-							<div className="bg-zinc-800 rounded-lg p-6">
+							<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors">
 								<div className="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
 									<FiUsers className="text-purple-400 w-6 h-6" />
 								</div>
@@ -84,7 +84,7 @@ function Companies() {
 									Connect with motivated students who are passionate about technology and eager to learn from industry professionals.
 								</p>
 							</div>
-							<div className="bg-zinc-800 rounded-lg p-6">
+							<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors">
 								<div className="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
 									<FiTrendingUp className="text-cyan-400 w-6 h-6" />
 								</div>
@@ -93,7 +93,7 @@ function Companies() {
 									Showcase your company's commitment to education and community development across Northern Ireland's schools.
 								</p>
 							</div>
-							<div className="bg-zinc-800 rounded-lg p-6">
+							<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors">
 								<div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
 									<FiAward className="text-green-400 w-6 h-6" />
 								</div>
@@ -127,14 +127,14 @@ function Companies() {
 								</div>
 							</div>
 							<div className="space-y-4">
-								<div className="bg-zinc-700 rounded-lg p-4 flex items-center justify-between">
+								<div className="bg-zinc-700 rounded-lg p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:justify-between">
 									<div>
 										<h4 className={`${red_hat_mono.className} text-white font-semibold`}>2023 Impact Report</h4>
 										<p className={`${red_hat_mono.className} text-gray-400 text-sm`}>Our inaugural year results and outcomes</p>
 									</div>
 									<a 
 										href="/reports/igloocode-impact-2023.pdf" 
-										className={`${red_hat_mono.className} bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 flex items-center`}
+										className={`${red_hat_mono.className} bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 flex items-center whitespace-nowrap`}
 										target="_blank"
 										rel="noopener noreferrer"
 									>
@@ -142,14 +142,14 @@ function Companies() {
 										Download
 									</a>
 								</div>
-								<div className="bg-zinc-700 rounded-lg p-4 flex items-center justify-between">
+								<div className="bg-zinc-700 rounded-lg p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:justify-between">
 									<div>
 										<h4 className={`${red_hat_mono.className} text-white font-semibold`}>2025 Impact Report</h4>
 										<p className={`${red_hat_mono.className} text-gray-400 text-sm`}>Latest results and future projections</p>
 									</div>
 									<a 
 										href="/reports/igloocode-impact-2025.pdf" 
-										className={`${red_hat_mono.className} bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 flex items-center`}
+										className={`${red_hat_mono.className} bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 flex items-center whitespace-nowrap`}
 										target="_blank"
 										rel="noopener noreferrer"
 									>

@@ -86,7 +86,7 @@ function About() {
 						</div>
 					</div>
 
-					<div className="bg-zinc-800 rounded-lg p-8 mb-16">
+					<div className="bg-zinc-800 rounded-lg p-8 mb-16 hover:bg-zinc-700 transition-colors">
 						<h3 className={`${red_hat_mono.className} text-white text-2xl font-semibold mb-6 text-center`}>
 							How it all <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">started</span>
 						</h3>
@@ -114,19 +114,19 @@ function About() {
 							What makes us <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">different</span>
 						</h3>
 						<div className="grid md:grid-cols-3 gap-8">
-							<div className="bg-zinc-800 rounded-lg p-6">
+							<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors">
 								<h4 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Student-led</h4>
 								<p className={`${red_hat_mono.className} text-gray-400`}>
 									Organized by young people, for young people. We understand what makes coding fun and engaging.
 								</p>
 							</div>
-							<div className="bg-zinc-800 rounded-lg p-6">
+							<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors">
 								<h4 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Inclusive</h4>
 								<p className={`${red_hat_mono.className} text-gray-400`}>
 									Challenges designed for all skill levels, from complete beginners to experienced coders.
 								</p>
 							</div>
-							<div className="bg-zinc-800 rounded-lg p-6">
+							<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors">
 								<h4 className={`${red_hat_mono.className} text-white text-xl font-semibold mb-4`}>Industry-connected</h4>
 								<p className={`${red_hat_mono.className} text-gray-400`}>
 									Direct connections to Northern Ireland's leading tech companies and career opportunities.
