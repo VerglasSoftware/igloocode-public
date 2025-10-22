@@ -17,12 +17,12 @@ export default function Footer({ session }) {
 							</Link>
 						</div>
 						<p className={`${red_hat_mono.className} text-gray-400 text-xs md:text-sm mb-4 md:mb-6 max-w-md leading-relaxed`}>
-							Northern Ireland's premier coding competition for KS3 students. Inspiring the next generation of programmers through fun, competitive challenges.
+							Northern Ireland's premier inter-school coding competition for KS3 students. Inspiring the next generation of programmers through fun, competitive challenges.
 						</p>
 						<div className="flex items-center text-gray-500 text-xs mb-4 md:mb-0">
 							<span className={`${red_hat_mono.className} mr-1 md:mr-2 flex items-center`}>by</span>
 							<a href="https://verglas.io/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity duration-200 flex items-center">
-								<Image src="/images/wll.png" alt="Verglas" width={50} height={13} className="opacity-75 hover:opacity-100 md:w-[60px] md:h-[16px]" />
+								<Image src="/images/wll.png" alt="Verglas" width={50} height={13} className="opacity-75 hover:opacity-100 h-auto w-[50px] md:w-[60px]" style={{ marginTop: '3px' }} />
 							</a>
 						</div>
 					</div>

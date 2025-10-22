@@ -19,7 +19,7 @@ export default function Layout({ children, session }) {
 				<meta name="msapplication-config" content="/images/browserconfig.xml" />
 				<meta content="IglooCode" property="og:title" />
 				<meta
-					content="IglooCode is Northern Ireland's premier coding competition for KS3 students. Learn programming, make friends, and win prizes!"
+					content="IglooCode is Northern Ireland's premier inter-school coding competition for KS3 students. Learn programming, make friends, and win prizes!"
 					property="og:description"
 				/>
 				<meta content="https://iglooco.de" property="og:url" />

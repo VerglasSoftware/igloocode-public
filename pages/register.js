@@ -25,7 +25,7 @@ export default function Registration() {
 			<Head>
 				<title>{`${formType === "school" ? "School Registration" : "Volunteer Registration"} - IglooCode`}</title>
 				<meta name="description" content={formType === "school" 
-					? "Register your school for IglooCode - Northern Ireland's premier coding competition for KS3 students" 
+					? "Register your school for IglooCode - Northern Ireland's premier inter-school coding competition for KS3 students" 
 					: "Join the IglooCode volunteer team and help inspire the next generation of coders"
 				} />
 				<meta name="theme-color" content="#171717" />
@@ -43,8 +43,8 @@ export default function Registration() {
 						</h1>
 						<p className={`${red_hat_mono.className} text-gray-400 text-lg max-w-3xl mx-auto mb-6`}>
 							{formType === "school" 
-								? "Join IglooCode 2025 - the perfect opportunity for KS3 students to explore coding together, in a fun and interactive way."
-								: "Help us inspire the next generation of programmers. Join our volunteer team for IglooCode 2025."
+								? "Join IglooCode 2026 - the perfect opportunity for KS3 students to explore coding together, in a fun and interactive way."
+								: "Help us inspire the next generation of programmers. Join our volunteer team for IglooCode 2026."
 							}
 						</p>
 						
@@ -174,7 +174,7 @@ export default function Registration() {
 									</h2>
 									<p className="text-gray-400 text-sm mt-1">
 										{formType === "school" 
-											? "Register your school's interest in participating in IglooCode 2025"
+											? "Register your school's interest in participating in IglooCode 2026"
 											: "Join our volunteer team and help make IglooCode amazing"
 										}
 									</p>
@@ -182,12 +182,9 @@ export default function Registration() {
 								
 								<div className="p-1">
 									<iframe 
-										src="https://tally.so/r/314GRg" 
+										src={formType === "school" ? "https://forms.office.com/e/8R1WitgbpY" : "https://forms.office.com/e/z4DskYQnV4"}
 										width="100%" 
 										height="700" 
-										frameBorder="0" 
-										marginHeight={0} 
-										marginWidth={0} 
 										title={formType === "school" ? "School registration form" : "Volunteer registration form"}
 										className="rounded-lg"
 									>

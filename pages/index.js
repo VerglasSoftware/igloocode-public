@@ -13,26 +13,28 @@ function Index() {
 		<Layout>
 			<Head>
 				<title>{siteTitle}</title>
-				<meta name="description" content="IglooCode is Northern Ireland's premier coding competition for KS3 students. Learn programming, make friends, and win prizes!" />
+				<meta name="description" content="IglooCode is Northern Ireland's premier inter-school coding competition for KS3 students. Learn programming, make friends, and win prizes!" />
 				<meta name="theme-color" content="#171717" />
 			</Head>
 
 			<section className="w-screen h-[60vh] bg-hero bg-cover flex flex-col justify-center items-center relative px-4 pt-16" style={{ backgroundBlendMode: "normal, saturation" }}>
-				<div className="text-center max-w-4xl">
-					<h1 className={`${red_hat_mono.className} text-transparent text-6xl sm:text-8xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-2 leading-none pb-2`}>
-						IglooCode
-					</h1>
-					<div className="flex items-center justify-center mb-6">
-						<span className={`${red_hat_mono.className} text-gray-400 text-sm mr-2 leading-tight`}>by</span>
-						<a href="https://verglas.io/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity duration-200 flex items-center">
-							<Image src="/images/wll.png" alt="Verglas" width={50} height={13} className="opacity-75 hover:opacity-100" />
-						</a>
+				<div className="text-center max-w-4xl flex flex-col items-center">
+					<div className="flex flex-col items-end">
+						<h1 className={`${red_hat_mono.className} text-transparent text-5xl sm:text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-0 leading-none pb-2`}>
+							IglooCode
+						</h1>
+						<div className="flex items-center mb-6 -mt-1">
+							<span className={`${red_hat_mono.className} text-gray-400 text-sm mr-2 leading-tight`}>by</span>
+							<a href="https://verglas.io/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity duration-200 flex items-center" >
+								<Image src="/images/wll.png" alt="Verglas" width={60} height={16} className="opacity-75 hover:opacity-100 align-middle" style={{ marginTop: '3px' }} />
+							</a>
+						</div>
 					</div>
 					<p className={`${red_hat_mono.className} text-white text-lg sm:text-xl mb-6 leading-relaxed`}>
-						Code. Compete. Connect.
+						{"< Code. Compete. Connect. />"}
 					</p>
 					<p className={`${red_hat_mono.className} text-gray-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto`}>
-						Northern Ireland's premier coding competition for KS3 students
+						Northern Ireland's premier inter-school coding competition for KS3 students
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
 						<Link href="/getinvolved" className={`${red_hat_mono.className} bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200`}>
@@ -72,7 +74,7 @@ function Index() {
 						</div>
 						<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors text-center">
 							<FiCalendar className="text-cyan-400 w-8 h-8 mx-auto mb-4" />
-							<h3 className={`${red_hat_mono.className} text-white font-semibold mb-2`}>Annual event</h3>
+							<h3 className={`${red_hat_mono.className} text-white font-semibold mb-2`}>4th year running</h3>
 							<p className={`${red_hat_mono.className} text-gray-400 text-sm`}>Next event: 2026</p>
 						</div>
 						<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors text-center">
@@ -177,7 +179,7 @@ function Index() {
 						Built by <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">young innovators</span>
 					</h2>
 					<p className={`${red_hat_mono.className} text-gray-400 text-base md:text-lg mb-4 md:mb-6 max-w-2xl mx-auto leading-relaxed`}>
-						IglooCode is created by Verglas, an NI tech startup developing software solutions to give students a competitive classroom edge. We believe young people should lead the charge in tech education.
+						IglooCode started as a passion project by sixth form students and has grown alongside our own journey into university and beyond. Now in our 4th year, we're dedicated to developing software solutions to give students a competitive classroom edge. We believe young people should lead the charge in tech education.
 					</p>
 					<div className="flex items-center justify-center text-gray-500 text-sm">
 						<span className={`${red_hat_mono.className}`}>Empowering the next generation through code</span>
@@ -185,14 +187,14 @@ function Index() {
 				</div>
 			</section>
 
-			<section className="relative bg-cover bg-center py-20 md:py-16 mt-8 md:mt-0" style={{ backgroundImage: "url('/images/DSC01856.jpeg')" }}>
+			<section className="relative bg-cover bg-center py-20 md:py-16" style={{ backgroundImage: "url('/images/DSC01856.jpeg')" }}>
 				<div className="absolute inset-0 bg-gradient-to-br from-purple-900/70 via-zinc-900/80 to-cyan-900/70"></div>
 				<div className="max-w-4xl mx-auto text-center px-4 relative z-10">
 					<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-6`}>
 						Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">code</span>?
 					</h2>
 					<p className={`${red_hat_mono.className} text-gray-300 text-lg mb-8 max-w-2xl mx-auto`}>
-						Applications for IglooCode 2025 will open soon. Don't miss your chance to be part of Northern Ireland's biggest coding competition for young people.
+						Applications for IglooCode 2026 will open soon. Don't miss your chance to be part of Northern Ireland's biggest coding competition for young people.
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<Link href="/getinvolved" className={`${red_hat_mono.className} bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200`}>
@@ -201,6 +203,54 @@ function Index() {
 						<Link href="/about" className={`${red_hat_mono.className} text-white border border-gray-400 px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all duration-200`}>
 							Our story
 						</Link>
+					</div>
+				</div>
+			</section>
+
+			<section className="bg-zinc-800 py-20">
+				<div className="max-w-6xl mx-auto px-4">
+					<div className="text-center mb-12">
+						<h2 className={`${red_hat_mono.className} text-white text-3xl sm:text-4xl font-bold mb-4`}>
+							What people <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">say</span>
+						</h2>
+						<p className={`${red_hat_mono.className} text-gray-400 text-lg`}>
+							Hear from students and teachers who've experienced IglooCode
+						</p>
+					</div>
+
+					<div className="grid md:grid-cols-2 gap-6 mb-8">
+						<div className="bg-zinc-900 rounded-lg p-6 hover:bg-zinc-900/80 transition-colors">
+							<p className={`${red_hat_mono.className} text-gray-300 text-sm mb-4 italic leading-relaxed`}>
+								"The tasks were engaging and fun. I enjoyed the novelty of the suite and the general environment and atmosphere."
+							</p>
+							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Student</p>
+						</div>
+
+						<div className="bg-zinc-900 rounded-lg p-6 hover:bg-zinc-900/80 transition-colors">
+							<p className={`${red_hat_mono.className} text-gray-300 text-sm mb-4 italic leading-relaxed`}>
+								"Excellently run event. Very professional. Thanks and we look forward to coming next year again."
+							</p>
+							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Teacher</p>
+						</div>
+
+						<div className="bg-zinc-900 rounded-lg p-6 hover:bg-zinc-900/80 transition-colors">
+							<p className={`${red_hat_mono.className} text-gray-300 text-sm mb-4 italic leading-relaxed`}>
+								“It was amazing. The tasks were
+								challenging but doable and the staff were
+								really welcoming! The Scratch
+								bits and the hacking talk were class, and
+								the fast-paced competition tied it all
+								together.”
+							</p>
+							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Student</p>
+						</div>
+
+						<div className="bg-zinc-900 rounded-lg p-6 hover:bg-zinc-900/80 transition-colors">
+							<p className={`${red_hat_mono.className} text-gray-300 text-sm mb-4 italic leading-relaxed`}>
+								"Outstanding experience for our pupils (including the sixth years)! Please run this again!"
+							</p>
+							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Teacher</p>
+						</div>
 					</div>
 				</div>
 			</section>
