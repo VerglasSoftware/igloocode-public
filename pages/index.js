@@ -223,7 +223,7 @@ function Index() {
 							<p className={`${red_hat_mono.className} text-gray-300 text-sm mb-4 italic leading-relaxed`}>
 								"The tasks were engaging and fun. I enjoyed the novelty of the suite and the general environment and atmosphere."
 							</p>
-							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Student participant</p>
+							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Student</p>
 						</div>
 
 						<div className="bg-zinc-900 rounded-lg p-6 hover:bg-zinc-900/80 transition-colors">
@@ -242,7 +242,7 @@ function Index() {
 								the fast-paced competition tied it all
 								together.”
 							</p>
-							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Student participant</p>
+							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Student</p>
 						</div>
 
 						<div className="bg-zinc-900 rounded-lg p-6 hover:bg-zinc-900/80 transition-colors">

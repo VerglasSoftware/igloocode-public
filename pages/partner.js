@@ -170,14 +170,14 @@ function Companies() {
 								<p className={`${red_hat_mono.className} text-gray-300 text-sm mb-4 italic leading-relaxed`}>
 									"We are delighted that our STEM committee were able to support this fantastic coding event for schools organised by three A Level students"
 								</p>
-								<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Partner organisation</p>
+								<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Partner</p>
 							</div>
 
 							<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors">
 								<p className={`${red_hat_mono.className} text-gray-300 text-sm mb-4 italic leading-relaxed`}>
 									"Great to be involved in such an amazing event that helps get the younger generation into coding. Well done and congratulations on running a very successful event."
 								</p>
-								<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Partner organisation</p>
+								<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Partner</p>
 							</div>
 						</div>
 					</div>
