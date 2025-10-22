@@ -4,8 +4,8 @@ This directory contains IglooCode's annual impact reports showcasing our achieve
 
 ## Reports
 
-- **2023 Impact Report** (`igloocode-impact-2023.pdf`) - Our inaugural year results
-- **2026 Impact Report** (`igloocode-impact-2026.pdf`) - Latest outcomes and future projections
+- **2023 Impact Report** (`igloocode-impact-report-2023.pdf`) - Our inaugural year results
+- **2026 Impact Report** (`igloocode-impact-report-2025.pdf`) - Latest outcomes and future projections
 
 ## Note
 

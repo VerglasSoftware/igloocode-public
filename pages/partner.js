@@ -133,7 +133,7 @@ function Companies() {
 										<p className={`${red_hat_mono.className} text-gray-400 text-sm`}>Our inaugural year results and outcomes</p>
 									</div>
 									<a 
-										href="/reports/igloocode-impact-2023.pdf" 
+										href="/reports/igloocode-impact-report-2023.pdf" 
 										className={`${red_hat_mono.className} bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 flex items-center whitespace-nowrap`}
 										target="_blank"
 										rel="noopener noreferrer"
@@ -144,11 +144,11 @@ function Companies() {
 								</div>
 								<div className="bg-zinc-700 rounded-lg p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:justify-between">
 									<div>
-										<h4 className={`${red_hat_mono.className} text-white font-semibold`}>2026 Impact Report</h4>
+										<h4 className={`${red_hat_mono.className} text-white font-semibold`}>2025 Impact Report</h4>
 										<p className={`${red_hat_mono.className} text-gray-400 text-sm`}>Latest results and future projections</p>
 									</div>
 									<a 
-										href="/reports/igloocode-impact-2026.pdf" 
+										href="/reports/igloocode-impact-report-2025.pdf" 
 										className={`${red_hat_mono.className} bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 flex items-center whitespace-nowrap`}
 										target="_blank"
 										rel="noopener noreferrer"

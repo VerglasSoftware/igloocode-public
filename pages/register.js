@@ -185,9 +185,6 @@ export default function Registration() {
 										src={formType === "school" ? "https://forms.office.com/e/8R1WitgbpY" : "https://forms.office.com/e/z4DskYQnV4"}
 										width="100%" 
 										height="700" 
-										frameBorder="0" 
-										marginHeight={0} 
-										marginWidth={0} 
 										title={formType === "school" ? "School registration form" : "Volunteer registration form"}
 										className="rounded-lg"
 									>
