@@ -18,14 +18,14 @@ function Index() {
 			</Head>
 
 			<section className="w-screen h-[60vh] bg-hero bg-cover flex flex-col justify-center items-center relative px-4 pt-16" style={{ backgroundBlendMode: "normal, saturation" }}>
-				<div className="text-center max-w-4xl">
-					<h1 className={`${red_hat_mono.className} text-transparent text-6xl sm:text-8xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-2 leading-none pb-2`}>
+				<div className="text-center max-w-4xl flex flex-col items-center">
+					<h1 className={`${red_hat_mono.className} text-transparent text-5xl sm:text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-2 leading-none pb-2`}>
 						IglooCode
 					</h1>
-					<div className="flex items-center justify-center mb-6">
+					<div className="flex items-center justify-end mb-6 w-full max-w-[280px] sm:max-w-[480px]">
 						<span className={`${red_hat_mono.className} text-gray-400 text-sm mr-2 leading-tight`}>by</span>
 						<a href="https://verglas.io/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity duration-200 flex items-center" >
-							<Image src="/images/wll.png" alt="Verglas" width={50} height={13} className="opacity-75 hover:opacity-100 align-middle" style={{ marginTop: '3px' }} />
+							<Image src="/images/wll.png" alt="Verglas" width={60} height={16} className="opacity-75 hover:opacity-100 align-middle" style={{ marginTop: '3px' }} />
 						</a>
 					</div>
 					<p className={`${red_hat_mono.className} text-white text-lg sm:text-xl mb-6 leading-relaxed`}>

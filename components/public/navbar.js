@@ -17,7 +17,7 @@ export default function Navbar() {
 		{ name: "Home", href: "/", current: router.route == "/" },
 		{ name: "About", href: "/about", current: router.route == "/about" || router.route == "/team" },
 		{ name: "Get involved", href: "/getinvolved", current: router.route.startsWith("/getinvolved") },
-		{ name: "Companies", href: "/companies", current: router.route == "/companies" },
+		{ name: "Partner with us", href: "/partner", current: router.route == "/partner" },
 	];
 	
 	return (

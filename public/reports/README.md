@@ -12,15 +12,5 @@ This directory contains IglooCode's annual impact reports showcasing our achieve
 These are placeholder files. Replace with actual PDF reports when available.
 
 The reports are linked from:
-- `/companies` - Partnership page showcasing our impact to potential sponsors
+- `/partner` - Partnership page showcasing our impact to potential sponsors
 - Future locations as needed
-
-## Format
-
-Reports should include:
-- Student participation numbers
-- School engagement statistics  
-- Partner testimonials
-- Competition outcomes
-- Community impact metrics
-- Future goals and projections
