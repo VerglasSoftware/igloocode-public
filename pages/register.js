@@ -25,7 +25,7 @@ export default function Registration() {
 			<Head>
 				<title>{`${formType === "school" ? "School Registration" : "Volunteer Registration"} - IglooCode`}</title>
 				<meta name="description" content={formType === "school" 
-					? "Register your school for IglooCode - Northern Ireland's premier coding competition for KS3 students" 
+					? "Register your school for IglooCode - Northern Ireland's premier inter-school coding competition for KS3 students" 
 					: "Join the IglooCode volunteer team and help inspire the next generation of coders"
 				} />
 				<meta name="theme-color" content="#171717" />

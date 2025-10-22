@@ -12,7 +12,7 @@ function Companies() {
 		<Layout>
 			<Head>
 				<title>Partner with us - {siteTitle}</title>
-				<meta name="description" content="Partner with IglooCode to support the next generation of programmers. Discover the benefits of sponsoring Northern Ireland's premier coding competition." />
+				<meta name="description" content="Partner with IglooCode to support the next generation of programmers. Discover the benefits of sponsoring Northern Ireland's premier inter-school coding competition." />
 				<meta name="theme-color" content="#171717" />
 			</Head>
 
@@ -49,7 +49,7 @@ function Companies() {
 							<div className="grid sm:grid-cols-2 gap-6">
 								<div className="flex items-center">
 									<FiUsers className="text-purple-400 w-6 h-6 mr-3" />
-									<span className={`${red_hat_mono.className} text-gray-300`}>200+ students reached annually</span>
+									<span className={`${red_hat_mono.className} text-gray-300`}>300+ students reached</span>
 								</div>
 								<div className="flex items-center">
 									<FiTarget className="text-cyan-400 w-6 h-6 mr-3" />
@@ -117,7 +117,7 @@ function Companies() {
 								</p>
 								<div className="grid grid-cols-2 gap-4 mb-6">
 									<div className="text-center p-4 bg-zinc-700 rounded-lg">
-										<div className={`${red_hat_mono.className} text-2xl font-bold text-purple-400`}>200+</div>
+										<div className={`${red_hat_mono.className} text-2xl font-bold text-purple-400`}>300+</div>
 										<div className={`${red_hat_mono.className} text-gray-400 text-sm`}>Students reached</div>
 									</div>
 									<div className="text-center p-4 bg-zinc-700 rounded-lg">

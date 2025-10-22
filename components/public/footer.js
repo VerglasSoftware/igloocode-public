@@ -17,7 +17,7 @@ export default function Footer({ session }) {
 							</Link>
 						</div>
 						<p className={`${red_hat_mono.className} text-gray-400 text-xs md:text-sm mb-4 md:mb-6 max-w-md leading-relaxed`}>
-							Northern Ireland's premier coding competition for KS3 students. Inspiring the next generation of programmers through fun, competitive challenges.
+							Northern Ireland's premier inter-school coding competition for KS3 students. Inspiring the next generation of programmers through fun, competitive challenges.
 						</p>
 						<div className="flex items-center text-gray-500 text-xs mb-4 md:mb-0">
 							<span className={`${red_hat_mono.className} mr-1 md:mr-2 flex items-center`}>by</span>

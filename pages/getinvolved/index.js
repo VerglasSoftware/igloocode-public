@@ -13,7 +13,7 @@ function GetInvolved() {
 		<Layout>
 			<Head>
 				<title>Get involved - {siteTitle}</title>
-				<meta name="description" content="Join IglooCode as a student team, teacher, or volunteer. Multiple ways to get involved in Northern Ireland's premier coding competition." />
+				<meta name="description" content="Join IglooCode as a student team, teacher, or volunteer. Multiple ways to get involved in Northern Ireland's premier inter-school coding competition." />
 				<meta name="theme-color" content="#171717" />
 			</Head>
 

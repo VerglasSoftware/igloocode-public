@@ -13,7 +13,7 @@ function Index() {
 		<Layout>
 			<Head>
 				<title>{siteTitle}</title>
-				<meta name="description" content="IglooCode is Northern Ireland's premier coding competition for KS3 students. Learn programming, make friends, and win prizes!" />
+				<meta name="description" content="IglooCode is Northern Ireland's premier inter-school coding competition for KS3 students. Learn programming, make friends, and win prizes!" />
 				<meta name="theme-color" content="#171717" />
 			</Head>
 
@@ -32,7 +32,7 @@ function Index() {
 						{"< Code. Compete. Connect. />"}
 					</p>
 					<p className={`${red_hat_mono.className} text-gray-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto`}>
-						Northern Ireland's premier coding competition for KS3 students
+						Northern Ireland's premier inter-school coding competition for KS3 students
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
 						<Link href="/getinvolved" className={`${red_hat_mono.className} bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200`}>
@@ -72,7 +72,7 @@ function Index() {
 						</div>
 						<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors text-center">
 							<FiCalendar className="text-cyan-400 w-8 h-8 mx-auto mb-4" />
-							<h3 className={`${red_hat_mono.className} text-white font-semibold mb-2`}>Annual event</h3>
+							<h3 className={`${red_hat_mono.className} text-white font-semibold mb-2`}>4th year running</h3>
 							<p className={`${red_hat_mono.className} text-gray-400 text-sm`}>Next event: 2026</p>
 						</div>
 						<div className="bg-zinc-800 rounded-lg p-6 hover:bg-zinc-700 transition-colors text-center">
@@ -177,7 +177,7 @@ function Index() {
 						Built by <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">young innovators</span>
 					</h2>
 					<p className={`${red_hat_mono.className} text-gray-400 text-base md:text-lg mb-4 md:mb-6 max-w-2xl mx-auto leading-relaxed`}>
-						IglooCode is created by Verglas, an NI tech startup developing software solutions to give students a competitive classroom edge. We believe young people should lead the charge in tech education.
+						IglooCode started as a passion project by sixth form students and has grown alongside our own journey into university and beyond. Now in our 4th year, we're dedicated to developing software solutions to give students a competitive classroom edge. We believe young people should lead the charge in tech education.
 					</p>
 					<div className="flex items-center justify-center text-gray-500 text-sm">
 						<span className={`${red_hat_mono.className}`}>Empowering the next generation through code</span>

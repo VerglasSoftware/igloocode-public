@@ -54,7 +54,7 @@ function About() {
 								Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">mission</span>
 							</h2>
 							<p className={`${red_hat_mono.className} text-gray-300 text-lg mb-6 leading-relaxed`}>
-								IglooCode is Northern Ireland's premier coding competition for young people, designed to inspire the next generation 
+								IglooCode is Northern Ireland's premier inter-school coding competition for young people, designed to inspire the next generation 
 								of programmers and connect like-minded students across the region.
 							</p>
 							<p className={`${red_hat_mono.className} text-gray-400 text-base mb-6`}>
@@ -65,11 +65,11 @@ function About() {
 							<div className="grid sm:grid-cols-2 gap-6">
 								<div className="flex items-center">
 									<FiUsers className="text-purple-400 w-6 h-6 mr-3" />
-									<span className={`${red_hat_mono.className} text-gray-300`}>200+ participants annually</span>
+									<span className={`${red_hat_mono.className} text-gray-300`}>300+ participants reached</span>
 								</div>
 								<div className="flex items-center">
 									<FiCalendar className="text-cyan-400 w-6 h-6 mr-3" />
-									<span className={`${red_hat_mono.className} text-gray-300`}>Running since 2023</span>
+									<span className={`${red_hat_mono.className} text-gray-300`}>4th year running</span>
 								</div>
 								<div className="flex items-center">
 									<FiMapPin className="text-green-400 w-6 h-6 mr-3" />
