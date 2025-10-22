@@ -233,7 +233,12 @@ function Index() {
 
 						<div className="bg-zinc-900 rounded-lg p-6 hover:bg-zinc-900/80 transition-colors">
 							<p className={`${red_hat_mono.className} text-gray-300 text-sm mb-4 italic leading-relaxed`}>
-								"It helped me to learn something new"
+								“It was amazing. The tasks were
+								challenging but doable and the staff were
+								really welcoming! The Scratch
+								bits and the hacking talk were class, and
+								the fast-paced competition tied it all
+								together.”
 							</p>
 							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>— Student participant</p>
 						</div>
