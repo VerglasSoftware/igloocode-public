@@ -13,14 +13,14 @@ function About() {
 	const [selectedImage, setSelectedImage] = useState(null);
 
 	const galleryImages = [
-		{ src: "/images/DSC01776.jpg", alt: "Students coding together" },
-		{ src: "/images/DSC01822.jpeg", alt: "Competition day atmosphere" },
-		{ src: "/images/DSC01856.jpeg", alt: "Team collaboration" },
-		{ src: "/images/DSC01864.jpeg", alt: "Students presenting solutions" },
-		{ src: "/images/IMG_0660.jpeg", alt: "Award ceremony" },
-		{ src: "/images/IMG_0679.jpeg", alt: "Networking and fun" },
-		{ src: "/images/DSC01890.jpeg", alt: "Industry mentors helping" },
-		{ src: "/images/scoreboard.jpeg", alt: "Competition scoreboard" }
+		{ src: "/images/IMG_6481.jpg", alt: "Prizegiving" },
+		{ src: "/images/DSC05306.JPG", alt: "" },
+		{ src: "/images/DSC04722.JPG", alt: "" },
+		{ src: "/images/DSC05635.JPG", alt: "" },
+		{ src: "/images/DSC05227.JPG", alt: "" },
+		{ src: "/images/DSC05269.JPG", alt: "" },
+		{ src: "/images/DSC04804.JPG", alt: "" },
+		{ src: "/images/DSC05593.JPG", alt: "" }
 	];
 
 	return (
@@ -117,7 +117,7 @@ function About() {
 						</div>
 						<div className="flex justify-center">
 							<Image
-								src="/images/cat-spinning.gif"
+								src="/images/DSC05187.JPG"
 								width={400}
 								height={400}
 								alt="IglooCode team and participants"

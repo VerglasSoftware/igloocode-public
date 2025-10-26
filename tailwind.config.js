@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			backgroundImage: {
-				hero: "linear-gradient(rgba(0,0,0,0.80), rgba(0.1,0,0,0.85)), linear-gradient(black, black), url('/images/backdrop.png'), url('/images/DSC01822.jpeg')",
+				hero: "linear-gradient(rgba(0,0,0,0.80), rgba(0.1,0,0,0.75)), linear-gradient(black, black), url('/images/backdrop.png'), url('/images/DSC05332.JPG')",
 			},
 			colors: {
 				"ic-blue": "#00E8FF",
