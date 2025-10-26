@@ -17,7 +17,7 @@ function Index() {
 				<meta name="theme-color" content="#171717" />
 			</Head>
 
-			<section className="w-screen h-[60vh] bg-hero bg-cover flex flex-col justify-center items-center relative px-4 pt-16" style={{ backgroundBlendMode: "normal, saturation" }}>
+			<section className="w-screen h-[80vh] bg-hero bg-cover bg-center flex flex-col justify-center items-center relative px-4 pt-16" style={{ backgroundBlendMode: "normal, saturation" }}>
 				<div className="text-center max-w-4xl flex flex-col items-center">
 					<div className="flex flex-col items-end">
 						<h1 className={`${red_hat_mono.className} text-transparent text-5xl sm:text-7xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-0 leading-none pb-2`}>
