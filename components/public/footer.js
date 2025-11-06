@@ -99,18 +99,16 @@ export default function Footer({ session }) {
 				</div>
 
 				<div className="border-t border-gray-700 pt-4 md:pt-6">
-					<div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
+					<div className="flex flex-col space-y-3">
 						<div className="text-center md:text-left">
-							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>
-								© 2025 Verglas (NI) Limited. IglooCode is a trademark of Verglas (NI) Limited.
+							<p className={`${red_hat_mono.className} text-gray-500 text-xs leading-relaxed`}>
+								Verglas (NI) CIC is a community interest company registered in Northern Ireland (no. 716105). <br /> Registered office: Office 218, 92 Castle Street, Belfast, BT1 1HE.
 							</p>
-							<p className={`${red_hat_mono.className} text-gray-600 text-xs mt-1`}>
-								Registered in Northern Ireland (no. NI716105). Office 218, 92 Castle Street, Belfast, BT1 1HE.
+							<p className={`${red_hat_mono.className} text-gray-600 text-xs mt-2 leading-relaxed`}>
+								Verglas is not associated with our founding schools, and any publications from us are not representative of our partners or sponsors.
 							</p>
-						</div>
-						<div className="text-center md:text-right">
-							<p className={`${red_hat_mono.className} text-gray-500 text-xs`}>
-								Made with ❤️ by young people, for young people
+							<p className={`${red_hat_mono.className} text-gray-500 text-xs mt-2`}>
+								© 2023 - 2025 Verglas (NI) CIC. All rights reserved. IglooCode™ and Educatr® are trademarks of Verglas (NI) CIC.
 							</p>
 						</div>
 					</div>
