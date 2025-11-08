@@ -99,8 +99,8 @@ export default function Footer({ session }) {
 				</div>
 
 				<div className="border-t border-gray-700 pt-4 md:pt-6">
-					<div className="flex flex-col space-y-3">
-						<div className="text-center md:text-left">
+					<div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+						<div className="text-center md:text-left flex-1">
 							<p className={`${red_hat_mono.className} text-gray-500 text-xs leading-relaxed`}>
 								Verglas (NI) CIC is a community interest company registered in Northern Ireland (no. 716105). <br /> Registered office: Office 218, 92 Castle Street, Belfast, BT1 1HE.
 							</p>
@@ -110,6 +110,9 @@ export default function Footer({ session }) {
 							<p className={`${red_hat_mono.className} text-gray-500 text-xs mt-2`}>
 								© 2023 - 2025 Verglas (NI) CIC. All rights reserved. IglooCode™ and Educatr® are trademarks of Verglas (NI) CIC.
 							</p>
+						</div>
+						<div className="flex justify-center md:justify-end">
+							<Image src="/images/seuk_certified_-_business_for_good_badge_720.png" alt="Social Enterprise UK - Certified Business for Good" width={80} height={80} className="opacity-90 hover:opacity-100 transition-opacity"/>
 						</div>
 					</div>
 				</div>
