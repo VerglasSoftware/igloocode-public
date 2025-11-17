@@ -182,7 +182,7 @@ export default function Registration() {
 								
 								<div className="p-1">
 									<iframe 
-										src={formType === "school" ? "https://forms.office.com/e/8R1WitgbpY" : "https://forms.office.com/e/z4DskYQnV4"}
+										src={formType === "school" ? "https://forms.office.com/e/tfjjRMW4kg" : "https://forms.office.com/e/z4DskYQnV4"}
 										width="100%" 
 										height="700" 
 										title={formType === "school" ? "School registration form" : "Volunteer registration form"}
