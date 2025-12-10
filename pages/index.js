@@ -96,18 +96,14 @@ function Index() {
 						How it works
 					</h2>
 					
-					<div className="bg-zinc-800 rounded-lg p-8 mb-12 aspect-video flex items-center justify-center border-2 border-dashed border-gray-600">
-						<div className="text-center">
-							<div className="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-								<svg className="w-8 h-8 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
-									<path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-								</svg>
-							</div>
-							<h3 className={`${red_hat_mono.className} text-white text-lg font-semibold mb-2`}>Video coming soon</h3>
-							<p className={`${red_hat_mono.className} text-gray-400 text-sm`}>
-								Learn about the competition format, how to enter teams, and what to expect on the day
-							</p>
-						</div>
+					<div className="bg-zinc-800 rounded-lg mb-12 aspect-video flex items-center justify-center overflow-hidden">
+						<iframe 
+							className="w-full h-full" 
+							src="https://www.youtube.com/embed/MN5PntjL-lA" 
+							title="IglooCode 2026 pre-entry information" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+							allowFullScreen 
+						/>
 					</div>
 
 					<p className={`${red_hat_mono.className} text-gray-400 mb-6 text-sm`}>Proudly supported by</p>
