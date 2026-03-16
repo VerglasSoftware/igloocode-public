@@ -1,13 +1,9 @@
-export async function getServerSideProps() {
-	return {
-		redirect: {
-			destination: "https://educa.tr/play/qm8b8ioee8sroi2p2qkpfuzp",
-			permanent: false,
-		},
-	};
-}
+import { useEffect } from "react";
 
 export default function Play() {
+	useEffect(() => {
+		window.location.replace("https://educa.tr/play/qm8b8ioee8sroi2p2qkpfuzp");
+	}, []);
+
 	return null;
 }
-
